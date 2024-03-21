@@ -9,8 +9,8 @@ const Hero = () => {
                 <p className="text-sm">Our solutions are all about simplification and optimisation </p>
             </div>
 
-            <div className="max-w-screen-xl mx-auto py-10 grid grid-cols-2 md:grid-cols-4 gap-x-28 pr-12">
-                <div className="group cursor-pointer rounded-md relative overflow-hidden w-[145%] h-[135%] bg-white p-8 grid-cols-1 text-center" >
+            <div className="max-w-screen-xl mx-auto py-10 grid grid-cols-2 md:grid-cols-4 gap-[6%] pr-12">
+                <div className="group cursor-pointer rounded-md relative overflow-hidden  w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center" >
                     <img
                         className="w-fit h-[50%]  object-cover group-hover:scale-110 duration-500 rounded-md"
                         src={home2}
@@ -23,7 +23,7 @@ const Hero = () => {
                         employee enrolment to the public sector </p>
                         <p className="text-[#D85012] mt-4">Learn more <span className="font-bold"> {'>'} </span> </p>
                 </div>
-                <div className="group cursor-pointer rounded-md relative overflow-hidden w-[145%] h-[135%] bg-white p-8 grid-cols-1 text-center" >
+                <div className="group cursor-pointer rounded-md relative overflow-hidden w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center" >
                     <img
                         className="w-fit h-[50%]  object-cover group-hover:scale-110 duration-500 rounded-md"
                         src={home2}
@@ -36,7 +36,7 @@ const Hero = () => {
                         employee enrolment to the public sector </p>
                         <p className="text-[#D85012] mt-4">Learn more <span className="font-bold"> {'>'} </span> </p>
                 </div>
-                <div className="group cursor-pointer rounded-md relative overflow-hidden w-[145%] h-[135%] bg-white p-8 grid-cols-1 text-center" >
+                <div className="group cursor-pointer rounded-md relative overflow-hidden  w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center" >
                     <img
                         className="w-fit h-[50%]  object-cover group-hover:scale-110 duration-500 rounded-md"
                         src={home2}
@@ -50,7 +50,7 @@ const Hero = () => {
                     <p className="text-[#D85012] mt-4">Learn more <span className="font-bold">{'>'} </span> </p>
                 </div>
 
-                <div className="group cursor-pointer rounded-md relative overflow-hidden w-[145%] h-[135%] bg-white p-8 grid-cols-1 text-center" >
+                <div className="group cursor-pointer rounded-md relative overflow-hidden  w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center" >
                     <img
                         className="w-fit h-[50%]  object-cover group-hover:scale-110 duration-500 rounded-md"
                         src={home2}
