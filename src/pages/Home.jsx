@@ -1,12 +1,12 @@
 import BFooterHome from "../components/BFooterHome"
 import CTAHome from "../components/CTAHome"
-import Hero from "../components/Hero"
+import VdHome from "../components/VdHome"
 
 const Home = () => {
   return (
     <>
      <CTAHome />
-      <Hero />
+      <VdHome />
       <BFooterHome />
     </>
   )
