@@ -22,7 +22,7 @@ const Header = () => {
                 style={{ color: "#352214", fontSize: "8px" }} >
                   <p className="text-sm text-[blue]">
                     <Link to="/about">
-                      About Us
+                      About
                     </Link>
                   </p>
               </div>
@@ -54,7 +54,7 @@ const Header = () => {
 
               <p className="text-sm text-[blue] hover:bg-[blue] hover:text-white border rounded-lg pl-4 pr-4 pt-2 pb-2 flex justify-end">
                 <Link to="/contactUs">
-                  Contact Us
+                  Contact
                 </Link>
               </p>            
           </div>
