@@ -1,8 +1,10 @@
+import CTACareer from "../components/CTACareer"
+
 const Career = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <CTACareer/>      
+    </>
   )
 }
 
