@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom/dist";
 const Header = () => {
   const navigate = useNavigate()
   const handleClick = () => {
-    if (window.location.pathname !== "/home") {
-      navigate("/home");
+    if (window.location.pathname !== "/") {
+      navigate("/");
     }
   };
 
