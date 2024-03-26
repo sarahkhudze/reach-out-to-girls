@@ -64,7 +64,7 @@ const ServicesBody = () => {
                         src={home2}
                         alt='heroImg'
                     />
-                    <p className="text-[103%] mt-8 text-[#001049] font-bold">SOFTWARE APPLICATION SERVICES</p>
+                    <p className="text-[103%] mt-8 text-[#001049] font-bold">SOFTWARE APPLICATION</p>
                     <p className="text-sm text-justify mt-2">Our enrolment solutions provide a wide
                         selection of customizable functionality
                         for our clients. From the private sector for
@@ -120,7 +120,7 @@ const ServicesBody = () => {
                         src={home2}
                         alt='heroImg'
                     />
-                    <p className="text-[103%] mt-8 text-[#001049] font-bold">SOFTWARE APPLICATION SERVICES</p>
+                    <p className="text-[103%] mt-8 text-[#001049] font-bold">SOFTWARE APPLICATION</p>
                     <p className="text-sm text-justify mt-2">Our enrolment solutions provide a wide
                         selection of customizable functionality
                         for our clients. From the private sector for
