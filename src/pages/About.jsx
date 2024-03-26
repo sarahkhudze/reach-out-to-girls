@@ -1,7 +1,7 @@
-import CTAAbout from "../components/CTAAbout"
-import Mission from "../components/Mission"
-import PreCTAAbout from "../components/PreCTAAbout"
-import Partners from "./Partners"
+import CTAAbout from "../components/about/CTAAbout"
+import Mission from "../components/about/Mission"
+import PreCTAAbout from "../components/about/PreCTAAbout"
+import Partners from "../components/about/Partners"
 
 const About = () => {
   return (

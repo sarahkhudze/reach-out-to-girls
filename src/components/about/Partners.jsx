@@ -1,4 +1,4 @@
-import { cisco, hp, idemia, lenovo, microsoft, neuro, veritas, vmware } from "../assets"
+import { cisco, hp, idemia, lenovo, microsoft, neuro, veritas, vmware } from "../../assets"
 
 const Partners = () => {
     return (

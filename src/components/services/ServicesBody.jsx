@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom/dist";
-import { home2 } from "../assets";
+import { home2 } from "../../assets";
 
 const ServicesBody = () => {
     const navigate = useNavigate()
@@ -24,7 +24,7 @@ const ServicesBody = () => {
                         src={home2}
                         alt='heroImg'
                     />
-                    <p className="text-[103%] mt-8 text-[#0F90CA] font-bold">IDENTITY BASED SOLUTIONS </p>
+                    <p className="text-[103%] mt-8 text-[#001049] font-bold">IDENTITY BASED SOLUTIONS </p>
                     <p className="text-sm text-justify mt-2">Our enrolment solutions provide a wide
                         selection of customizable functionality
                         for our clients. From the private sector for
@@ -37,7 +37,7 @@ const ServicesBody = () => {
                         src={home2}
                         alt='heroImg'
                     />
-                    <p className="text-[103%] mt-8 text-[#0F90CA] font-bold">ENROLMENT OPERATIONS</p>
+                    <p className="text-[103%] mt-8 text-[#001049] font-bold">ENROLMENT OPERATIONS</p>
                     <p className="text-sm text-justify mt-2">Our enrolment solutions provide a wide
                         selection of customizable functionality
                         for our clients. From the private sector for
@@ -50,7 +50,7 @@ const ServicesBody = () => {
                         src={home2}
                         alt='heroImg'
                     />
-                    <p className="text-[103%] mt-8 text-[#0F90CA] font-bold">IDENTITY MANG. SOLUTIONS</p>
+                    <p className="text-[103%] mt-8 text-[#001049] font-bold">IDENTITY MANG. SOLUTIONS</p>
                     <p className="text-sm text-justify mt-2">Our enrolment solutions provide a wide
                         selection of customizable functionality
                         for our clients. From the private sector for
@@ -64,7 +64,7 @@ const ServicesBody = () => {
                         src={home2}
                         alt='heroImg'
                     />
-                    <p className="text-[103%] mt-8 text-[#0F90CA] font-bold">SOFTWARE APPLICATION SERVICES</p>
+                    <p className="text-[103%] mt-8 text-[#001049] font-bold">SOFTWARE APPLICATION SERVICES</p>
                     <p className="text-sm text-justify mt-2">Our enrolment solutions provide a wide
                         selection of customizable functionality
                         for our clients. From the private sector for
@@ -80,7 +80,7 @@ const ServicesBody = () => {
                         src={home2}
                         alt='heroImg'
                     />
-                    <p className="text-[103%] mt-8 text-[#0F90CA] font-bold">IDENTITY BASED SOLUTIONS </p>
+                    <p className="text-[103%] mt-8 text-[#001049] font-bold">IDENTITY BASED SOLUTIONS </p>
                     <p className="text-sm text-justify mt-2">Our enrolment solutions provide a wide
                         selection of customizable functionality
                         for our clients. From the private sector for
@@ -93,7 +93,7 @@ const ServicesBody = () => {
                         src={home2}
                         alt='heroImg'
                     />
-                    <p className="text-[103%] mt-8 text-[#0F90CA] font-bold">ENROLMENT OPERATIONS</p>
+                    <p className="text-[103%] mt-8 text-[#001049] font-bold">ENROLMENT OPERATIONS</p>
                     <p className="text-sm text-justify mt-2">Our enrolment solutions provide a wide
                         selection of customizable functionality
                         for our clients. From the private sector for
@@ -106,7 +106,7 @@ const ServicesBody = () => {
                         src={home2}
                         alt='heroImg'
                     />
-                    <p className="text-[103%] mt-8 text-[#0F90CA] font-bold">IDENTITY MANG. SOLUTIONS</p>
+                    <p className="text-[103%] mt-8 text-[#001049] font-bold">IDENTITY MANG. SOLUTIONS</p>
                     <p className="text-sm text-justify mt-2">Our enrolment solutions provide a wide
                         selection of customizable functionality
                         for our clients. From the private sector for
@@ -120,7 +120,7 @@ const ServicesBody = () => {
                         src={home2}
                         alt='heroImg'
                     />
-                    <p className="text-[103%] mt-8 text-[#0F90CA] font-bold">SOFTWARE APPLICATION SERVICES</p>
+                    <p className="text-[103%] mt-8 text-[#001049] font-bold">SOFTWARE APPLICATION SERVICES</p>
                     <p className="text-sm text-justify mt-2">Our enrolment solutions provide a wide
                         selection of customizable functionality
                         for our clients. From the private sector for

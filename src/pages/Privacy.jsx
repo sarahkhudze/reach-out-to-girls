@@ -1,5 +1,5 @@
-import CTAPrivacy from "../components/CTAPrivacy"
-import PrivacyBody from "../components/PrivacyBody"
+import CTAPrivacy from "../components/policies/CTAPrivacy"
+import PrivacyBody from "../components/policies/PrivacyBody"
 
 const Privacy = () => {
     return (

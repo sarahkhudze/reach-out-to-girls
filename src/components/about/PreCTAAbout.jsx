@@ -1,10 +1,19 @@
 import { Link } from "react-router-dom";
+import { bg } from "../../assets";
 
 const PreCTAAbout = () => {
     return (
-        <div className="bg-[#001049] pb-[4%] pt-[4%]">
+        <div className="bg-repeat bg-center h-fit relative pb-[4%] pt-[4%] w-full z-1"
+        style={{
+            backgroundImage: `url(${bg})`,
+            position: 'relative',
+        }}
+    >
+        <div className="absolute inset-0 bg-black opacity-80"></div>
+
+
             <div className="max-w-screen-xl mx-auto grid md:grid-cols-1 gap-y-10 text-center">
-                <div className="flex flex-col items-center justify-center text-white">
+                <div className="flex flex-col items-center justify-center text-white z-10">
                     <h2 className="font-bold text-[400%] md:text-md mb-2 text-[#D85012] ">
                         Pioneering Biometric <br />
                         Excellence for  <br />

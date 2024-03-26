@@ -1,5 +1,5 @@
-import CTAIsms from "../components/CTAIsms"
-import IsmsBody from "../components/IsmsBody"
+import CTAIsms from "../components/policies/CTAIsms"
+import IsmsBody from "../components/policies/IsmsBody"
 
 const Isms = () => {
     return (

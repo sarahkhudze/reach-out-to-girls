@@ -1,9 +1,15 @@
 import { useNavigate } from "react-router-dom/dist";
-import { home2 } from "../assets";
+import { home2 } from "../../assets";
 
 const Hero = () => {
     const navigate = useNavigate()
     const handleClick = () => {
+        if (window.location.pathname !== "/services") {
+            navigate("/services");
+        }
+    };
+
+    const handleAClick = () => {
         if (window.location.pathname !== "/service") {
             navigate("/service");
         }
@@ -24,12 +30,12 @@ const Hero = () => {
                             src={home2}
                             alt='heroImg'
                         />
-                        <p className="text-[103%] mt-8 text-[#0F90CA] font-bold">IDENTITY BASED SOLUTIONS </p>
+                        <p className="text-[103%] mt-8 text-[#001049] font-bold">IDENTITY BASED SOLUTIONS </p>
                         <p className="text-sm text-justify mt-2">Our enrolment solutions provide a wide
                             selection of customizable functionality
                             for our clients. From the private sector for
                             employee enrolment to the public sector </p>
-                        <p className="text-[#D85012] mt-4">Learn more <span className="font-bold"> {'>'} </span> </p>
+                        <p className="text-[#D85012] mt-4" onClick={handleAClick}>Learn more <span className="font-bold"> {'>'} </span> </p>
                     </div>
                     <div className="group cursor-pointer rounded-md relative overflow-hidden w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center" >
                         <img
@@ -37,12 +43,12 @@ const Hero = () => {
                             src={home2}
                             alt='heroImg'
                         />
-                        <p className="text-[103%] mt-8 text-[#0F90CA] font-bold">ENROLMENT OPERATIONS</p>
+                        <p className="text-[103%] mt-8 text-[#001049] font-bold">ENROLMENT OPERATIONS</p>
                         <p className="text-sm text-justify mt-2">Our enrolment solutions provide a wide
                             selection of customizable functionality
                             for our clients. From the private sector for
                             employee enrolment to the public sector </p>
-                        <p className="text-[#D85012] mt-4">Learn more <span className="font-bold"> {'>'} </span> </p>
+                        <p className="text-[#D85012] mt-4" onClick={handleAClick}>Learn more <span className="font-bold"> {'>'} </span> </p>
                     </div>
                     <div className="group cursor-pointer rounded-md relative overflow-hidden  w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center" >
                         <img
@@ -50,12 +56,12 @@ const Hero = () => {
                             src={home2}
                             alt='heroImg'
                         />
-                        <p className="text-[103%] mt-8 text-[#0F90CA] font-bold">IDENTITY MANG. SOLUTIONS</p>
+                        <p className="text-[103%] mt-8 text-[#001049] font-bold">IDENTITY MANG. SOLUTIONS</p>
                         <p className="text-sm text-justify mt-2">Our enrolment solutions provide a wide
                             selection of customizable functionality
                             for our clients. From the private sector for
                             employee enrolment to the public sector </p>
-                        <p className="text-[#D85012] mt-4">Learn more <span className="font-bold">{'>'} </span> </p>
+                        <p className="text-[#D85012] mt-4" onClick={handleAClick}>Learn more <span className="font-bold">{'>'} </span> </p>
                     </div>
 
                     <div className="group cursor-pointer rounded-md relative overflow-hidden  w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center" >
@@ -64,17 +70,17 @@ const Hero = () => {
                             src={home2}
                             alt='heroImg'
                         />
-                        <p className="text-[103%] mt-8 text-[#0F90CA] font-bold">SOFTWARE APPLICATION SERVICES</p>
+                        <p className="text-[103%] mt-8 text-[#001049] font-bold">SOFTWARE APPLICATION SERVICES</p>
                         <p className="text-sm text-justify mt-2">Our enrolment solutions provide a wide
                             selection of customizable functionality
                             for our clients. From the private sector for
                             employee enrolment to the public sector </p>
-                        <p className="text-[#D85012] mt-4">Learn more <span className="font-bold">{'>'} </span> </p>
+                        <p className="text-[#D85012] mt-4" onClick={handleAClick}>Learn more <span className="font-bold">{'>'} </span> </p>
                     </div>
                 </div>
 
                 <div className="text-center mt-[8%]">
-                    <button className="bg-[#0F90CA] border rounded-full w-fit p-3 text-white" onClick={handleClick}>See all services {'⇾'}</button>
+                    <button className="bg-[#001049] hover:bg-white border rounded-full w-fit p-3 text-[#ffffff] hover:text-[#001049]" onClick={handleClick}>See all services {'⇾'}</button>
                 </div>
             </div>
         </div>

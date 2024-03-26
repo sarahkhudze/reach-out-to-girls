@@ -1,9 +1,11 @@
-import CTACareer from "../components/CTACareer"
+import CTACareer from "../components/career/CTACareer"
+import CareerBody from "../components/career/CareerBody"
 
 const Career = () => {
   return (
     <>
-      <CTACareer/>      
+      <CTACareer/>  
+      <CareerBody/>    
     </>
   )
 }

@@ -17,8 +17,19 @@ import face from "../assets/face.png";
 import robot from "../assets/robot.png";
 import bg from "../assets/bg.png";
 import circular from "../assets/circular.png";
+import one from "../assets/carouselPictures/one.jpg"
+import two from "../assets/carouselPictures/two.jpg"
+import three from "../assets/carouselPictures/three.jpg"
+import four from "../assets/carouselPictures/four.jpg"
+import five from "../assets/carouselPictures/five.jpg"
+
 
 export {
+    one,
+    two,
+    three,
+    four,
+    five,
     circular,
     bg,
     robot,

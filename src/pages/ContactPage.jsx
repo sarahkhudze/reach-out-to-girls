@@ -1,5 +1,5 @@
-import CTAContact from "../components/CTAContact"
-import ContactBody from "../components/ContactBody"
+import CTAContact from "../components/contact/CTAContact"
+import ContactBody from "../components/contact/ContactBody"
 
 const ContactPage = () => {
     return (

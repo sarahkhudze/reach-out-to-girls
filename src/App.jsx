@@ -7,13 +7,14 @@ import {
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import ScrollButton from "./components/ScrollButton";
+import Footer from "./components/others/Footer";
+import Header from "./components/others/Header";
+import ScrollButton from "./components/others/ScrollButton";
 import Career from "./pages/Career";
 import Privacy from "./pages/Privacy";
 import Isms from "./pages/Isms";
 import ContactPage from "./pages/ContactPage";
+import AService from "./pages/AService";
 
 const Layout = () => {
 
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/service",
+        path: "/services",
         element: <Services />,
       },
       {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
       {
         path: "/isms",
         element: <Isms />,
+      },
+      {
+        path: "/service",
+        element: <AService />,
       },
       {
         path: "/career",

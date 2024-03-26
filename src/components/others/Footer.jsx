@@ -1,6 +1,6 @@
 import { MdFacebook, MdOutlineCall, MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
-import { msPix, nigPix } from "../assets";
+import { msPix, nigPix } from "../../assets";
 import { Link } from "react-router-dom";
 
 
@@ -22,7 +22,7 @@ const Footer = () => {
 
                 <div className="flex flex-col items-center align-middle gap-2">
                     <div className="font-bold text-xl">Get In Touch</div>
-                    <span className="border w-fit bg-gray-400 hover:text-gray-400 hover:bg-white font-bold rounded-3xl p-2 cursor-pointer">Request Demo</span>
+                    <span className="border w-fit bg-blue-900 text-white hover:bg-blue-600 font-bold rounded-3xl p-2 cursor-pointer">Request Demo</span>
                     <span className="flex items-center gap-2 cursor-pointer">
                         <MdOutlineCall />
                         <span>+2348000000000</span>

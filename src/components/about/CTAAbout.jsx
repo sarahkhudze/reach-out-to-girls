@@ -1,8 +1,9 @@
-import { robot } from "../assets";
+import { robot } from "../../assets";
 
 const CTAAbout = () => {
     return (
-        <div className="bg-[#001049] pt-[4%] pb-[4%]">
+        <div className="bg-[#001049] pt-[4%] pb-[4%] w-full">
+        
             <div className="max-w-screen-xl mx-auto flex items-center justify-between h-fit gap-x-20">
                 <div className="font-semibold text-[200%] md:text-md mb-2 text-white" >
                 Lorem ipsum dolor sit <br/> amet consectetur. <br/>Vulputate eget fames sit <br/> sed justo sagittis. Velit.

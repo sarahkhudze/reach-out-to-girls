@@ -1,6 +1,6 @@
 
 
-import { finger } from "../assets";
+import { finger } from "../../assets";
 import Hero from "./Hero";
 
 const CTAHome = () => {

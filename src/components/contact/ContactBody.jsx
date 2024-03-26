@@ -72,7 +72,7 @@ const ContactBody = () => {
                     <form
                     //   onSubmit={handleSubmit}
                     >
-                        <div className="mb-4 justify-between bg-[#014C98] p-8 rounded-lg">
+                        <div className="mb-4 justify-between bg-[#001049] p-8 rounded-lg">
                             <h2 className="text-sm font-bold mb-2 text-center text-white">Request a Quote</h2>
 
                             <div className="mt-4 mb-4">
