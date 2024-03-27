@@ -3,18 +3,18 @@ import { home } from "../../assets";
 const BFooterHome = () => {
     return (
        
-            <div className="w-full mx-auto grid h-fit  md:grid-cols-2">
+            <div className="w-full mx-auto grid h-fit md:grid-cols-2">
                 <div className="group">
                     <img className="w-full h-52 md:h-96 object-cover" src={home} alt="img1" />
                 </div>
 
-                <div className="group bg-white text-black gap-10 pl-10 pt-10 items-center  ml-[6%] mr-[6%] justify-end">
-                    <h2 className="font-semibold text-sm md:text-md mb-2 ">
-                        DEDICATED TO ECO-CONSCIOUS EXPERTISE:
+                <div className="group bg-white text-black gap-10 pl-10 pt-4 md:pt-10 items-center ml-[6%] mr-[6%] justify-end">
+                    <h2 className="font-semibold text-sm md:text-md md:mb-2 ">
+                        LATEST NEWS IN IDENTIKO:
                         <br />
-                        REDEFINING THE TECH SPACE
+                        IDENTIKO BLOG
                     </h2>
-                    <p className="text-[8px] md:text-xs pr-4 md:pr-0">
+                    <p className="text-xs md:text-xs pr-4 md:pr-0 py-4 md:py-0">
                     When you use Identiko Integrated Solutions Limited Services, we collect 
                     information sent to us by your computer, mobile phone or other electronic 
                     access device. The automatically collected information includes but not 

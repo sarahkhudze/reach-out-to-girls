@@ -12,20 +12,20 @@ const PreCTAAbout = () => {
         <div className="absolute inset-0 bg-black opacity-80"></div>
 
 
-            <div className="max-w-screen-xl mx-auto grid md:grid-cols-1 gap-y-10 text-center">
+            <div className="max-w-screen-xl mx-auto grid md:grid-cols-1 gap-y-10 text-center px-4 md:px-8 lg:px-12 xl:px-16">
                 <div className="flex flex-col items-center justify-center text-white z-10">
-                    <h2 className="font-bold text-[400%] md:text-md mb-2 text-[#D85012] ">
+                    <h2 className="font-bold text-[250%] md:text-[400%] mb-2 text-[#D85012] ">
                         Pioneering Biometric <br />
                         Excellence for  <br />
                         Unparalleled Data  <br />
                         Protection
                     </h2>
-                    <p className="text-[8px] md:text-sm mb-[4%]">
+                    <p className="text-xs md:text-sm mb-[4%]">
                         Identiko specializes in identity management technology, verification,
                         and digital identity solutions.
                     </p>
 
-                    <div className="flex gap-[10%] text-center w-full justify-center items-center">
+                    <div className="flex gap-[10%] text-center text-xs md:text-auto w-full justify-center items-center">
                         <button className="bg-[#0F90CA] border rounded-full p-3 text-white">Learn more {'⇾'}</button>
                        <Link to = '/contactUs'> <button className="bg-[#D85012] border rounded-full p-3 text-white">Contact Us {'⇾'}</button></Link>
 

@@ -4,7 +4,7 @@ import { face, bg } from "../../assets";
 
 const CTAPrivacy = () => {
     return (
-        <div className="bg-repeat bg-center h-fit relative pb-[4%] pt-[4%] w-full z-1"
+        <div className="bg-repeat bg-center relative pb-[4%] pt-[4%] w-full z-1"
             style={{
                 backgroundImage: `url(${bg})`,
                 position: 'relative',
@@ -13,13 +13,13 @@ const CTAPrivacy = () => {
             <div className="absolute inset-0 bg-black opacity-80"></div>
 
 
-            <div className="max-w-screen-xl mx-auto flex items-center justify-between h-fit gap-x-20">
-                <div className="font-semibold text-3xl md:text-md mb-2 text-white z-10" >
+            <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-8 md:gap-x-20 px-4 md:px-0">
+                <div className="font-semibold text-[150%] md:text-[200%] md:text-md mb-2 text-white z-10 text-center md:text-left" >
                     PRIVACY POLICY
                 </div>
 
                 <div className="z-10">
-                    <img className="h-52 md:h-[50%] left-0 rounded-lg" src={face} alt="img1" />
+                    <img className="h-52 md:h-64 rounded-lg" src={face} alt="img1" />
                 </div>
             </div>
         </div>

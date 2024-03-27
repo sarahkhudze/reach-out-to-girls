@@ -3,14 +3,14 @@ import { robot } from "../../assets";
 const CTAAbout = () => {
     return (
         <div className="bg-[#001049] pt-[4%] pb-[4%] w-full">
-        
-            <div className="max-w-screen-xl mx-auto flex items-center justify-between h-fit gap-x-20">
-                <div className="font-semibold text-[200%] md:text-md mb-2 text-white" >
-                Lorem ipsum dolor sit <br/> amet consectetur. <br/>Vulputate eget fames sit <br/> sed justo sagittis. Velit.
+
+            <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-8 md:gap-x-20 px-4 md:px-0">
+                <div className="font-semibold text-[100%] md:text-[200%] mb-2 text-white z-10 text-center md:text-left" >
+                    Lorem ipsum dolor sit <br /> amet consectetur. <br />Vulputate eget fames sit <br /> sed justo sagittis. Velit.
                 </div>
 
                 <div>
-                    <img className="h-52 md:h-[50%] left-0 border rounded-lg border:bg-black" src={robot} alt="img1" />
+                    <img className="h-52 md:h-64 border rounded-lg border:bg-black" src={robot} alt="img1" />
                 </div>
             </div>
         </div>

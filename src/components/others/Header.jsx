@@ -1,10 +1,13 @@
-
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { identikoWeb } from "../../assets";
 import { useNavigate } from "react-router-dom/dist";
+import { MdMenu, MdClose } from "react-icons/md";
 
 const Header = () => {
-  const navigate = useNavigate()
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
   const handleClick = () => {
     if (window.location.pathname !== "/") {
       navigate("/");
@@ -12,61 +15,78 @@ const Header = () => {
   };
 
   return (
-    <div
-      className="overflow-x-hidden bg-white top-0 flex items-center border-b border-[#EDEFF2] justify-center gap-[25%]" >
-
-      <div> <img src={identikoWeb} alt="webImg" className={`w-[100%] translate-x-8 cursor-pointer`} onClick={handleClick} /></div>
-      <div className="w-[100%] flex items-center justify-center gap-24">
-        <div
-          className="cursor-pointer duration-300"
-          style={{ color: "#352214", fontSize: "8px" }} >
-          <p className="text-sm text-[blue] hover:text-[#001049]">
-            <Link to="/about">
-              <p className="flex">About Us</p>
-            </Link>
-          </p>
-        </div>
-
-        <div
-          className="cursor-pointer duration-300"
-          style={{ color: "#352214", fontSize: "8px" }}>
-          <p className="text-sm text-[blue] hover:text-[#001049]">
-            <Link to="/services">
-              <p>Services</p>
-            </Link>
-          </p>
-        </div>
-
-        <div
-          className="cursor-pointer duration-300"
-          style={{ color: "#352214", fontSize: "8px" }}>
-          <p className="text-sm text-[blue] hover:text-[#001049]">
-            <Link to="/career">
-              <p>Career</p>
-            </Link>
-          </p>
-        </div>
+    <div className="overflow-x-hidden bg-white top-0 flex items-center border-b border-[#EDEFF2] justify-between px-8 py-4">
+      <div>
+        <img
+          src={identikoWeb}
+          alt="webImg"
+          className="w-[50%] max-w-[200px] cursor-pointer"
+          onClick={handleClick}
+        />
       </div>
 
-      <div
-        className="p-4 cursor-pointer duration-300"
-        style={{ color: "#352214", fontSize: "8px" }}>
+      <div className="hidden md:flex items-center justify-between gap-40">
+        <NavLink to="/about">About Us</NavLink>
+        <NavLink to="/services">Services</NavLink>
+        <NavLink to="/career">Career</NavLink>
 
         <div className="text-sm text-[blue] hover:bg-[#001049] hover:text-white border rounded-full pl-8 pr-8 pt-2 pb-2 flex justify-end">
-          <Link to="/contactUs">
-            <div className="flex justify-center items-center gap-[6%]">
-              <p>Contact</p>
-              <p>Us</p>
-              <span className="font-bold">{'>'} </span>
-            </div>
-
-
-          </Link>
+        <NavLink to="/contactUs">Contact Us</NavLink>
         </div>
+        
       </div>
 
-    </div>
+      <div className="md:hidden cursor-pointer">
+        {isMenuOpen ? (
+          <MdClose
+            onClick={() => setIsMenuOpen(false)}
+            className="text-[#352214] text-xl"
+          />
+        ) : (
+          <MdMenu
+            onClick={() => setIsMenuOpen(true)}
+            className="text-[#352214] text-xl"
+          />
+        )}
+      </div>
 
+      {isMenuOpen && (
+        <div className="md:hidden absolute top-[72px] left-0 right-0 bg-white z-10 border-b border-[#EDEFF2]">
+          <MobileNavLink to="/about" onClick={() => setIsMenuOpen(false)}>
+            About Us
+          </MobileNavLink>
+          <MobileNavLink to="/services" onClick={() => setIsMenuOpen(false)}>
+            Services
+          </MobileNavLink>
+          <MobileNavLink to="/career" onClick={() => setIsMenuOpen(false)}>
+            Career
+          </MobileNavLink>
+          <MobileNavLink to="/contactUs" onClick={() => setIsMenuOpen(false)}>
+            Contact Us
+          </MobileNavLink>
+        </div>
+      )}
+    </div>
+  );
+};
+
+const NavLink = ({ to, children }) => {
+  return (
+    <div className="cursor-pointer duration-300">
+      <p className="text-sm text-blue hover:text-[#001049]">
+        <Link to={to}>{children}</Link>
+      </p>
+    </div>
+  );
+};
+
+const MobileNavLink = ({ to, children, onClick }) => {
+  return (
+    <div className="p-4 cursor-pointer duration-300" onClick={onClick}>
+      <p className="text-sm text-blue hover:bg-[#001049] hover:text-white border rounded-full pl-8 pr-8 pt-2 pb-2 flex justify-end">
+        <Link to={to}>{children}</Link>
+      </p>
+    </div>
   );
 };
 

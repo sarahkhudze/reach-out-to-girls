@@ -1,16 +1,13 @@
 const ContactBody = () => {
 
     return (
-        <div className="w-full pb-20 pt-20">
+        <div className="w-full pb-20 pt-20 px-4 md:px-0">
             <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28">
-                <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0">
+                <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0 text-justify">
                     <h2 className="text-sm font-bold mb-1">CONTACT US</h2>
                     <form>
                         <div className="mb-4">
-                            <p
-                                className="w-2/3 cursor-pointer text-[12px] md:text-sm py-2 
-                 text-black"
-                            >
+                            <p className="w-2/3 cursor-pointer text-[12px] md:text-sm py-2 text-black" >
                                 If you have any questions or require advice, please feel free to
                                 get in touch with us. Our team is here and ready to assist you.
                             </p>
@@ -24,28 +21,21 @@ const ContactBody = () => {
                             </p>
                         </div>
 
-                        <div className="mt-5 flex gap-5">
-
+                        <div className="mt-4 flex gap-5">
                             <div>
-                                <p className="w-full py-2 text-black text-sm font-semibold">
-                                    Address:
-                                </p>
+                                <p className="w-full py-2 text-black text-sm font-semibold"> Address: </p>
                                 <p className="w-full text-black text-[12px] md:text-sm font-subFont">
                                     Cooperate office: Suite10 Canaan Plaza, Plot 2 Blk 105,
-                                    Lekki Phase 1, Lagos <br />
-                                    <br />
+                                    Lekki Phase 1, Lagos <br />  <br />
                                     Operation office: 2nd Floor, CITN (Chartered Institute of Taxation)
-                                    House, Plot 16, Jobi Fele way, Central Business District, Ikeja, Lagos.
+                                    House,  <br />Plot 16, Jobi Fele way, Central Business District, Ikeja, Lagos.
                                 </p>
                             </div>
                         </div>
 
                         <div className="mt-2 flex gap-5">
-
                             <div>
-                                <p className="w-full py-2 text-black text-sm font-semibold">
-                                    Phone:
-                                </p>
+                                <p className="w-full py-2 text-black text-sm font-semibold"> Phone: </p>
                                 <p className="w-full text-black text-[12px] md:text-sm font-subFont">
                                     +234 800 0000 000 (whatsapp/call) <br />
                                     +234 900 0000 000 (call only)
@@ -54,11 +44,8 @@ const ContactBody = () => {
                         </div>
 
                         <div className="mb-4 flex gap-5">
-
                             <div>
-                                <p className="w-full py-2 text-black  text-sm font-semibold">
-                                    Email:
-                                </p>
+                                <p className="w-full py-2 text-black  text-sm font-semibold"> Email: </p>
                                 <p className="w-full text-black text-sm font-subFont">
                                     info@identikosolutions.com
                                 </p>
@@ -122,8 +109,6 @@ const ContactBody = () => {
                                 required
                             />
 
-
-
                             <input
                                 className="shadow appearance-none border h-20 cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 name="message"
@@ -133,7 +118,6 @@ const ContactBody = () => {
                                 // onChange={handleInputChange}
                                 required
                             />
-
 
                             {/* {formError && <p>{formError}</p>} */}
                             <button
