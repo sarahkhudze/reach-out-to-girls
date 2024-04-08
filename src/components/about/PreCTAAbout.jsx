@@ -25,7 +25,7 @@ const PreCTAAbout = () => {
                         and digital identity solutions.
                     </p>
 
-                    <div className="flex gap-[10%] text-center text-xs md:text-auto w-full justify-center mb-4 md:mb-0 items-center">
+                    <div className="flex gap-[10%] text-center text-xs md:text-xl w-full justify-center mb-4 md:mb-0 items-center">
                         <button className="bg-[#0F90CA] border rounded-full p-2 md:p-3 text-white">Learn more {'⇾'}</button>
                        <Link to = '/contactUs'> <button className="bg-[#D85012] border rounded-full p-2 md:p-3 text-white">Contact Us {'⇾'}</button></Link>
 
