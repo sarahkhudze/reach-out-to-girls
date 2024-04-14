@@ -40,8 +40,8 @@ const ServicesBody = () => {
 
                 <div className="max-w-screen-xl mx-auto py-10 mb-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pr-4 md:pr-12">
                 {[...Array(8)].map((_, idx) => (
-                        <div key={idx} id={`div${idx + 1}`} className={`group cursor-pointer border rounded-md relative overflow-hidden bg-white p-8
-                        text-center transition-opacity scroll-smooth delay-${idx * 100} ${isVisible[idx] ? 'opacity-100' : 'opacity-0'
+                        <div key={idx} id={`div${idx + 1}`} className={`group cursor-pointer border duration-500 rounded-md relative overflow-hidden bg-white p-8
+                        text-center transition-all scroll-smooth ${isVisible[idx] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
           }`} >
                             <img
                                 className="w-fit h-32 object-cover group-hover:scale-110 duration-500 rounded-md mb-4 mx-auto"

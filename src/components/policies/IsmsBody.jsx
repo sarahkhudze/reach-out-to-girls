@@ -1,4 +1,29 @@
+import { useState, useEffect } from "react";
+
 const IsmsBody = () => {
+  const [isVisible1, setIsVisible1] = useState(false);
+  const [isVisible2, setIsVisible2] = useState(false);
+  const [isVisible3, setIsVisible3] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const top1 = document.getElementById('div1').getBoundingClientRect().top;
+      const top2 = document.getElementById('div2').getBoundingClientRect().top;
+      const top3 = document.getElementById('div3').getBoundingClientRect().top;
+
+      const windowHeight = window.innerHeight;
+
+      setIsVisible1(top1 < windowHeight);
+      setIsVisible2(top2 < windowHeight);
+      setIsVisible3(top3 < windowHeight);
+
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div className="w-full bg-[#C8E0EB] pt-[4%] pb-[4%]">
 
@@ -10,16 +35,19 @@ const IsmsBody = () => {
         applicable business, statutory, regulatory, and legal requirements.
         Identiko Integrated Solutions Limited, is also committed to achieving the following. <br /><br />
 
-        <p className="font-bold text-sm md:text-md">1) To protect (Confidentiality)</p>
-        To protect information assets against unauthorized disclosure.<br /> <br />
-        <p className="font-bold text-sm md:text-md">2) To maintain (Integrity)</p>
-        To protect information assets from unauthorized or accidental modification ensuring the accuracy and completeness of the organization’s assets.<br /> <br />
-        <p className="font-bold text-sm md:text-md">3) To ensure (Availability)</p> 
-        To ensure that Information assets are available as and when required adhering to the organization’s business objectives.
-        To achieve these, we have set measurable objectives at all relevant functions and levels throughout the organization.
+        <p id="div1" className={`text-sm md:text-md duration-500 transition-all scroll-smooth ${isVisible1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
+          }`} >1) To protect (Confidentiality)
+          To protect information assets against unauthorized disclosure.<br /> <br /></p>
+        <p id="div2" className={`text-sm md:text-md duration-500 transition-all scroll-smooth ${isVisible2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
+          }`} >2) To maintain (Integrity)
+          To protect information assets from unauthorized or accidental modification ensuring the accuracy and completeness of the organization’s assets.<br /> <br /></p>
+        <p id="div3" className={`text-sm md:text-md duration-500 transition-all scroll-smooth ${isVisible3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
+          }`} >3) To ensure (Availability)
+          To ensure that Information assets are available as and when required adhering to the organization’s business objectives.
+          To achieve these, we have set measurable objectives at all relevant functions and levels throughout the organization.
 
-        This Policy is reviewed annually to ensure its continuous suitability and adequacy and has been communicated and understood by all employees as well as applicable interested parties
-        within and outside the organization as required.
+          This Policy is reviewed annually to ensure its continuous suitability and adequacy and has been communicated and understood by all employees as well as applicable interested parties
+          within and outside the organization as required.</p>
       </p>
     </div>
   );

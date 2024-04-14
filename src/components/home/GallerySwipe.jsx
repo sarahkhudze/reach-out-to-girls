@@ -31,8 +31,8 @@ const GallerySwipe = () => {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
   };
@@ -40,20 +40,20 @@ const GallerySwipe = () => {
   return (
     <div className='bg-white overflow-x-hidden overflow-y-hidden flex items-center'>
       <div id="div1"
-        className={`w-1/2 bg-white transition-opacity delay-700 ${isVisible1 ? 'opacity-100' : 'opacity-0'
+        className={`w-full md:w-1/2 bg-white transition-all duration-500 scroll-smooth ${isVisible1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
           }`}
       >
         <h2 className=" text-center text-sm md:text-2xl font-bold text-black pt-12">OUR EVENT GALLERY</h2>
         <Slider {...settings}>
           {MyPhoto.map((PhotoLink, index) => (
             <div key={index}>
-              <img src={PhotoLink} alt={`Slide ${index + 1}`} className="mx-auto flex flex-col md:flex-row md:grid md:w-[80%] h:[100%] mt-2 mb-12 rounded-xl" />
+              <img src={PhotoLink} alt={`Slide ${index + 1}`} className="mx-auto flex flex-col md:flex-row md:grid md:w-[50%] h:[70%] mt-2 mb-12 rounded-3xl" />
             </div>
           ))}
         </Slider>
       </div>
       <div id="div2"
-        className={`w-1/2 bg-black transition-opacity delay-1000 ${isVisible2 ? 'opacity-100' : 'opacity-0'
+        className={`hidden md:block w-1/2 bg-black transition-all duration-500  scroll-smooth ${isVisible2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
           }`}
       >
         <h2 className=" text-center text-sm md:text-2xl font-bold text-white pt-12">WORD FROM THE BOSS</h2>

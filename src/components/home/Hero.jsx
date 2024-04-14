@@ -54,8 +54,8 @@ const Hero = () => {
                 </div>
 
                 <div className="max-w-screen-xl mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[7%] md:gap-[6%] pr-12">
-                    <div id="div1" className={`group cursor-pointer rounded-md relative 
-                    overflow-hidden  w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center transition-opacity scroll-smooth delay-150 ${isVisible1 ? 'opacity-100' : 'opacity-0'
+                    <div id="div1" className={`group cursor-pointer rounded-md relative duration-500
+                    overflow-hidden  w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center transition-all scroll-smooth ${isVisible1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
                         }`} >
                         <img
                             className="w-fit h-[50%] object-cover group-hover:scale-110 duration-500 rounded-md"
@@ -70,7 +70,7 @@ const Hero = () => {
                         <p className="text-[#D85012] mt-4" onClick={handleAClick}>Learn more <span className="font-bold"> {'>'} </span> </p>
                     </div>
                     <div id="div2" className={`group cursor-pointer rounded-md relative 
-                    overflow-hidden w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center transition-opacity scroll-smooth delay-200 ${isVisible2 ? 'opacity-100' : 'opacity-0'
+                    overflow-hidden w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center duration-500 transition-all scroll-smooth ${isVisible2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
                         }`} >
                         <img
                             className="w-fit h-[50%] object-cover group-hover:scale-110 duration-500 rounded-md"
@@ -85,7 +85,7 @@ const Hero = () => {
                         <p className="text-[#D85012] mt-4" onClick={handleAClick}>Learn more <span className="font-bold"> {'>'} </span> </p>
                     </div>
                     <div id="div3" className={`group cursor-pointer rounded-md relative 
-                    overflow-hidden  w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center transition-opacity scroll-smooth delay-300 ${isVisible3 ? 'opacity-100' : 'opacity-0'
+                    overflow-hidden  w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center duration-500 transition-all scroll-smooth ${isVisible3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
                         }`} >
                         <img
                             className="w-fit h-[50%] object-cover group-hover:scale-110 duration-500 rounded-md"
@@ -101,10 +101,10 @@ const Hero = () => {
                     </div>
 
                     <div id="div4" className={`group cursor-pointer rounded-md relative overflow-hidden  w-[120%] h-[130%] bg-white p-8 grid-cols-1 
-                    text-center transition-opacity scroll-smooth delay-500 ${isVisible4 ? 'opacity-100' : 'opacity-0'
+                    text-center transition-all scroll-smooth duration-500 ${isVisible4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
                         }`} >
                         <img
-                            className="w-fit h-[50%] object-cover group-hover:scale-110 duration-00 rounded-md"
+                            className="w-fit h-[50%] object-cover group-hover:scale-110 duration-500 rounded-md"
                             src={home2}
                             alt='heroImg'
                         />
