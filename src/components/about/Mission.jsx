@@ -32,7 +32,7 @@ const Mission = () => {
         };
       }, []);
     return (
-        <div className="bg-[#131316] pb-[4%] pt-[4%]">
+        <div className="bg-[#131316] pb-[4%] pt-[4%] overflow-x-hidden">
             <div className="max-w-screen-xl mx-auto mt-4 md:mt-0 px-4 md:px-8 lg:px-12 xl:px-16 grid grid-cols-1 gap-y-10 text-center text-white">
 
                 <h2 className="font-semibold text-xl md:text-3xl md:mb-2">
@@ -81,9 +81,9 @@ const Mission = () => {
                     </div>
                 </div>
 
-                <div className="mt-8">
+                <div className="mt-8 overflow-x-hidden">
                     <div className="grid grid-cols-1 md:grid-cols-2 flex-col gap-8" >
-                        <div id="div4" className={`text-center duration-500 transition-all scroll-smooth ${isVisible4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
+                        <div id="div4" className={`text-center duration-500 transition-all delay-75 scroll-smooth ${isVisible4 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'
                         }`} >
                             <p className="text-xl md:text-2xl font-bold">Our Misson</p>
                             <p className="text-xs md:text-sm text-justify mt-2">Our enrolment solutions provide a wide
@@ -111,7 +111,7 @@ const Mission = () => {
                             </p>
                         </div>
 
-                        <div id="div5" className={`text-center mb-16 md:mb-0 duration-500 transition-all scroll-smooth ${isVisible5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
+                        <div id="div5" className={`overflow-x-hidden text-center mb-16 md:mb-0 duration-500 transition-all delay-200 scroll-smooth ${isVisible5 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'
                         }`} >
                             <p className="text-xl md:text-2xl font-bold">Our Vision</p>
                             <p className="text-xs md:text-sm text-justify mt-2">Our enrolment solutions provide a wide
