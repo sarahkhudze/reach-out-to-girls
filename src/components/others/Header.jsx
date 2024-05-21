@@ -1,6 +1,6 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { identikoWeb } from "../../assets";
+import { logoPicu } from "../../assets";
 import { useNavigate } from "react-router-dom/dist";
 import { MdMenu, MdClose } from "react-icons/md";
 
@@ -15,12 +15,12 @@ const Header = () => {
   };
 
   return (
-    <div className="overflow-x-hidden top-0 flex items-center text-[#001049] justify-between px-8 py-4">
+    <div className="overflow-x-hidden top-0 flex items-center text-[#003997] justify-between px-8 py-4">
 
 
       <div>
         <img
-          src={identikoWeb}
+          src={logoPicu}
           alt="webImg"
           className="w-[50%] max-w-[200px] cursor-pointer rounded-lg"
           onClick={handleClick || setIsMenuOpen(false)}        
@@ -34,7 +34,7 @@ const Header = () => {
           <NavLink to="/career">Career</NavLink>
         </div>
 
-        <div className="text-sm hover:bg-[#001049] hover:text-[#001049] bg-[#ffffff] border border-[#001049] rounded-full pl-4 pr-4 pt-2 pb-2 flex justify-end">
+        <div className="text-sm hover:bg-[#003997] hover:text-[#003997] bg-[#ffffff] border border-[#003997] rounded-full pl-4 pr-4 pt-2 pb-2 flex justify-end">
           <NavLink to="/contactUs" className="text-sm rounded-full pl-8 pr-8 pt-2 pb-2 flex justify-end">Contact Us</NavLink>
         </div>
 
@@ -44,18 +44,18 @@ const Header = () => {
         {isMenuOpen ? (
           <MdClose
             onClick={() => setIsMenuOpen(false)}
-            className="text-[#001049] text-xl"
+            className="text-[#003997] text-xl"
           />
         ) : (
           <MdMenu
             onClick={() => setIsMenuOpen(true)}
-            className="text-[#001049] text-xl"
+            className="text-[#003997] text-xl"
           />
         )}
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden absolute top-[72px] left-0 right-0 z-50 border-b bg-[#001049]">
+        <div className="md:hidden absolute top-[72px] left-0 right-0 z-50 border-b bg-[#003997]">
           <MobileNavLink to="/about" onClick={() => setIsMenuOpen(false)}>
             About Us
           </MobileNavLink>
@@ -104,7 +104,7 @@ const NavLink = ({ to, children }) => {
     <div className="cursor-pointer duration-300">
       <p
         className={`text-sm text-blue ${
-          isActive ? "text-white bg-[#001049]" : "hover:bg-[#001049] hover:bottom-1 hover:text-white"
+          isActive ? "text-white bg-[#003997]" : "hover:bg-[#003997] hover:bottom-1 hover:text-white"
         } pl-4 pr-4 pt-2 pb-2 rounded-full`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -118,7 +118,7 @@ const NavLink = ({ to, children }) => {
 
 const MobileNavLink = ({ to, children, onClick }) => {
   return (
-    <div className="p-4 cursor-pointer z-20 duration-300 bg-[#001049]" onClick={onClick}>
+    <div className="p-4 cursor-pointer z-20 duration-300 bg-[#003997]" onClick={onClick}>
       <p className="text-xs text-[#ffffff] border z-20 rounded-full pl-4 pr-4 pt-2 pb-2 flex items-center justify-center">
         <Link to={to}>{children}</Link>
       </p>

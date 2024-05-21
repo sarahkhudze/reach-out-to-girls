@@ -1,6 +1,6 @@
 import { MdCheckCircleOutline } from "react-icons/md"
 import { useState, useEffect } from "react";
-import { Sunset } from "../../assets";
+import { aboutUs } from "../../assets";
 
 const Mission = () => {
     const [isVisible1, setIsVisible1] = useState(false);
@@ -35,9 +35,9 @@ const Mission = () => {
         <div className="bg-white pb-[4%] pt-[4%] overflow-x-hidden">
 
             <div className="relative">
-                <div className="absolute w-full border-b-2 border-[#001049] rounded-full mb-4" style={{ top: "51%" }}></div>
+                <div className="absolute w-full border-b-2 border-[#003997] rounded-full mb-4" style={{ top: "51%" }}></div>
             </div>
-            <div className="max-w-screen-xl mx-auto mt-4 md:mt-0 px-4 md:px-8 lg:px-12 xl:px-16 grid grid-cols-1 gap-y-10 text-center text-[#001049]">
+            <div className="max-w-screen-xl mx-auto mt-4 md:mt-0 px-4 md:px-8 lg:px-12 xl:px-16 grid grid-cols-1 gap-y-10 text-center text-[#003997]">
 
                 <h2 className="font-semibold text-xl md:text-3xl md:mb-2 mt-12">
                     Our Primary Pillars
@@ -87,36 +87,25 @@ const Mission = () => {
 
 
                 <div className="mt-8 overflow-x-hidden">
-
                     <div className="grid grid-cols-1 md:grid-cols-2 flex-col gap-8" >
                         <div id="div1" className={` group duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
-                            <video className="md:h-auto w-screen min-w-full min-h-full object-cover relative m-0 p-0 cover" src={Sunset} autoPlay loop muted alt="img1" />
+                            <img className="md:h-fit w-screen min-w-full min-h-full object-cover relative m-0 p-0 cover rounded-xl" src={aboutUs} alt="img1" />
                         </div>
 
                         <div id="div4" className={`text-center duration-500 transition-all delay-500 scroll-smooth ${isVisible4 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'
                             }`} >
                             <p className="text-xl md:text-2xl font-bold">Our Misson</p>
                             <p className="text-xs md:text-sm text-justify mt-2">Our enrolment solutions provide a wide
-                                selection of customizable functionality
-                                for our clients. From the private sector for
-                                employee enrolment to the public sector
-                                Our enrolment solutions provide a wide
-                                selection of customizable functionality
-                                for our clients. From the private sector for
-                                employee enrolment to the public sector
-                                selection of customizable functionality
-                                for our clients. From the private sector for
-                                employee enrolment to the public sector
-                                Our enrolment solutions provide a wide
-                                selection of customizable functionality
-                                for our clients. From the private sector for
-                                employee enrolment to the public sector
-                                selection of customizable functionality
-                                for our clients. From the private sector for
-                                employee enrolment to the public sector
-                                Our enrolment solutions provide a wide
-                                selection of customizable functionality
-                                for our clients. From the private sector for
+                                selection of customizable functionality for our clients. From the private sector for
+                                employee enrolment to the public sector Our enrolment solutions provide a wide
+                                selection of customizable functionality for our clients. From the private sector for
+                                employee enrolment to the public sector selection of customizable functionality
+                                for our clients. From the private sector for employee enrolment to the public sector
+                                Our enrolment solutions provide a wide selection of customizable functionality
+                                for our clients. From the private sector for employee enrolment to the public sector
+                                selection of customizable functionality for our clients. From the private sector for
+                                employee enrolment to the public sector Our enrolment solutions provide a wide
+                                selection of customizable functionality for our clients. From the private sector for
                                 employee enrolment to the public sector
                             </p>
                         </div>
@@ -125,31 +114,21 @@ const Mission = () => {
                             }`} >
                             <p className="text-xl md:text-2xl font-bold">Our Vision</p>
                             <p className="text-xs md:text-sm text-justify mt-2">Our enrolment solutions provide a wide
-                                selection of customizable functionality
-                                for our clients. From the private sector for
-                                employee enrolment to the public sector
-                                Our enrolment solutions provide a wide
-                                selection of customizable functionality
-                                for our clients. From the private sector for
-                                employee enrolment to the public sector
-                                selection of customizable functionality
-                                for our clients. From the private sector for
-                                employee enrolment to the public sector
-                                Our enrolment solutions provide a wide
-                                selection of customizable functionality
-                                for our clients. From the private sector for
-                                employee enrolment to the public sector
-                                selection of customizable functionality
-                                for our clients. From the private sector for
-                                employee enrolment to the public sector
-                                Our enrolment solutions provide a wide
-                                selection of customizable functionality
-                                for our clients. From the private sector for
+                                selection of customizable functionality for our clients. From the private sector for
+                                employee enrolment to the public sector Our enrolment solutions provide a wide
+                                selection of customizable functionality for our clients. From the private sector for
+                                employee enrolment to the public sector selection of customizable functionality
+                                for our clients. From the private sector for employee enrolment to the public sector
+                                Our enrolment solutions provide a wide selection of customizable functionality
+                                for our clients. From the private sector for employee enrolment to the public sector
+                                selection of customizable functionality for our clients. From the private sector for
+                                employee enrolment to the public sector Our enrolment solutions provide a wide
+                                selection of customizable functionality for our clients. From the private sector for
                                 employee enrolment to the public sector
                             </p>
                         </div>
                         <div id="div1" className={` group duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
-                            <video className="md:h-auto w-screen min-w-full min-h-full object-cover relative m-0 p-0 cover" src={Sunset} autoPlay loop muted alt="img1" />
+                            <img className="md:h-auto w-screen min-w-full min-h-full object-cover relative m-0 p-0 cover rounded-xl" src={aboutUs} alt="img1" />
                         </div>
                     </div>
                 </div>

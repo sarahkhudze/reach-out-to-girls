@@ -10,7 +10,7 @@ const CTAService = () => {
             }}
         >
 
-            <div className="absolute inset-0 bg-[#001049] opacity-95"></div>
+            <div className="absolute inset-0 bg-[#003997] opacity-95"></div>
 
             <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-x-20 mt-10 mb-10 z-10 justify-between items-center">
                 <div className="group text-white gap-10 z-10">

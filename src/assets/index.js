@@ -34,11 +34,15 @@ import off7 from "../assets/off7.jpg"
 import off8 from "../assets/off8.jpg"
 import aboutUsPic from "../assets/aboutUsPic.jpg"
 import careerPic from "../assets/careerPic.jpg"
+import aboutUs from "../assets/aboutUs.jpg"
+import logoPicu from "../assets/logoPicu.png"
 
 
 
 
 export {
+    logoPicu,
+    aboutUs,
     careerPic,
     aboutUsPic,
     off1,

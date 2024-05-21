@@ -62,7 +62,7 @@ const Hero = () => {
                             src={home2}
                             alt='heroImg'
                         />
-                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 text-[#001049] font-bold">TECH SOLUTIONS </p>
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 text-[#003997] font-bold">TECH SOLUTIONS </p>
                     </div>
                     <div id="div2" className={`group cursor-pointer border rounded-3xl relative 
                     overflow-hidden bg-white p-8 grid-cols-1 text-center duration-500 transition-all scroll-smooth ${isVisible2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'
@@ -72,7 +72,7 @@ const Hero = () => {
                             src={home2}
                             alt='heroImg'
                         />
-                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 text-[#001049] font-bold">ENROLMENT SERVICES</p>
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 text-[#003997] font-bold">ENROLMENT SERVICES</p>
                     </div>
                     <div id="div3" className={`group cursor-pointer border rounded-3xl relative 
                     overflow-hidden bg-white p-8 grid-cols-1 text-center duration-500 transition-all scroll-smooth ${isVisible3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'
@@ -82,7 +82,7 @@ const Hero = () => {
                             src={home2}
                             alt='heroImg'
                         />
-                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 text-[#001049] font-bold">IDENTITY SOLUTIONS</p>
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 text-[#003997] font-bold">IDENTITY SOLUTIONS</p>
                     </div>
 
                     <div id="div4" className={`group cursor-pointer border rounded-3xl relative overflow-hidden bg-white p-8 grid-cols-1 
@@ -93,12 +93,12 @@ const Hero = () => {
                             src={home2}
                             alt='heroImg'
                         />
-                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 text-[#001049] font-bold">SOFTWARE APPLICATION</p>
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 text-[#003997] font-bold">SOFTWARE APPLICATION</p>
                     </div>
                 </div>
 
                 <div className="text-center md:mt-2 mb-24">
-                    <button className="bg-[#001049] hover:bg-white border rounded-full w-fit p-3 text-[#ffffff] hover:text-[#001049]" onClick={handleClick}>See all services {'⇾'}</button>
+                    <button className="bg-[#003997] hover:bg-white border rounded-full w-fit p-3 text-[#ffffff] hover:text-[#003997]" onClick={handleClick}>See all services {'⇾'}</button>
                 </div>
             </div>
         </div>
