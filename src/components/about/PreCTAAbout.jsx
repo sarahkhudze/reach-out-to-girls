@@ -4,7 +4,7 @@ import { aboutUsPic } from "../../assets";
 
 const PreCTAAbout = () => {
     return (
-        <div className="bg-no-repeat bg-center bg-cover relative md:py-[12%] w-full z-1"
+        <div className="bg-no-repeat bg-center bg-cover relative py-[12%] md:py-[12%] lg:py-[14%] xl:py-[18%] w-full z-1"
         style={{
             backgroundImage: `url(${aboutUsPic})`,
             position: 'relative',            
@@ -16,10 +16,8 @@ const PreCTAAbout = () => {
             <div className="max-w-screen-xl mx-auto grid md:grid-cols-1 gap-y-10 text-center px-4 md:px-8 lg:px-12 xl:px-16">
                 <div className="flex flex-col items-center justify-center text-[#ffffff] z-10">
                     <h2 className="font-bold text-[150%] md:text-[300%] mt-4 md:mt-0 mb-2  ">
-                        Pioneering Biometric <br />
-                        Excellence For  <br />
-                        Unparalleled Data  <br />
-                        Protection
+                        Pioneering Biometric Excellence For  <br />
+                        Unparalleled Data Protection
                     </h2>
                     <p className="text-xs md:text-xl mb-[4%] font-bold">
                         Identiko specializes in identity management technology, verification,
