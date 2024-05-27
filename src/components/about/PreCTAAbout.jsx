@@ -24,7 +24,7 @@ const PreCTAAbout = () => {
                         and digital identity solutions.
                     </p>
 
-                    <div className="flex gap-[10%] text-center text-xs md:text-xl w-full justify-center mb-4 md:mb-0 items-center">
+                    <div className="flex gap-[10%] text-center text-xs md:text-[100%] w-full justify-center mb-4 md:mb-0 items-center">
                         <button className="hover:bg-[#003997] bg-[#ffffff] hover:text-[#ffffff] text-[#003997] border border-[#003997] rounded-full px-4 py-2 md:p-3 pl-2 pr-2">Learn more</button>
                        
                        <Link to = '/contactUs'> 
