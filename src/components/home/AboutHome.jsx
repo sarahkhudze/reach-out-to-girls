@@ -41,7 +41,7 @@ const AboutHome = () => {
                     <p>We may also collect information you provide us including but not limited to
                         information on web form
                     </p><br/><br/>
-                    <Link to = '/aboutUs'> 
+                    <Link to = '/about'> 
                    
                     <button className="bg-[#003997] hover:bg-white border rounded-full w-fit p-3 text-[#ffffff] hover:text-[#003997]">Read More all services {'⇾'}</button>
                   </Link>
