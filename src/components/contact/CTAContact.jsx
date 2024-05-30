@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { editedContact } from "../../assets";
+import { AiOutlineArrowDown } from "react-icons/ai";
 
 const CTAContact = () => {
     return (
@@ -16,9 +17,9 @@ const CTAContact = () => {
                         Contact Us  
                     </div>
                     <Link to="#section-1">
-                    <div className="absolute bottom-0 left-0 right-0 mx-auto flex justify-center
+                    <div className="absolute bottom-24 left-0 right-0 mx-auto flex justify-center
                  items-center mb-20 text-white font-bold  rounded-full">
-                        <p className="bg-[#003997] rounded-full p-4 animate-bounce">↡</p>
+                        <p className="bg-[#003997] rounded-full p-4 animate-bounce"><AiOutlineArrowDown/> </p>
                     </div>
                 </Link>
                    

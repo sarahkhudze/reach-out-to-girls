@@ -1,4 +1,4 @@
-import BFooterHome from "../components/home/BFooterHome"
+// import BFooterHome from "../components/home/BFooterHome"
 import CTAHome from "../components/home/CTAHome"
 // import VdHome from "../components/home/VdHome"
 import Hero from "../components/home/Hero";
@@ -8,6 +8,7 @@ import { Spinner } from "react-bootstrap"
 import ContactSubscribe from "../components/contact/ContactSubscribe";
 import Partners from "../components/about/Partners";
 import AboutHome from "../components/home/AboutHome";
+import GallerySwipe from "../components/home/GallerySwipe"
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,11 +30,12 @@ const Home = () => {
       <CTAHome />
       <Hero />
       {/* <VdHome /> */}
-      {/* <GallerySwipe/> */}
+     
       <AboutHome/>
      
-      <BFooterHome />
+      {/* <BFooterHome /> */}
       <Partners/>
+      <GallerySwipe/>
       <ContactSubscribe/>
     </div>
   )

@@ -32,7 +32,7 @@ const AboutHome = () => {
             </div>
             <div id="div2" className={`bg-white text-black gap-10 pt-4 md:pt-10 items-center md:w-[40%] text-left ml-[6%] mr-[6%] justify-start duration-500 transition-all scroll-smooth delay-300 ${isVisible2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'}`}>
                 <h2 className="font-semibold text-sm md:text-4xl md:mb-2  ">
-                    About Us
+                    Who We Are
                 </h2>
                 <p>
                     <p className="text-xs md:text-4xl pr-4 md:pr-0 py-4 md:py-0">
@@ -43,7 +43,7 @@ const AboutHome = () => {
                     </p><br/><br/>
                     <Link to = '/about'> 
                    
-                    <button className="bg-[#003997] hover:bg-white border rounded-full w-fit p-3 text-[#ffffff] hover:text-[#003997]">Read More all services {'⇾'}</button>
+                    <button className="w-fit p-3 text-[#000000] hover:text-[#003997]">Read More  {'⇾'}</button>
                   </Link>
 
 
