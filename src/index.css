@@ -6,12 +6,12 @@
 
 body {
     margin: 0;
-    font-family: Helvetica Neue; /* Apply default font */
+    font-family: Roboto; /* Apply default font */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-/* body {
+body {
     margin: 0;
     font-family:
         "Roboto",
@@ -28,4 +28,4 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-} */
+}

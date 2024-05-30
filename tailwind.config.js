@@ -13,7 +13,7 @@ export default {
       },
 
       fontFamily: {
-        sans: ["Helvetica Neue", "sans-serif"],      
+        Roboto: ["Roboto", "sans-serif"],     
       }
     },
   },
