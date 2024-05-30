@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { contactIde } from "../../assets";
+import { contactIde, circular } from "../../assets";
 import { useState, useEffect } from "react";
 
 const AboutHome = () => {
@@ -26,11 +26,18 @@ const AboutHome = () => {
 
     return (
 
-        <div className="w-full mx-auto h-fit flex flex-col md:flex-row justify-center items-center mt-20 mb-20">
-            <div id="div1" className={` md:w-[50%] ml-[6%] mr-[6%] duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
+        <div className="relative w-full mx-auto h-fit  pt-[8%] pb-[8%] flex flex-col md:flex-row justify-center items-center mt-20 mb-20  bg-cover bg-center" 
+        style={{
+            backgroundImage: `url(${circular})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}>
+           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-85"></div>
+            <div id="div1" className={` relative md:w-[35%]  ml-[6%] mr-[6%] duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
+                <img src={contactIde} className="bg-no-repeat bg-center mb-2 z-1 shadow-xl rounded-md" />
                 <img src={contactIde} className="bg-no-repeat bg-center z-1 shadow-xl rounded-md" />
             </div>
-            <div id="div2" className={`bg-white text-black gap-10 pt-4 md:pt-10 items-center md:w-[40%] text-left ml-[6%] mr-[6%] justify-start duration-500 transition-all scroll-smooth delay-300 ${isVisible2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'}`}>
+            <div id="div2" className={`bg-white text-black gap-10 p-20 items-center justify-start duration-500 transition-all scroll-smooth delay-300 ${isVisible2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'}`}>
                 <h2 className="font-semibold text-sm md:text-4xl md:mb-2  ">
                     Who We Are
                 </h2>
@@ -43,7 +50,7 @@ const AboutHome = () => {
                     </p><br/><br/>
                     <Link to = '/about'> 
                    
-                    <button className="w-fit p-3 text-[#000000] hover:text-[#003997]">Read More  {'⇾'}</button>
+                    <button className="w-fit p-3 hover:text-[#003a97b3] text-[#003997]">Read More  {'⇾'}</button>
                   </Link>
 
 

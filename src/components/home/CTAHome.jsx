@@ -12,19 +12,16 @@ const CTAHome = () => {
 
             <div className=" absolute md:z-50 text-[50%] md:text-[150%] ml-[6%] text-left mt-32 text-white w-full h-full md:top-0 flex items-center justify-start">
                 <div className="text-start text-shadow-lg">
-                <p> Identiko Is Your One-Stop Shop For Digital </p>
-                <p> Identity, Verification, And Technology Solutions</p> </div>               
-            </div>
+                    <p> Identiko Is Your One-Stop Shop  </p>
+                    <p> For Identity, Verification, And </p>
+                </div>
 
-            <Link to="#section-1">
-                    <div className="absolute bottom-24 left-0 right-0 mx-auto hidden md:flex justify-center
+                <Link to="#section-1" className="absolute bottom-44 right-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:flex text-center justify-center
                  items-center text-white font-bold rounded-full">
-                        <p className="bg-[#003997] rounded-full p-4 animate-bounce"><AiOutlineArrowDown /> </p>
-                    </div>
+                    <p className="bg-[#003997] rounded-full p-4 animate-bounce"><AiOutlineArrowDown /> </p>
+
                 </Link>
-
-
-
+            </div>
         </div>
 
     );
