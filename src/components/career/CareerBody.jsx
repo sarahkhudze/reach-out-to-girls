@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import {circular} from "../../assets"
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -45,14 +45,20 @@ const CareerBody = () => {
     };
 
     return (
-        <div id="section-1" className="w-full pb-20 pt-20 px-4 md:px-0">
-            <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28">
+        <div id= "section-1" className="relative w-full pb-20 pt-20 px-4 md:px-0 bg-cover bg-center" 
+        style={{
+            backgroundImage: `url(${circular})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}>
+           <div className="absolute top-0 left-0 w-full h-full bg-white opacity-85"></div>
+       <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28 z-50">
                 <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0">
                     <h2 className="text-xl md:text-3xl font-bold mb-2">OUR CAREER LIST</h2>
                     <form>
 
-                        <div className="mt-4 flex gap-5 ">
-                            <div className="border p-4 hover:bg-[#014d9811] text-sm py-2">
+                        <div className="mt-4 flex gap-5 s">
+                            <div className="border p-4 hover:bg-[#014d9811] text-sm py-2 shadow">
                                 <div
                                     className="w-full py-2 font-semibold mb-2 ">
                                     APPLICATIONS DEPARTMENT
@@ -66,8 +72,8 @@ const CareerBody = () => {
                         </div>
 
                         <div className="mt-2 flex gap-5">
-                            <div className="border p-4 hover:bg-[#014d9811] text-sm py-2">
-                                <div className="w-full py-2 font-semibold mb-2">
+                            <div className="border p-4 hover:bg-[#014d9811] text-sm py-2 shadow">
+                                <div className="w-full py-2 font-semibold mb-2 ">
                                     INFRASTRUCTURE DEPARTMENT
                                 </div>
                                 <div className="w-full grid gap-3">
@@ -80,7 +86,7 @@ const CareerBody = () => {
 
                         <div className="mt-2 flex gap-5">
 
-                            <div className="border p-4 hover:bg-[#014d9811] text-sm py-2">
+                            <div className="border p-4 hover:bg-[#014d9811] text-sm py-2 shadow">
                                 <div className="w-full grid gap-3">
                                 <p className="font-semibold"> Overall Services </p>
                                     <p> IT </p>

@@ -3,6 +3,7 @@ import { LandingVid } from "../../assets";
 import { Link } from "react-router-dom";
 
 const CTAHome = () => {
+
   return (
     <div className="h-full md:h-screen overflow-hidden relative">
       <video

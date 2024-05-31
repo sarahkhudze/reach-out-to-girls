@@ -3,6 +3,7 @@ import ContactBody from "../components/contact/ContactBody"
 import { useState, useEffect } from "react"
 import { AiOutlineLoading } from "react-icons/ai"
 import { Spinner } from "react-bootstrap"
+import Map from "../components/others/Map"
 
 const ContactPage = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -23,6 +24,7 @@ const ContactPage = () => {
         <div>
             <CTAContact />
             <ContactBody />
+            <Map/>
         </div>
     )
 }
