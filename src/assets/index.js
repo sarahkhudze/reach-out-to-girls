@@ -46,9 +46,11 @@ import enrollment_services from "../assets/services_icon/enrollment_services.svg
 import identity_solution from "../assets/services_icon/identity_solution.svg"
 import software_application from "../assets/services_icon/software_application.svg"
 import tech_solution from "../assets/services_icon/tech_solution.svg"
+import identiko_logo from "../../public/identiko_logo.svg"
 
 
 export {
+    identiko_logo,
     software_application,
     enrollment_services,
     identity_solution,
