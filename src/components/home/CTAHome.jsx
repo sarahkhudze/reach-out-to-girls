@@ -1,4 +1,4 @@
-import { AiOutlineArrowDown } from "react-icons/ai";
+// import { AiOutlineArrowDown } from "react-icons/ai";
 import { LandingVid } from "../../assets";
 import { Link } from "react-router-dom";
 import arrow_down from "../../assets/arrow_down.svg";
