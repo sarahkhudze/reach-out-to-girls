@@ -209,6 +209,7 @@ const ServicesBody = () => {
         <div id="section-1" className="w-full px-4 md:px-8 lg:px-12 xl:px-16 mb-2">
             <div className="max-w-screen-xl mx-auto text-center mt-12 items-center justify-center">
                 <div className="text-center text-black">
+                
                     <p className="text-md md:text-3xl mt-20  font-bold">OUR SERVICES</p>
                     <p className="text-xs md:text-sm">Our solutions are all about simplification and optimisation </p>
                 </div>
