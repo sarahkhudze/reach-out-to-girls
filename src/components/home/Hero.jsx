@@ -143,7 +143,7 @@ const Hero = () => {
 
         <div className="text-center md:mt-2 mb-24">
           <button
-            className="bg-[#003997] hover:bg-white border rounded-full w-fit p-3 text-[#ffffff] hover:text-[#003997]"
+            className="text-[#003997] hover:text-white border rounded-full w-fit p-3 bg-[#ffffff] hover:bg-[#003997]"
             onClick={handleClick}
           >
             See all services {"⇾"}

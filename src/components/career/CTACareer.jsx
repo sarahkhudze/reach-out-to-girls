@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import { aCareer } from "../../assets";
+import { anocar } from "../../assets";
 import arrow_down from "../../assets/arrow_down.svg";
 // import { AiOutlineArrowDown } from "react-icons/ai";
 
 const CTACareer = () => {
   return (
     <div
-      className="bg-no-repeat bg-left relative py-[12%] md:py-[6%] w-full z-1 px-4 md:px-0"
+      className="bg-no-repeat bg-cover relative py-[12%] md:py-[6%] w-full z-1 px-4 md:px-0"
       style={{
-        backgroundImage: `url(${aCareer})`,
+        backgroundImage: `url(${anocar})`,
         position: "relative",
       }}
     >

@@ -1,24 +1,23 @@
 import { useState } from "react";
-import {circular} from "../../assets"
+import { circular } from "../../assets"
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input';
+import { Link } from "react-router-dom";
 
 const ContactBody = () => {
 
 
-       const [formData, setFormData] = useState({
-        service:"",
-        name:"",
-        phone:"",
-        email:"",
-        message:"",
+    const [formData, setFormData] = useState({
+        service: "",
+        name: "",
+        phone: "",
+        email: "",
+        message: "",
 
     })
 
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
+    const handleInputChange = (name, value) => {
+        setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
     };
 
     const handleSubmit = async (e) => {
@@ -53,14 +52,14 @@ const ContactBody = () => {
 
 
     return (
-        <div id= "section-1" className="relative w-full pb-20 pt-20 px-4 md:px-0 bg-cover bg-center" 
-        style={{
-            backgroundImage: `url(${circular})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}>
-           <div className="absolute top-0 left-0 w-full h-full bg-white opacity-85"></div>
-  
+        <div id="section-1" className="relative w-full pb-20 pt-20 px-4 md:px-0 bg-cover bg-center"
+            style={{
+                backgroundImage: `url(${circular})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+            }}>
+            <div className="absolute top-0 left-0 w-full h-full bg-white opacity-85"></div>
+
             <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28 z-50">
                 <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0 text-justify">
                     <h2 className="text-xl md:text-3xl font-bold mb-1">CONTACT US</h2>
@@ -116,12 +115,12 @@ const ContactBody = () => {
                 <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0">
 
                     <form
-                      onSubmit={handleSubmit}
+                        onSubmit={handleSubmit}
                     >
                         <div className="mb-4 justify-between bg-[#003997] p-8 rounded-lg">
                             <h2 className="text-xl md:text-3xl font-bold mb-2 text-center text-white">Request a Quote</h2>
 
-                            <div className="mt-4 mb-4">
+                            <div className="mt-4 mb-2">
                                 <select
                                     type="text"
                                     name="service"
@@ -130,17 +129,39 @@ const ContactBody = () => {
                                     className="w-full bg-[#F7F8FA] border border-[#7F9395] rounded-md focus:outline-none focus:border-[#1F6FE2] text-xs p-[3%]"
                                 >
                                     <option value="Select a Service">OUR SERVICES</option>
-                                    <option value="Service 1">Service 1</option>
-                                    <option value="Service 2">Service 2</option>
-                                    <option value="Service 3">Service 3</option>
-                                    <option value="Service 4">Service 4</option>
-                                    <option value="Service 5">Service 5</option>
-                                    <option value="Service 6">Service 6</option>
+                                    <option value="Service 1">Enrollment Options</option>
+                                    <option value="Service 2">Identity Management Solution</option>
+                                    <option value="Service 3"> Software Application services</option>
+                                    <option value="Service 4">Demographic Data Harmonized</option>
+                                    <option value="Service 5">ABI’s (Civil & Criminal)</option>
+                                    <option value="Service 6">Foundational Civil Registration</option>
+                                    <option value="Service 1">Card Production & Personalization</option>
+                                    <option value="Service 2">Identity Verification</option>
+                                    <option value="Service 3">Mobile verification</option>
+                                    <option value="Service 4">Electronic Voting</option>
+                                    <option value="Service 5">Traffic Management Systems</option>
+                                    <option value="Service 6">Electronic Surveilance</option>
+                                    <option value="Service 1">IOT x electronic sensor</option>
+                                    <option value="Service 2">Monitoring & Management</option>
+                                    <option value="Service 3">Software Development</option>
+                                    <option value="Service 4">Software Integration</option>
+                                    <option value="Service 5"> Software Application Services</option>
+                                    <option value="Service 6">State, National ID & Civil Registration</option>
+                                    <option value="Service 1">E-government Services Platform</option>
+                                    <option value="Service 2">Health Programs</option>
+                                    <option value="Service 3">Time & Attendance</option>
+                                    <option value="Service 4">Security & Access Control</option>
+                                    <option value="Service 5">E-passport</option>
+                                    <option value="Service 6">Drivers License</option>
+                                    <option value="Service 1">Border Control</option>
+                                    <option value="Service 2">Criminal Database</option>
+                                    <option value="Service 3">Prisons/ Correctional Facility Management</option>
+                                    <option value="Service 4">Smart City/Campus</option>
                                 </select>
                             </div>
 
                             <input
-                                className="mb-4 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="mb-2 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 name="name"
                                 type="text"
                                 placeholder="Name*"
@@ -149,18 +170,18 @@ const ContactBody = () => {
                                 required
                             />
 
-                            <input
-                                className="mb-4 shadow appearance-none border cursor-pointer  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            <PhoneInput
+                                defaultCountry="NG"
+                                className="mb-2 shadow bg-white appearance-none cursor-pointer  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 name="phone"
-                                type="text"
-                                placeholder="Phone Number*"
+                                placeholder="800 0000 000*"
                                 value={formData.phoneNumber}
-                                onChange={handleInputChange}
+                                onChange={(value) => handleInputChange("phoneNumber", value)}
                                 required
                             />
 
                             <input
-                                className=" mb-4 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className=" mb-2 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 name="email"
                                 type="email"
                                 placeholder="Email*"
@@ -170,7 +191,7 @@ const ContactBody = () => {
                             />
 
                             <textArea
-                                className="shadow appearance-none border h-28 cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="shadow appearance-none border h-24 cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 name="message"
                                 type="text"
                                 placeholder="Message*"
@@ -179,7 +200,15 @@ const ContactBody = () => {
                                 required
                             />
 
-                           
+                            <div className="mb-4">
+                                <input
+                                    type="checkbox"
+                                    name="terms"
+                                    required
+                                    onChange={(e) => handleInputChange("terms", e.target.checked)}
+                                />
+                                <label className="text-sm text-white mt-2">I agree to the <Link to="/privacy">Privacy Policy & Terms and Conditions</Link></label>
+                            </div>
                             <button
                                 className="w-full flex items-center justify-center mt-4 bg-white text-[#014C98] hover:text-black font-semibold py-2 px-4 mb-2 rounded-full focus:outline-none border border-black focus:shadow-outline cursor-pointer"
                                 type="submit"

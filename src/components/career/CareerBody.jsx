@@ -2,18 +2,16 @@ import { useState } from "react";
 import { circular } from "../../assets";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input';
+import { Link } from "react-router-dom";
 
 const CareerBody = () => {
   // const navigate = useNavigate()
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
-    name: "",
-    coverletter: "",
-    phoneNumber: "",
-    cvLogo: "",
-    email: "",
-    phoneNnumber: "",
-    services: "",
+    name: "", coverletter: "",  phone: "",
+    cvLogo: "", email: "",  services: "",
   });
 
   const handleFormSubmit = async (e) => {
@@ -24,7 +22,6 @@ const CareerBody = () => {
       toast.error("Please enter a valid email address");
       return;
     }
-
     setLoading(false);
   };
 
@@ -106,7 +103,7 @@ const CareerBody = () => {
                 Join Us
               </h2>
 
-              <div className="mt-4 mb-4">
+              <div className="mt-4 mb-2">
                 <select
                   type="text"
                   name="services"
@@ -117,20 +114,12 @@ const CareerBody = () => {
                 >
                   <option value="Select a Service">OUR SERVICES</option>
                   <option value="Service 1">Enrollment Options</option>
-                  <option value="Service 2">
-                    Identity Management Solution
-                  </option>
-                  <option value="Service 3">
-                    Software Application services
-                  </option>
+                  <option value="Service 2">Identity Management Solution</option>
+                  <option value="Service 3"> Software Application services</option>
                   <option value="Service 4">Demographic Data Harmonized</option>
                   <option value="Service 5">ABI’s (Civil & Criminal)</option>
-                  <option value="Service 6">
-                    Foundational Civil Registration
-                  </option>
-                  <option value="Service 1">
-                    Card Production & Personalization
-                  </option>
+                  <option value="Service 6">Foundational Civil Registration</option>
+                  <option value="Service 1">Card Production & Personalization</option>
                   <option value="Service 2">Identity Verification</option>
                   <option value="Service 3">Mobile verification</option>
                   <option value="Service 4">Electronic Voting</option>
@@ -140,15 +129,9 @@ const CareerBody = () => {
                   <option value="Service 2">Monitoring & Management</option>
                   <option value="Service 3">Software Development</option>
                   <option value="Service 4">Software Integration</option>
-                  <option value="Service 5">
-                    Software Application Services
-                  </option>
-                  <option value="Service 6">
-                    State, National ID & Civil Registration
-                  </option>
-                  <option value="Service 1">
-                    E-government Services Platform
-                  </option>
+                  <option value="Service 5"> Software Application Services</option>
+                  <option value="Service 6">State, National ID & Civil Registration</option>
+                  <option value="Service 1">E-government Services Platform</option>
                   <option value="Service 2">Health Programs</option>
                   <option value="Service 3">Time & Attendance</option>
                   <option value="Service 4">Security & Access Control</option>
@@ -156,15 +139,13 @@ const CareerBody = () => {
                   <option value="Service 6">Drivers License</option>
                   <option value="Service 1">Border Control</option>
                   <option value="Service 2">Criminal Database</option>
-                  <option value="Service 3">
-                    Prisons/ Correctional Facility Management
-                  </option>
+                  <option value="Service 3">Prisons/ Correctional Facility Management</option>
                   <option value="Service 4">Smart City/Campus</option>
                 </select>
               </div>
 
               <input
-                className="mb-4 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="mb-2 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 name="name"
                 type="text"
                 placeholder="Name"
@@ -173,18 +154,18 @@ const CareerBody = () => {
                 required
               />
 
-              <input
-                className="mb-4 shadow appearance-none border cursor-pointer  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                name="phoneNumber"
-                type="text"
-                placeholder="Phone Number"
+              <PhoneInput
+                defaultCountry="NG"
+                className="mb-2 shadow bg-white appearance-none cursor-pointer  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                name="phone"
+                placeholder="800 0000 000*"
                 value={formData.phoneNumber}
-                onChange={handleValueChange}
+                onChange={(value) => handleValueChange("phoneNumber", value)}
                 required
               />
 
               <input
-                className=" mb-4 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className=" mb-2 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 name="email"
                 type="email"
                 placeholder="Email"
@@ -194,7 +175,7 @@ const CareerBody = () => {
               />
 
               <textarea
-                className=" mb-4 shadow appearance-none border h-20 cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className=" mb-2 shadow appearance-none border h-24 cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 name="message"
                 type="text"
                 placeholder="Coverletter (optional)"
@@ -215,10 +196,18 @@ const CareerBody = () => {
                 placeholder="Upload CV/Resume"
               />
 
-              {/* {formError && <p>{formError}</p>} */}
+              <div className="mb-4">
+                <input
+                  type="checkbox"
+                  name="terms"
+                  required
+                  onChange={(e) => handleValueChange("terms", e.target.checked)}
+                />
+                <label className="text-sm text-white mt-2">I agree to the <Link to="/privacy">Privacy Policy & Terms and Conditions</Link></label>
+              </div>
+
               <button
                 className="w-full flex items-center justify-center mt-4 bg-white text-[#014C98] hover:text-black font-semibold py-2 px-4 mb-2 rounded-full focus:outline-none border border-black focus:shadow-outline cursor-pointer"
-                // type="submit"
               >
                 {loading ? "Sending..." : "Send"}
               </button>
