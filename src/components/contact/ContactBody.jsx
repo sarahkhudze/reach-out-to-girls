@@ -112,7 +112,7 @@ const ContactBody = () => {
                     </form>
                 </div>
 
-                <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0">
+                <div className="w-full">
 
                     <form
                         onSubmit={handleSubmit}
@@ -174,7 +174,7 @@ const ContactBody = () => {
                                 defaultCountry="NG"
                                 className="mb-2 shadow bg-white appearance-none cursor-pointer  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 name="phone"
-                                placeholder="800 0000 000*"
+                                placeholder="8012345678"
                                 value={formData.phoneNumber}
                                 onChange={(value) => handleInputChange("phoneNumber", value)}
                                 required
@@ -207,10 +207,10 @@ const ContactBody = () => {
                                     required
                                     onChange={(e) => handleInputChange("terms", e.target.checked)}
                                 />
-                                <label className="text-sm text-white mt-2">I agree to the <Link to="/privacy">Privacy Policy & Terms and Conditions</Link></label>
+                                <label className="text-xs md:text-sm text-white mt-2">I agree to the <Link to="/privacy">Privacy Policy & Terms and Conditions</Link></label>
                             </div>
                             <button
-                                className="w-full flex items-center justify-center mt-4 bg-white text-[#014C98] hover:text-black font-semibold py-2 px-4 mb-2 rounded-full focus:outline-none border border-black focus:shadow-outline cursor-pointer"
+                                className="w-full flex items-center justify-center mt-4 bg-white text-[#014C98] hover:text-black font-semibold py-2 px-4 mb-2 rounded-full focus:outline-none border focus:shadow-outline cursor-pointer"
                                 type="submit"
                             >
                                 Submit

@@ -95,7 +95,7 @@ const CareerBody = () => {
           </form>
         </div>
 
-        <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0">
+        <div className="w-full">
           <form onSubmit={handleFormSubmit}>
             <ToastContainer />
             <div className="mb-4 justify-between bg-[#003997] p-8 rounded-lg">
@@ -158,7 +158,7 @@ const CareerBody = () => {
                 defaultCountry="NG"
                 className="mb-2 shadow bg-white appearance-none cursor-pointer  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 name="phone"
-                placeholder="800 0000 000*"
+                placeholder="8012345678"
                 value={formData.phoneNumber}
                 onChange={(value) => handleValueChange("phoneNumber", value)}
                 required

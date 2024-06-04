@@ -6,7 +6,7 @@ import arrow_down from "../../assets/arrow_down.svg";
 const CTAContact = () => {
   return (
     <div
-      className="bg-no-repeat bg-center bg-cover relative py-[1%] md:py-[4%] w-full z-1"
+      className="bg-no-repeat bg-center md:bg-cover relative py-[1%] md:py-[4%] w-full z-1 px-14 md:px-0"
       style={{
         backgroundImage: `url(${editedContact})`,
         position: "relative",

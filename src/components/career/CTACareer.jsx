@@ -6,7 +6,7 @@ import arrow_down from "../../assets/arrow_down.svg";
 const CTACareer = () => {
   return (
     <div
-      className="bg-no-repeat bg-cover relative py-[12%] md:py-[6%] w-full z-1 px-4 md:px-0"
+      className="bg-no-repeat  bg-left md:bg-cover relative py-[12%] md:py-[6%] w-full z-1 px-4 md:px-0"
       style={{
         backgroundImage: `url(${anocar})`,
         position: "relative",
