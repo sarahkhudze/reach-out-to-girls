@@ -8,12 +8,11 @@ import "react-toastify/dist/ReactToastify.css";
 import emailjs from '@emailjs/browser';
 
 const ContactBody = () => {
+    const [loading, setLoading] = useState(false);
+
     const [formData, setFormData] = useState({
-        service: "",
-        name: "",
-        phone: "",
-        email: "",
-        message: "",
+        service: "", name: "", phone: "",
+        email: "", message: "",
     })
 
     const form = useRef();
@@ -22,32 +21,34 @@ const ContactBody = () => {
         setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
     };
 
-    const sendEmail = async (e) => {
+    const sendEmail = async (e) => {        
         e.preventDefault();
+        setLoading(true)
         const formDataObject = {
             service: formData.service,
             name: formData.name,
             phone: formData.phone,
             email: formData.email,
             message: formData.message,
-          };
-          
-           emailjs
-            .sendForm('service_k4eu1go', 'template_irvji6c', form.current, {            
-              publicKey: 'wHjGOUGZOCsxtBGQh', 
+        };
+
+        emailjs
+            .sendForm('service_k4eu1go', 'template_irvji6c', form.current, {
+                publicKey: 'wHjGOUGZOCsxtBGQh',
             }, formDataObject)
             .then(
-              () => {
-                console.log('Submission Successful!');
-                toast.success('Submission Successful!');
-              },
-              (error) => {
-                console.log('FAILED...', error.text);
-                toast.error('Submission failed, please try again!');
-              },
+                () => {
+                    console.log('Submission Successful!');
+                    toast.success('Submission Successful!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    toast.error('Submission failed, please try again!');
+                },
             );
-        };         
-                
+            setLoading(false);
+    };
+
 
     return (
         <div id="section-1" className="relative w-full pb-20 pt-20 px-4 md:px-0 bg-cover bg-center"
@@ -127,34 +128,34 @@ const ContactBody = () => {
                                     className="w-full bg-[#F7F8FA] border border-[#7F9395] rounded-md focus:outline-none focus:border-[#1F6FE2] text-xs p-[3%]"
                                 >
                                     <option value="Select a Service">OUR SERVICES</option>
-                                    <option value="Service 1">Enrollment Options</option>
-                                    <option value="Service 2">Identity Management Solution</option>
-                                    <option value="Service 3"> Software Application services</option>
-                                    <option value="Service 4">Demographic Data Harmonized</option>
-                                    <option value="Service 5">ABI’s (Civil & Criminal)</option>
-                                    <option value="Service 6">Foundational Civil Registration</option>
-                                    <option value="Service 1">Card Production & Personalization</option>
-                                    <option value="Service 2">Identity Verification</option>
-                                    <option value="Service 3">Mobile verification</option>
-                                    <option value="Service 4">Electronic Voting</option>
-                                    <option value="Service 5">Traffic Management Systems</option>
-                                    <option value="Service 6">Electronic Surveilance</option>
-                                    <option value="Service 1">IOT x electronic sensor</option>
-                                    <option value="Service 2">Monitoring & Management</option>
-                                    <option value="Service 3">Software Development</option>
-                                    <option value="Service 4">Software Integration</option>
-                                    <option value="Service 5"> Software Application Services</option>
-                                    <option value="Service 6">State, National ID & Civil Registration</option>
-                                    <option value="Service 1">E-government Services Platform</option>
-                                    <option value="Service 2">Health Programs</option>
-                                    <option value="Service 3">Time & Attendance</option>
-                                    <option value="Service 4">Security & Access Control</option>
-                                    <option value="Service 5">E-passport</option>
-                                    <option value="Service 6">Drivers License</option>
-                                    <option value="Service 1">Border Control</option>
-                                    <option value="Service 2">Criminal Database</option>
-                                    <option value="Service 3">Prisons/ Correctional Facility Management</option>
-                                    <option value="Service 4">Smart City/Campus</option>
+                                    <option value="Enrollment Options">Enrollment Options</option>
+                                    <option value="Identity Management Solution">Identity Management Solution</option>
+                                    <option value="Software Application services"> Software Application services</option>
+                                    <option value="Demographic Data Harmonized">Demographic Data Harmonized</option>
+                                    <option value="ABI’s (Civil & Criminal)">ABI’s (Civil & Criminal)</option>
+                                    <option value="Foundational Civil Registration">Foundational Civil Registration</option>
+                                    <option value="Card Production & Personalization">Card Production & Personalization</option>
+                                    <option value="Identity Verification">Identity Verification</option>
+                                    <option value="Mobile verification">Mobile verification</option>
+                                    <option value="Electronic Voting">Electronic Voting</option>
+                                    <option value="Traffic Management Systems">Traffic Management Systems</option>
+                                    <option value="Electronic Surveilance">Electronic Surveilance</option>
+                                    <option value="IOT x electronic sensor">IOT x electronic sensor</option>
+                                    <option value="Monitoring & Management">Monitoring & Management</option>
+                                    <option value="Software Development">Software Development</option>
+                                    <option value="Software Integration">Software Integration</option>
+                                    <option value="Software Application Services"> Software Application Services</option>
+                                    <option value="State, National ID & Civil Registration">State, National ID & Civil Registration</option>
+                                    <option value="E-government Services Platform">E-government Services Platform</option>
+                                    <option value="Health Programs">Health Programs</option>
+                                    <option value="Time & Attendance">Time & Attendance</option>
+                                    <option value="Security & Access Control">Security & Access Control</option>
+                                    <option value="E-passport">E-passport</option>
+                                    <option value="Drivers License">Drivers License</option>
+                                    <option value="Border Control">Border Control</option>
+                                    <option value="Criminal Database">Criminal Database</option>
+                                    <option value="Prisons/ Correctional Facility Management">Prisons/ Correctional Facility Management</option>
+                                    <option value="Smart City/Campus">Smart City/Campus</option>
                                 </select>
                             </div>
 
@@ -194,7 +195,7 @@ const ContactBody = () => {
                                 type="text"
                                 placeholder="Message*"
                                 value={formData.message}
-                                onChange={(e) => handleInputChange ("message", e.target.value)}
+                                onChange={(e) => handleInputChange("message", e.target.value)}
                                 required
                             />
 
@@ -211,7 +212,7 @@ const ContactBody = () => {
                                 className="w-full flex items-center justify-center mt-4 bg-white text-[#014C98] hover:text-black font-semibold py-2 px-4 mb-2 rounded-full focus:outline-none border focus:shadow-outline cursor-pointer"
                                 type="submit"
                             >
-                                Submit
+                                {loading ? "Submitting..." : "Submit"}
                             </button>
                         </div>
                     </form>
