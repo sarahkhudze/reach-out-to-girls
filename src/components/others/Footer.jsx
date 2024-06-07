@@ -19,7 +19,7 @@ const Footer = () => {
                     <div className="font-bold text-md md:text-xl">Get In Touch</div>
                      <span className="flex items-center gap-2 cursor-pointer">
                         <MdOutlineCall />
-                        <span>+234-(0)8094710197</span>
+                        <a href={`tel:+2348094710197`}><span>+234-(0)8094710197</span></a>
                     </span>
                     <span className="flex items-center gap-2 cursor-pointer">
                         <MdOutlineEmail />
