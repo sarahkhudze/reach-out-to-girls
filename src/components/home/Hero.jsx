@@ -65,17 +65,18 @@ const Hero = () => {
             <div
               key={idx}
               id={service.id}
-              className={`border rounded-md relative flex flex-col items-center 
-             overflow-hidden bg-white shadow-md hover:shadow-xl p-8 grid-cols-1 text-center 
-             hover:bg-cover hover:bg-center hover:bg-no-repeat 
-             hover:bg-[url('${service.bgImg}')]`}
-  onClick={handleAClick}
+              className="group cursor-pointer border rounded-md relative flex flex-col items-center 
+                        overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl p-8 grid-cols-1 
+                        text-center duration-500 hover:bg-cover hover:bg-center"
+                        
+              // style={{ backgroundImage: `url(${service.bgImg})` }}
+              onClick={handleAClick}
                >
-                <div className="absolute inset-0 bg-[#003997] opacity-0 hover:opacity-75 transition-opacity duration-500"></div>
-  <img src={service.img} className="w-20" />
-  <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold"> {service.title} </p>
-  <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0"> {service.description}</p>
-</div>
+                <div className="absolute inset-0 bg-[#003997] opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
+                <img src={service.img} className="w-20 z-10 group-hover:text-white" />
+                <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold z-10 group-hover:text-white"> {service.title} </p>
+                <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 z-10 group-hover:text-white"> {service.description}</p>
+            </div>
           ))}
         </div>
 

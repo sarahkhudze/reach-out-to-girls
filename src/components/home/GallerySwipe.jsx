@@ -1,18 +1,40 @@
-
-import { five, four, three } from '../../assets';
+import { lagg, nimc, las } from '../../assets';
 
 const GallerySwipe = () => {
+  const projects = [
+    {
+      img: lagg,
+      title: 'LAGOS STATE MINISTRY OF YOUTH & SOCIAL DEVELOPMENT',
+      description: 'MYSD Engagement portal',
+    },
+    {
+      img: nimc,
+      title: 'NATIONAL IDENTITY MANAGEMENT COMMISION',
+      description: 'ABIS Upgrade and Support',
+    },
+    {
+      img: las,
+      title: 'LAGOS STATE RESIDENTS’ REGISTRATION AGENCY',
+      description: 'LAGOS RESIDENTS SMART ID CARD',
+    },
+  ];
 
   return (
-    <div className=' overflow-x-hidden overflow-y-hidden flex flex-col items-center'>
-     
-        <h2 className=" text-center text-xl md:text-3xl font-bold text-black mt-12 md:mb-12">Our Featured Works</h2>
-     
-          <div className='flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 mb-20'>
-            <img src ={five} alt = "fiveImg" className='w-[55%] md:w-[25%] rounded-md' />
-            <img src ={four} alt = "fourImg" className='w-[55%] md:w-[25%] rounded-md' />
-            <img src ={three} alt = "threeImg" className='w-[55%] md:w-[25%] rounded-md' />
+    <div className='overflow-x-hidden overflow-y-hidden flex flex-col items-center'>
+      <h2 className="text-center text-xl md:text-3xl font-bold text-black mt-12 md:mb-0">Our Featured Works</h2>
+      <div className='flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 p-12'>
+        {projects.map((project, idx) => (
+          <div key={idx}>
+            <div>
+              <img src={project.img} alt='projectImg' className='w-full h-fit' />
+            </div>
+            <div className='bg-white border rounded-b-md p-2'>
+              <p className='font-bold mt-4 mb-2'>{project.title}</p>
+              <p className='mb-4'>{project.description}</p>
+            </div>
           </div>
+        ))}
+      </div>
     </div>
   );
 };

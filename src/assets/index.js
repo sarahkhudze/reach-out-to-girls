@@ -17,11 +17,6 @@ import face from "../assets/face.png";
 import robot from "../assets/robot.png";
 import bg from "../assets/bg.png";
 import circular from "../assets/circular.png";
-import one from "../assets/carouselPictures/one.jpg"
-import two from "../assets/carouselPictures/two.jpg"
-import three from "../assets/carouselPictures/three.jpg"
-import four from "../assets/carouselPictures/four.jpg"
-import five from "../assets/carouselPictures/five.jpg"
 import jideAgbaje from "../assets/jideAgbaje.jpg"
 import Sunset from "../assets/Sunset.mp4"
 import off1 from "../assets/off1.jpg"
@@ -59,7 +54,6 @@ import interswitchL from "../assets/partners/interswitchL.svg"
 import lagosL from "../assets/partners/lagosL.svg"
 import lassraL from "../assets/partners/lassraL.svg"
 import lenovoL from "../assets/partners/lenovoL.svg"
-
 import manageL from "../assets/partners/manageL.svg"
 import microsoftL from "../assets/partners/microsoftL.svg"
 import neuroL from "../assets/partners/neuroL.svg"
@@ -68,18 +62,21 @@ import sterlingL from "../assets/partners/sterlingL.svg"
 import veritasL from "../assets/partners/veritasL.svg"
 import verveL from "../assets/partners/verveL.svg"
 import vmL from "../assets/partners/vmL.svg"
+import lagg from "../assets/carouselPictures/lagg.png"
+import las from "../assets/carouselPictures/las.png"
+import nimc from "../assets/carouselPictures/nimc.png"
 
 
 
 
 export {
-    microsoftL, neuroL, nimcL, sterlingL, veritasL, verveL, vmL,
+    microsoftL, neuroL, nimcL, sterlingL, veritasL, verveL, vmL, lagg, las, nimc,
     ciscoL, hpL, huaweiL, idemiaL, interswitchL, lagosL, lassraL, lenovoL, manageL,
     vision, anocar, identiko_logo, software_application, enrollment_services,
     identity_solution, tech_solution, AboutVid, editedContact, LandingVid,
     aCareer, officeSpace, contactIde, logoPicu, aboutUs, careerPic, aboutUsPic,
-    off1, off2, off3, off4, off5, off6, off7, off8, Sunset, jideAgbaje, one,
-    two, three, four, five, circular, bg, robot, zeroreg, face, finger, home, 
+    off1, off2, off3, off4, off5, off6, off7, off8, Sunset, jideAgbaje, circular, 
+    bg, robot, zeroreg, face, finger, home, 
     home2, identikoWeb, vmware, veritas, neuro, microsoft, lenovo, idemia, hp,
     cisco, msPix, nigPix, recognition, identiko
 };
