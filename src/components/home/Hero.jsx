@@ -67,13 +67,17 @@ const Hero = () => {
               id={service.id}
               className="group cursor-pointer border rounded-md relative flex flex-col items-center 
                         overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl p-8 grid-cols-1 
-                        text-center duration-500 hover:bg-cover hover:bg-center"
+                        text-center duration-500"
                         
-              // style={{ backgroundImage: `url(${service.bgImg})` }}
+              
               onClick={handleAClick}
                >
-                <div className="absolute inset-0 bg-[#003997] opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
-                <img src={service.img} className="w-20 z-10 group-hover:text-white" />
+               <div className={`card-bg absolute bg-cover bg-center bg-no-repeat inset-0 transition-opacity duration-500 ${service.id}`}
+               style={{ backgroundImage: `url(${service.bgImg})` }}>
+               </div>
+                <div className="overlay absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-500"></div>
+
+                <img src={service.img} className="w-20 z-10 group-hover:filter group-hover:invert group-hover:brightness-0" alt={service.title} />
                 <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold z-10 group-hover:text-white"> {service.title} </p>
                 <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 z-10 group-hover:text-white"> {service.description}</p>
             </div>
@@ -82,12 +86,38 @@ const Hero = () => {
 
         <div className="text-center md:mt-2 mb-24">
           <button
-            className="bg-[#003997] hover:bg-white border rounded-full w-fit p-3 text-[#ffffff] hover:text-[#003997]"
+            className="text-[#003997] hover:text-white shadow-md border rounded-full w-fit p-3 bg-[#ffffff] hover:bg-[#003997]"
             onClick={handleClick} >
             See all services {"⇾"}
           </button>
         </div>
       </div>
+
+
+
+      <style>
+        {`
+        .card-bg{
+          opacity: 0;
+        }
+        .group:hover .card-bg{
+          opacity: 1;
+        }
+        #div1.card-bg{
+          background-image: url(${veritas});
+        }
+        #div2.card-bg{
+          background-image: url(${hp});
+        }
+        #div3.card-bg{
+          background-image: url(${microsoft});
+        }
+        #div4.card-bg{
+          background-image: url(${idemia});
+        }
+        `}
+      </style>    
+
     </div>
   );
 };
