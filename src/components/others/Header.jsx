@@ -55,7 +55,7 @@ const Header = () => {
 
       {isMenuOpen && (
         <div
-          className="md:hidden absolute top-[14%] left-20 right-0 z-50 border-b bg-[#000000] transition delay-150 duration-300 ease-in-out"
+          className="md:hidden absolute top-[9%] left-0 right-0 z-50 border-b bg-[#000000] transition delay-150 duration-300 ease-in-out"
           style={{ maxHeight: isMenuOpen ? "300px" : "0" }}
         >
           <MobileNavLink to="/about" onClick={() => setIsMenuOpen(false)}>

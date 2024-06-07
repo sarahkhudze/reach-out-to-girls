@@ -6,7 +6,7 @@ const CTAHome = () => {
   return (
     <div className="h-full md:h-screen overflow-hidden relative">
       <video
-        className="h-40 md:h-auto bg:cover bg:center min-w-full min-h-full relative m-0 p-0"
+        className="h-full md:h-auto bg:cover bg:center min-w-full min-h-full relative m-0 p-0"
         src={LandingVid}
         autoPlay
         loop

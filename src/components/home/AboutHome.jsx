@@ -37,7 +37,7 @@ const AboutHome = () => {
                 <img src={contactIde} className="bg-no-repeat bg-center mb-2 z-1 shadow-xl rounded-md" />
                 {/* <img src={contactIde} className="bg-no-repeat bg-center z-1 shadow-xl rounded-md" /> */}
             </div>
-            <div id="div2" className={`w-1/2 bg-white text-black gap-10 ml-6 p-12 items-center duration-500 transition-all scroll-smooth delay-300 ${isVisible2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'}`}>
+            <div id="div2" className={`md:w-1/2 bg-white text-black gap-10 ml-6 p-12 items-center duration-500 transition-all scroll-smooth delay-300 ${isVisible2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'}`}>
                 <h2 className="font-semibold text-sm md:text-4xl md:mb-2  ">
                     Who We Are
                 </h2>
