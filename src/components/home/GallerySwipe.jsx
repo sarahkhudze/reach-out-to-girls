@@ -15,7 +15,7 @@ const GallerySwipe = () => {
     {
       img: las,
       title: 'LAGOS STATE RESIDENTS’ REGISTRATION AGENCY',
-      description: 'LAGOS RESIDENTS SMART ID CARD',
+      description: 'Lagos Resident Smart ID CARD',
     },
   ];
 
