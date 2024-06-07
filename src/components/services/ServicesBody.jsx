@@ -203,7 +203,7 @@ const ServicesBody = () => {
                             className={`cursor-pointer border duration-500 rounded-md relative overflow-hidden bg-white
                                         hover:text-[#003997] shadow-md hover:shadow-xl p-8
                                            grid-cols-1 text-center transition-all scroll-smooth`}  >
-                            <div className=" flex justify-center"> <img src={service.image} className="w-20 group-hover:filter group-hover:invert group-hover:brightness-0" alt={service.title}/> </div>
+                            <div className=" flex justify-center"> <img src={service.image} className="w-20 group-hover:filter group-hover:[#003997]" alt={service.title}/> </div>
                             <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold">{service.title}</p>
                             <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0">{service.description} </p>
 

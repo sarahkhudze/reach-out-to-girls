@@ -1,5 +1,5 @@
 import {microsoftL, neuroL, nimcL, sterlingL, veritasL, verveL, vmL,
-  ciscoL, hpL, huaweiL, idemiaL, interswitchL, lagosL, lassraL, lenovoL, manageL,  } from "../../assets";
+  ciscoL, hpL, huaweiL, idemiaL, interswitchL, lagosL, lenovoL, manageL,  } from "../../assets";
 
 const partners1 = [
   { logo: microsoftL, alt: "msImg" },
@@ -18,7 +18,6 @@ const partners2 = [
   { logo: idemiaL, alt: "nigImg" },
   { logo: lagosL, alt: "msImg" },
   { logo: interswitchL, alt: "msImg" },
-  { logo: lassraL, alt: "nigImg" },
   { logo: lenovoL, alt: "msImg" },
   { logo: manageL, alt: "msImg" },
 ];
@@ -61,11 +60,11 @@ const Partners = () => {
             display: flex;
             overflow: hidden;
             position: relative;
-            width: 200%;
+            width: 300%;
           }
           .marquee-content {
             display: flex;
-            animation: marquee 20s linear infinite;
+            animation: marquee 100s linear infinite;
           }
           .marquee-content.reverse {
             display: flex;
