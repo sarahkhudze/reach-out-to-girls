@@ -22,7 +22,7 @@ const GallerySwipe = () => {
   return (
     <div className='overflow-x-hidden overflow-y-hidden flex flex-col items-center'>
       <h2 className="text-center text-xl md:text-3xl font-bold text-black mt-12 md:mb-0">Our Featured Works</h2>
-      <div className='flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 p-12'>
+      <div className='flex flex-col md:flex-row justify-center items-center gap-10 md:gap-12 p-12'>
         {projects.map((project, idx) => (
           <div key={idx}>
             <div>
