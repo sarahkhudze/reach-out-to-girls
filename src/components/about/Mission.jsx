@@ -39,7 +39,7 @@ const Mission = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}>
-           <div className="absolute top-0 left-0 w-full h-full bg-white opacity-85"></div>
+           <div className="absolute top-0 left-0 w-full h-full bg-white opacity-95"></div>
            
             <div className="relative max-w-screen-xl mx-auto mt-4 md:mt-0 px-4 md:px-8 lg:px-12 xl:px-16 flex flex-col justify-center items-center gap-y-10 text-center z-50">
 

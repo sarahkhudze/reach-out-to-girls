@@ -40,7 +40,7 @@ const CareerBody = () => {
     }, formDataObject)
     .then(
       () => {
-        toast.success('Submission Successful!');
+        toast.success('Career Form Submission Successful!');
         setLoading(false); 
       },
       (error) => {
@@ -77,7 +77,7 @@ const CareerBody = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute top-0 left-0 w-full h-full bg-white opacity-85"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-white opacity-95"></div>
       <ToastContainer />
       <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28 z-50">
      

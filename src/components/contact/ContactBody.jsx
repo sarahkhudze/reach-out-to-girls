@@ -38,8 +38,8 @@ const ContactBody = () => {
             }, formDataObject)
             .then(
                 () => {
-                    console.log('Submission Successful!');
-                    toast.success('Submission Successful!');
+                    // console.log('Submission Successful!');
+                    toast.success('Contact Form Submission Successful!');
                     setLoading(false); 
                 },
                 (error) => {
@@ -58,7 +58,7 @@ const ContactBody = () => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}>
-            <div className="absolute top-0 left-0 w-full h-full bg-white opacity-85"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-white opacity-95"></div>
             <ToastContainer />
 
             <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28 z-50">
