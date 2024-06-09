@@ -40,12 +40,12 @@ const CareerBody = () => {
     }, formDataObject)
     .then(
       () => {
-        console.log('Submission Successful!');
-        toast.success('Submission Successful!');
+        toast.success('Career Form Submission Successful!');
+        setLoading(false); 
       },
       (error) => {
-        console.log('FAILED...', error.text);
-        toast.error('Submission failed, please try again!');
+        toast.error('Submission failed, please try again!', error.text );
+        setLoading(false); 
       },
     );
 
@@ -77,7 +77,7 @@ const CareerBody = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute top-0 left-0 w-full h-full bg-white opacity-85"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-white opacity-95"></div>
       <ToastContainer />
       <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28 z-50">
      
@@ -85,9 +85,9 @@ const CareerBody = () => {
           <h2 className="text-xl md:text-3xl font-bold mb-2">
             OUR CAREER LIST
           </h2>
-          <form>
+          <div>
             <div className="mt-4 flex gap-5">
-              <div className="border w-[40%]  p-4 hover:bg-[#98010196] text-sm py-2 shadow">
+              <div className="border w-[40%]  p-4 hover:bg-[#9801011c] text-sm py-2 shadow">
                 <div className="w-full py-2 font-semibold mb-2 ">
                  RECENT VACANCY
                 </div>
@@ -121,9 +121,7 @@ const CareerBody = () => {
                   <p> Server Services</p>
                 </div>
               </div>
-            </div>
 
-            <div className="mt-2 flex gap-5">
               <div className="border w-[40%]  p-4 hover:bg-[#98011811] text-sm py-2 shadow">
                 <div className="w-full grid gap-3">
                   <p className="font-semibold"> OVERALL SERVICES </p>
@@ -132,8 +130,8 @@ const CareerBody = () => {
                   <p> NYSC and Siwes </p>
                 </div>
               </div>
-            </div>
-          </form>
+            </div>           
+          </div>
         </div>
 
         <div className="w-full">
@@ -225,7 +223,7 @@ const CareerBody = () => {
               />
 
               <input
-                className="shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                 name="file"
                 type="file"
                 onChange={async (e) =>
@@ -244,7 +242,7 @@ const CareerBody = () => {
                   required
                   onChange={(e) => handleInputChange("terms", e.target.checked)}
                 />
-                <label className="text-sm text-white mt-2">I agree to the <Link to="/privacy">Privacy Policy & Terms and Conditions</Link></label>
+                <label className="text-sm text-white mt-2 cursor-pointer">I agree to the <Link to="/privacy">Privacy Policy & Terms and Conditions</Link></label>
               </div>
 
               <button

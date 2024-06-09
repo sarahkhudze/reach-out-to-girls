@@ -38,16 +38,17 @@ const ContactBody = () => {
             }, formDataObject)
             .then(
                 () => {
-                    console.log('Submission Successful!');
-                    toast.success('Submission Successful!');
+                    // console.log('Submission Successful!');
+                    toast.success('Contact Form Submission Successful!');
+                    setLoading(false); 
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
                     toast.error('Submission failed, please try again!');
+                    setLoading(false); 
                 },
             );
-            setLoading(false);
-    };
+        };
 
 
     return (
@@ -57,7 +58,7 @@ const ContactBody = () => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}>
-            <div className="absolute top-0 left-0 w-full h-full bg-white opacity-85"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-white opacity-95"></div>
             <ToastContainer />
 
             <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28 z-50">
@@ -199,7 +200,7 @@ const ContactBody = () => {
                                 required
                             />
 
-                            <div className="mb-4">
+                            <div className="mb-4 cursor-pointer">
                                 <input
                                     type="checkbox"
                                     name="terms"

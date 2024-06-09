@@ -203,9 +203,9 @@ const ServicesBody = () => {
                             className={`cursor-pointer border duration-500 rounded-md relative overflow-hidden bg-white
                                         hover:text-[#003997] shadow-md hover:shadow-xl p-8
                                            grid-cols-1 text-center transition-all scroll-smooth`}  >
-                            <div className=" flex justify-center"> <img src={service.image} className="w-20" /> </div>
+                            <div className=" flex justify-center"> <img src={service.image} className="w-20 group-hover:filter group-hover:[#003997]" alt={service.title}/> </div>
                             <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold">{service.title}</p>
-                            <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 hover:text-[#000000]">{service.description} </p>
+                            <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0">{service.description} </p>
 
                         </div>
                     ))}                   
@@ -216,7 +216,7 @@ const ServicesBody = () => {
                             {numServices === 12 ? (
                                 <button onClick={handleShowMore} className="text-[#003997]  border hover:text-white rounded-full w-fit p-3 bg-[#ffffff] hover:bg-[#003997]">Show More</button>
                             ) : (
-                                <button onClick={handleShowLess} className="bg-[#970000] border hover:bg-white rounded-full w-fit p-3 text-[#ffffff] hover:text-[#970000]">Show Less</button>
+                                <button onClick={handleShowLess} className="bg-[#ffffff] text-[#003997] border hover:bg-[#003997] rounded-full w-fit p-3 hover:text-white">Show Less</button>
                             )}
                         </div>
                     </div>
