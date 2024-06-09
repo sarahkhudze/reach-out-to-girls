@@ -7,33 +7,34 @@ import identity_solution from "../../assets/services_icon/identity_solution.svg"
 import { card1, card2, card3, card4, } from "../../assets";
 
 const services = [
+
   {
     id: "div1",
-    img: tech_solution,
-    title: "TECH SOLUTIONS",
-    description: "Our solutions are all about simplification imitation",
-    bgImg: card1
-  },
-  {
-    id: "div2",
-    img: enrollment_services,
-    title: "ENROLMENT SERVICES",
+    img: identity_solution,
+    title: "IDENTITY-BASED SOLUTION",
     description: "Our solutions are all about simplification imitation",
     bgImg: card2
   },
   {
+    id: "div2",
+    img: software_application,
+    title: "SOFTWARE APPLICATION",
+    description: "Our solutions are all about simplification imitation",
+    bgImg: card4
+  },
+  {
     id: "div3",
-    img: identity_solution,
-    title: "IDENTITY SOLUTIONS",
+    img: tech_solution,
+    title: "TECH SOLUTION",
     description: "Our solutions are all about simplification imitation",
     bgImg: card3
   },
   {
     id: "div4",
-    img: software_application,
-    title: "SOFTWARE APPLICATION",
+    img: enrollment_services,
+    title: "ENROLMENT SERVICES",
     description: "Our solutions are all about simplification imitation",
-    bgImg: card4
+    bgImg: card1
   },
 ];
 
