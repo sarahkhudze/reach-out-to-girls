@@ -155,9 +155,9 @@ can contribute to our exciting journey</p>
                   onChange={(e) =>
                     handleInputChange("service", e.target.value)
                   }
-                  className="w-full bg-[#F7F8FA] border border-[#7F9395] rounded-md focus:outline-none focus:border-[#1F6FE2] text-xs p-[3%]"
+                  className="w-full bg-[#F7F8FA] border uppercase border-[#7F9395] rounded-md focus:outline-none focus:border-[#1F6FE2] text-xs p-[3%]"
                 >
-                  <option value="Select a Service">OUR SERVICES</option>
+                  <option value="Select a Service" className="font-bold">OUR SERVICES</option>
                   <option value="Enrollment Options">Enrollment Options</option>
                   <option value="Identity Management Solution">Identity Based Solution</option>
                   <option value="Software Application services"> Software Application services</option>
