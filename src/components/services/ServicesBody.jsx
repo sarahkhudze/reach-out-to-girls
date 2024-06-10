@@ -1,26 +1,26 @@
-import { useNavigate } from "react-router-dom/dist";
+// import { useNavigate } from "react-router-dom/dist";
 import { useState } from "react";
 import { enrollment_services, identity_solution, software_application, tech_solution } from "../../assets";
 
 const servicesData = [
     {
         no: 1, image: tech_solution,
-        title: 'Identity Based Solution', description: 'Our solutions are all about simpl Our solutions are all about mplificationification',
+        title: 'Identity Based Solution', description: 'Our solutions are all about simpl Our solutions are all about',
 
     },
     {
         no: 2, image: enrollment_services,
-        title: 'Software Application services', description: 'Our solutions are all about simpl Our solutions are all about simplificationification',
+        title: 'Software Application services', description: 'Our solutions are all about simpl Our solutions are all about',
 
     },
     {
         no: 3, image: identity_solution,
-        title: 'Demographic Data Harmonized', description: ' Our solutions are all about simpl Our solutions are all about simplificationification',
+        title: 'Demographic Data Harmonized', description: ' Our solutions are all about simpl Our solutions are all about',
 
     },
     {
         no: 4, image: software_application,
-        title: 'ABI’s (Civil & Criminal)', description: 'Our solutions are all about simpl Our solutions are all about',
+        title: 'ABIS (Civil & Criminal) Solution', description: 'Our solutions are all about simpl Our solutions are all about',
     },
     {
         no: 5, image: identity_solution,
@@ -33,15 +33,15 @@ const servicesData = [
 
     {
         no: 7, image: software_application,
-        title: 'Identity Verification', description: 'Our solutions are all about simplification and optimization',
+        title: 'Identity Verification Solution', description: 'Our solutions are all about simplification and optimization',
     },
     {
         no: 8, image: software_application,
-        title: 'Mobile verification', description: 'Our solutions are all about sweetness and delight',
+        title: 'Mobile verification services', description: 'Our solutions are all about sweetness and delight',
     },
     {
         no: 9, image: identity_solution,
-        title: 'Electronic Voting', description: 'Our solutions are all about innovation and excellence',
+        title: 'Electronic Voting Solution', description: 'Our solutions are all about innovation and excellence',
     },
     {
         no: 10, image: identity_solution,
@@ -69,7 +69,7 @@ const servicesData = [
     },
     {
         no: 15,
-        title: 'Software Integration',
+        title: 'Software Integration Services',
         description: 'Our solutions are all about sweetness and delight',
         image: enrollment_services,
     },
@@ -93,14 +93,14 @@ const servicesData = [
     },
     {
         no: 19,
-        title: 'Health Programs',
+        title: 'Health Programs Services',
         description: 'Our solutions are all about innovation and excellence',
         image: software_application,
     },
 
     {
         no: 20,
-        title: 'Time & Attendance',
+        title: 'Time & Attendance Services',
         description: 'Our solutions are all about simplification and optimization',
         image: software_application,
     },
@@ -112,37 +112,37 @@ const servicesData = [
     },
     {
         no: 22,
-        title: 'E-passport',
+        title: 'E-passport Solutions',
         description: 'Our solutions are all about innovation and excellence',
         image: identity_solution,
     },
     {
         no: 23,
-        title: 'Drivers License',
+        title: 'Drivers License Services',
         description: 'Our solutions are all about simplification and optimization',
         image: identity_solution,
     },
     {
         no: 24,
-        title: 'Border Control',
+        title: 'Border Control Services',
         description: 'Our solutions are all about sweetness and delight',
         image: tech_solution,
     },
     {
         no: 25,
-        title: 'Criminal Database',
+        title: 'Criminal Database Services',
         description: 'Our solutions are all about innovation and excellence',
         image: tech_solution,
     },
     {
         no: 26,
-        title: 'Prisons/ Correctional Facility Management',
+        title: 'Prisons/Correctional Facility Management',
         description: 'Our solutions are all about sweetness and delight',
-        image: software_application.svg,
+        image: software_application,
     },
     {
         no: 27,
-        title: 'Smart City/Campus',
+        title: 'Smart City/Campus Services',
         description: 'Our solutions are all about sweetness and delight',
         image: tech_solution,
     },
@@ -168,7 +168,7 @@ const servicesData = [
 ];
 
 const ServicesBody = () => {
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     const [numServices, setNumServices] = useState(12);
 
     const handleShowMore = () => {
@@ -179,11 +179,11 @@ const ServicesBody = () => {
         setNumServices(12);
     };
 
-    const handleClick = () => {
-        if (window.location.pathname !== "/service") {
-            navigate("/service");
-        }
-    };
+    // const handleClick = () => {
+    // //     if (window.location.pathname !== "/service") {
+    // //         navigate("/service");
+    // //     }
+    // };
 
     return (
         <div id="section-1" className="w-full px-4 md:px-8 lg:px-12 xl:px-16 mb-2">
@@ -199,12 +199,12 @@ const ServicesBody = () => {
 
                         <div key={idx}
                             id={`div${idx + 1}`}
-                            onClick={handleClick}
+                            // onClick={handleClick}
                             className={`cursor-pointer border duration-500 rounded-md relative overflow-hidden bg-white
                                         hover:text-[#003997] shadow-md hover:shadow-xl p-8
                                            grid-cols-1 text-center transition-all scroll-smooth`}  >
                             <div className=" flex justify-center"> <img src={service.image} className="w-20 group-hover:filter group-hover:[#003997]" alt={service.title}/> </div>
-                            <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold">{service.title}</p>
+                            <p className="text-sm md:text-[17px] md:mt-8 mb-12 md:mb-0 font-bold uppercase">{service.title}</p>
                             <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0">{service.description} </p>
 
                         </div>
