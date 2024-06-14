@@ -11,19 +11,22 @@ const CTAServices = () => {
         position: "relative",
       }}
     >
-      <div className="text-white max-w-screen-xl mx-auto mt-40 mb-20 z-10  vh-[10%]">
+      <div className="text-white max-w-screen-xl mx-auto mt-40 mb-20 z-10">
         <div className="group gap-10 z-10 flex flex-col justify-center items-center text-center translate-y-20">
           <div className="text-[100%] md:text-[100%]  md:mb-2 text-black font-bold ">
             Secure Your Future <br />
             With Advanced Biometrics Solution
           </div>
         </div>
+        
         <Link to="#section-1">
           <div
-            className="absolute bottom-28 left-0 right-0 mx-auto flex justify-center
-                 items-center mt-4 text-white font-bold  rounded-full animate-bounce"
+            className="absolute top-[80%] left-0 right-0 mx-auto flex justify-center
+                 items-center mt-4 text-white font-bold  rounded-full"
           >
-            <img src={arrow_down} className="w-6 h-auto" />
+            <div className="rounded-full p-3 animate-bounce">
+              <img src={arrow_down} className="w-6 h-auto" />
+            </div>
           </div>
         </Link>
       </div>

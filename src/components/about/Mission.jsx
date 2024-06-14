@@ -95,19 +95,10 @@ const Mission = () => {
                         <div id="div4" className={`md:w-[50%] flex flex-col justify-center text-center duration-500 text-black transition-all delay-500 scroll-smooth ${isVisible4 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'
                             }`} >
                             <p className="text-xl md:text-2xl font-bold">Our Misson</p>
-                            <p className="text-xs md:text-sm text-justify mt-2">From the private sector for
+                            <p className="text-xs md:text-xl text-justify mt-2">From the private sector for
                                 employee enrolment to the public sector Our enrolment solutions provide a wide
                                 selection of customizable functionality for our clients. From the private sector for
-                                employee enrolment to the public sector From the private sector for
-                                employee enrolment to the public sector Our enrolment solutions provide a wide
-                                selection of customizable functionality for our clients. From the private sector for
-                                employee enrolment to the public sector Our enrolment solutions provide a wide
-                                 Our enrolment solutions provide a wide
-                                selection of customizable functionality for our clients. From the private sector for
-                                employee enrolment to the public sector From the private sector for
-                                employee enrolment to the public sector Our enrolment solutions provide a wide
-                                selection of customizable functionality for our clients. From the private sector for
-                                employee enrolment to the public sector
+                                employee enrolment to the public sector 
                             </p>
                         </div>
 
@@ -124,15 +115,6 @@ const Mission = () => {
                             <p className="text-xl md:text-2xl font-bold">Our Vision</p>
                             <p className="text-xs md:text-sm text-justify mt-2">Our enrolment solutions provide a wide
                                  Our enrolment solutions provide a wide
-                                selection of customizable functionality for our clients. From the private sector for
-                                employee enrolment to the public sector From the private sector for
-                                employee enrolment to the public sector enrolment solutions provide a wide
-                                selection of customizable functionality for our clients. From the private sector for
-                                employee enrolment to the public sector Our enrolment solutions provide a wide
-                                 Our enrolment solutions provide a wide
-                                selection of customizable functionality for our clients. From the private sector for
-                                employee enrolment to the public sector From the private sector for
-                                employee enrolment to the public sector Our enrolment solutions provide a wide
                                 selection of customizable functionality for our clients. From the private sector for
                                 employee enrolment to the public sector
                             </p>
