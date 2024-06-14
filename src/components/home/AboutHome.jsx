@@ -43,7 +43,7 @@ const AboutHome = () => {
                 <p>
 
 
-                    <p>At the heart of Identiko lies a steadfast commitment to
+                    <p className="text-balance">At the heart of Identiko lies a steadfast commitment to
                         innovation, reliability, integrity, and dedication. Our leadership
                         team brings over 20 years of unparalleled expertise, delivering
                         top-tier solutions across diverse industries such as banking,
