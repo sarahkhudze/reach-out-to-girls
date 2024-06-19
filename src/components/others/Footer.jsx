@@ -11,8 +11,8 @@ const Footer = () => {
             <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-8 mt-4'>
                 <div className="flex flex-col items-center align-middle gap-2 md:gap-4">
                     <div className="font-bold text-md md:text-xl">Compliance</div>
-                    <Link to = '/isms'><span className="cursor-pointer">ISO Policy</span></Link>
-                    <Link to = '/privacy'><span className="cursor-pointer">Privacy Policy</span></Link>                    
+                    <Link to = '/isms-policy'><span className="cursor-pointer">ISO Policy</span></Link>
+                    <Link to = '/privacy-policy'><span className="cursor-pointer">Privacy Policy</span></Link>                    
                 </div>
 
                 <div className="flex flex-col items-center align-middle gap-2 md:gap-4">
@@ -40,7 +40,7 @@ const Footer = () => {
                 <div className="flex flex-col items-center align-middle gap-2 md:gap-4">
                     <div className="font-bold text-md md:text-xl">Resources</div>
                     <span className="cursor-pointer">Success Stories</span>
-                    <Link to = '/about'><span className="cursor-pointer">Partners</span></Link>
+                    <Link to = '/about-us'><span className="cursor-pointer">Partners</span></Link>
                 </div>
             </div>
 

@@ -53,7 +53,7 @@ const AboutHome = () => {
                         national levels, ensuring the highest standards of excellence and
                         security.
                     </p><br /><br />
-                    <Link to='/about'>
+                    <Link to='/about-us'>
 
                         <button className="w-fit hover:text-[#003a97b3] text-[#003997]">Read More  {'⇾'}</button>
                     </Link>

@@ -1,6 +1,6 @@
 import { MdCheckCircleOutline } from "react-icons/md"
 import { useState, useEffect } from "react";
-import { aboutUs } from "../../assets";
+import { aboutUs, contactIde2 } from "../../assets";
 import {circular} from "../../assets"
 
 const Mission = () => {
@@ -113,14 +113,14 @@ const Mission = () => {
                         <div id="div5" className={`overflow-x-hidden md:w-[50%] flex flex-col justify-center  text-black text-center mb-16 md:mb-0 duration-700 transition-all delay-200 scroll-smooth ${isVisible5 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'
                             }`} >
                             <p className="text-xl md:text-2xl font-bold">Our Vision</p>
-                            <p className="text-xs md:text-sm text-justify mt-2">Our enrolment solutions provide a wide
+                            <p className="text-xs md:text-xl text-justify mt-2">Our enrolment solutions provide a wide
                                  Our enrolment solutions provide a wide
                                 selection of customizable functionality for our clients. From the private sector for
                                 employee enrolment to the public sector
                             </p>
                         </div>
                         <div id="div1" className={` group  md:w-[50%] duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
-                            <img className="md:h-auto  object-cover relative m-0 p-0 cover rounded-xl" src={aboutUs} alt="img1" />
+                            <img className="md:h-auto  object-cover relative m-0 p-0 cover rounded-xl" src={contactIde2} alt="img1" />
                         </div>
                     </div>
                 </div>

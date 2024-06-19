@@ -54,8 +54,8 @@ const Hero = () => {
   const [selectedService, setSelectedService] = useState(null);
 
   const handleClick = () => {
-    if (window.location.pathname !== "/services") {
-    navigate("/services");
+    if (window.location.pathname !== "/our-services") {
+    navigate("/our-services");
     }
     };
 

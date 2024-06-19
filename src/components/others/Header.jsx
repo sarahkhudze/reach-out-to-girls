@@ -29,12 +29,12 @@ const Header = () => {
       <div className="hidden md:flex items-center justify-center">
         <div className="flex justify-center items-center gap-12 ">
         <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About Us</NavLink>
-          <NavLink to="/services">Services</NavLink>
-          <NavLink to="/career">Career</NavLink>
+          <NavLink to="/about-us">About Us</NavLink>
+          <NavLink to="/our-services">Services</NavLink>
+          <NavLink to="/career-page">Career</NavLink>
 
           <div className="border p-2 cursor-pointer rounded-md text-[#ffffff] bg-[#000000]  hover:bg-[#000000d7]  flex justify-end duration-300 delay-100 transition-transform">
-            <NavLink to="/contactUs">Contact Us</NavLink>
+            <NavLink to="/contact-us">Contact Us</NavLink>
           </div>
         </div>
       </div>
@@ -58,19 +58,19 @@ const Header = () => {
           className="md:hidden absolute top-[9%] left-0 right-0 z-50 border-b bg-[#000000] transition delay-150 duration-300 ease-in-out"
           style={{ maxHeight: isMenuOpen ? "300px" : "0" }}
         >
-          <MobileNavLink to="/about" onClick={() => setIsMenuOpen(false)}>
+          <MobileNavLink to="/about-us" onClick={() => setIsMenuOpen(false)}>
             {" "}
             About Us{" "}
           </MobileNavLink>
-          <MobileNavLink to="/services" onClick={() => setIsMenuOpen(false)}>
+          <MobileNavLink to="/our-services" onClick={() => setIsMenuOpen(false)}>
             {" "}
             Services{" "}
           </MobileNavLink>
-          <MobileNavLink to="/career" onClick={() => setIsMenuOpen(false)}>
+          <MobileNavLink to="/career-page" onClick={() => setIsMenuOpen(false)}>
             {" "}
             Career{" "}
           </MobileNavLink>
-          <MobileNavLink to="/contactUs" onClick={() => setIsMenuOpen(false)}>
+          <MobileNavLink to="/contact-us" onClick={() => setIsMenuOpen(false)}>
             {" "}
             Contact Us{" "}
           </MobileNavLink>
@@ -102,7 +102,7 @@ const NavLink = ({ to, children }) => {
     >
       <Link to={to} className={`${active ? "font-bold" : ""} relative`}>
         {children}
-        {to !== "/contactUs" && (
+        {to !== "/contact-us" && (
           <span
             style={{
               transform: open ? "scaleX(1)" : "scaleX(0)",

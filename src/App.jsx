@@ -40,23 +40,23 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/about",
+        path: "/about-us",
         element: <About />,
       },
       {
-        path: "/services",
+        path: "/our-services",
         element: <Services />,
       },
       {
-        path: "/privacy",
+        path: "/privacy-policy",
         element: <Privacy />,
       },
       {
-        path: "/contactUs",
+        path: "/contact-us",
         element: <ContactPage />,
       },
       {
-        path: "/isms",
+        path: "/isms-policy",
         element: <Isms />,
       },
       {
@@ -64,7 +64,7 @@ const router = createBrowserRouter([
         element: <AService />,
       },
       {
-        path: "/career",
+        path: "/career-page",
         element: <Career />,
       },
       {

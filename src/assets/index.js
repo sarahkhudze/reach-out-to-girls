@@ -32,6 +32,7 @@ import careerPic from "../assets/careerPic.jpg"
 import aboutUs from "../assets/aboutUs.jpg"
 import logoPicu from "../assets/logoPicu.png"
 import contactIde from "../assets/recognito.png"
+import contactIde2 from "../assets/recognition02.png"
 import officeSpace from "../assets/newS.jpg"
 import aCareer from "../assets/aCareer.jpg"
 import LandingVid from "../assets/lanlan.mp4"
@@ -99,7 +100,7 @@ export {
     microsoftL, neuroL, nimcL, sterlingL, veritasL, verveL, vmL, lagg, las, nimc,
     ciscoL, hpL, huaweiL, idemiaL, interswitchL, lagosL, lassraL, lenovoL, manageL,
     vision, anocar, identiko_logo, software_application, enrollment_services,
-    identity_solution, tech_solution, AboutVid, editedContact, LandingVid,
+    identity_solution, tech_solution, AboutVid, editedContact, LandingVid, contactIde2,
     aCareer, officeSpace, contactIde, logoPicu, aboutUs, careerPic, aboutUsPic,
     off1, off2, off3, off4, off5, off6, off7, off8, Sunset, jideAgbaje, circular, 
     bg, robot, zeroreg, face, finger, home, card1, card2, card3, card4,
