@@ -18,7 +18,7 @@ const CTAContact = () => {
             Connect With Us          </div>
           <Link to="#section-1">
             <div
-               className="absolute top-[80%] left-0 right-0 mx-auto flex justify-center
+               className="absolute top-[75%] left-0 right-0 mx-auto flex justify-center
                  items-center text-white font-bold mt-1  rounded-full"
           >
              <div className="rounded-full p-3 animate-bounce">
