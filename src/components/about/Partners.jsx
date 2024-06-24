@@ -27,12 +27,12 @@ const Partners = () => {
     <div className="mb-12 md:mt-20 text-center overflow-hidden">
       <div className="flex flex-col items-center justify-center align-middle gap-2 ml-[6%] md:ml-[0%] mr-[4%] md:mr-[0%]">
         <div className="font-bold text-xl md:text-3xl mt-12">Our Partners</div>
-        <span className="text-sm md:text-xl text-center md:w-[40%]">
+        <span className="text-sm md:text-xl text-center md:w-[47%]">
           We bring together a team of 1st class world partners to provide our clients with top grade services in all aspects of our solutions
         </span>
         <div className="w-full mt-4 text-center overflow-hidden relative">
           <div className="marquee">
-            <div className="marquee-content reverse">
+            <div className="marquee-content reverse gap-6">
               {partners1.concat(partners1).map((partner, index) => (
                 <div key={index} className="flex md:p-3 md:gap-4 justify-center items-center">
                   <img src={partner.logo} alt={partner.alt} className="w-24 md:w-[100%]" />
@@ -43,7 +43,7 @@ const Partners = () => {
         </div>
         <div className="w-full mt-4 text-center overflow-hidden relative">
           <div className="marquee">
-            <div className="marquee-content">
+            <div className="marquee-content gap-6">
               {partners2.concat(partners2).map((partner, idx) => (
                 <div key={idx} className="flex md:p-3 gap-4 justify-center items-center">
                   <img src={partner.logo} alt={partner.alt} className="w-24 md:w-[100%]" />
@@ -64,7 +64,7 @@ const Partners = () => {
           }
           .marquee-content {
             display: flex;
-            animation: marquee 100s linear infinite;
+            animation: marquee 70s linear infinite;
           }
           .marquee-content.reverse {
             display: flex;

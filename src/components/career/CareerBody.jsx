@@ -203,7 +203,7 @@ can contribute to our exciting journey</p>
                 defaultCountry="NG"
                 className="mb-2 shadow bg-white appearance-none cursor-pointer  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 name="phone"
-                placeholder=" 8012345678"
+                placeholder=" 800-0000-000"
                 value={formData.phoneNumber}
                 onChange={(value) => handleInputChange("phone", value)}
                 required
@@ -248,7 +248,7 @@ can contribute to our exciting journey</p>
                   required
                   onChange={(e) => handleInputChange("terms", e.target.checked)}
                 />
-                <label className="text-sm text-white mt-2 cursor-pointer">I agree to the <Link to="/privacy">Privacy Policy & Terms and Conditions</Link></label>
+                <label className="text-sm text-white mt-1.5 -translate-y-0.5 translate-x-1.5 cursor-pointer">I agree to the <Link to="/privacy">Privacy Policy & Terms and Conditions</Link></label>
               </div>
 
               <button

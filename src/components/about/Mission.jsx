@@ -1,6 +1,6 @@
 import { MdCheckCircleOutline } from "react-icons/md"
 import { useState, useEffect } from "react";
-import { aboutUs } from "../../assets";
+import { aboutUs, contactIde2 } from "../../assets";
 import {circular} from "../../assets"
 
 const Mission = () => {
@@ -54,14 +54,10 @@ const Mission = () => {
                     Our enrolment solutions provide a wide
                     selection of customizable functionality
                     for our clients.
-                    Our ICT professionals are experts in
-                    biometrics, identity management systems, and system integration.
-                    Our enrolment solutions provide a wide
-                    selection of customizable functionality
-                    for our clients.  </p>
+                     </p>
 
                 <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-[6%] md:gap-[10%] md:mt-8">
-                    <div id="div1" className={`bg-yellow-500 text-white hover:scale-110 rounded-xl overflow-hidden border shadow-md p-16 md:p-8 duration-500 transition-all scroll-smooth ${isVisible1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
+                    <div id="div1" className={`bg-[#707070] text-white hover:scale-110 rounded-xl overflow-hidden border shadow-md p-16 md:p-8 duration-500 transition-all scroll-smooth ${isVisible1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
                         }`} >
                         <p className="text-md md:text-xl -mt-2 md:mt-8  font-bold">Quality Solutions</p>
                         <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Reliability <span><MdCheckCircleOutline /></span></p>
@@ -70,7 +66,7 @@ const Mission = () => {
                         <p className="text-xs md:text-sm text-justify mb-16 md:mb-0 mt-2 md:mt-4 flex items-center justify-between">Durability<span><MdCheckCircleOutline /></span></p>
                     </div>
 
-                    <div id="div2" className={`bg-[#0F90CA]  text-white hover:scale-110 duration-500 rounded-xl overflow-hidden shadow-xl p-12 md:p-8 border transition-all scroll-smooth ${isVisible2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
+                    <div id="div2" className={`bg-[#014C98] text-white hover:scale-110 duration-500 rounded-xl overflow-hidden shadow-xl p-12 md:p-8 border transition-all scroll-smooth ${isVisible2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
                         }`} >
                         <p className="text-md md:text-xl -mt-2 md:mt-8  font-bold">Quality Delivery</p>
                         <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">On-time Delivery <span><MdCheckCircleOutline /></span></p>
@@ -79,7 +75,7 @@ const Mission = () => {
                         <p className="text-xs md:text-sm text-justify  mb-16 md:mb-0 mt-2 md:mt-4 flex items-center justify-between">Extensive Support<span><MdCheckCircleOutline /></span></p>
                     </div>
 
-                    <div id="div3" className={`bg-green-500 text-white hover:scale-110 duration-500 rounded-xl overflow-hidden shadow-md p-12 md:p-8 border transition-all scroll-smooth ${isVisible3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
+                    <div id="div3" className={`bg-[#0F90CA]  text-white hover:scale-110 duration-500 rounded-xl overflow-hidden shadow-md p-12 md:p-8 border transition-all scroll-smooth ${isVisible3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
                         }`} >
                         <p className="text-md md:text-xl -mt-2 md:mt-8 font-bold">Quality Results</p>
                         <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Measurable Results <span><MdCheckCircleOutline /></span></p>
@@ -99,10 +95,10 @@ const Mission = () => {
                         <div id="div4" className={`md:w-[50%] flex flex-col justify-center text-center duration-500 text-black transition-all delay-500 scroll-smooth ${isVisible4 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'
                             }`} >
                             <p className="text-xl md:text-2xl font-bold">Our Misson</p>
-                            <p className="text-xs md:text-sm text-justify mt-2">From the private sector for
+                            <p className="text-xs md:text-xl text-justify mt-2">From the private sector for
                                 employee enrolment to the public sector Our enrolment solutions provide a wide
                                 selection of customizable functionality for our clients. From the private sector for
-                                employee enrolment to the public sector
+                                employee enrolment to the public sector 
                             </p>
                         </div>
 
@@ -117,14 +113,14 @@ const Mission = () => {
                         <div id="div5" className={`overflow-x-hidden md:w-[50%] flex flex-col justify-center  text-black text-center mb-16 md:mb-0 duration-700 transition-all delay-200 scroll-smooth ${isVisible5 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'
                             }`} >
                             <p className="text-xl md:text-2xl font-bold">Our Vision</p>
-                            <p className="text-xs md:text-sm text-justify mt-2">Our enrolment solutions provide a wide
+                            <p className="text-xs md:text-xl text-justify mt-2">Our enrolment solutions provide a wide
                                  Our enrolment solutions provide a wide
                                 selection of customizable functionality for our clients. From the private sector for
                                 employee enrolment to the public sector
                             </p>
                         </div>
                         <div id="div1" className={` group  md:w-[50%] duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
-                            <img className="md:h-auto  object-cover relative m-0 p-0 cover rounded-xl" src={aboutUs} alt="img1" />
+                            <img className="md:h-auto  object-cover relative m-0 p-0 cover rounded-xl" src={contactIde2} alt="img1" />
                         </div>
                     </div>
                 </div>
