@@ -1,5 +1,5 @@
 
-import {useState} from "react"
+// import { useState } from "react"
 import { useNavigate } from "react-router-dom/dist";
 import tech_solution from "../../assets/services_icon/tech_solution.svg";
 import enrollment_services from "../../assets/services_icon/enrollment_services.svg";
@@ -7,9 +7,7 @@ import software_application from "../../assets/services_icon/software_applicatio
 import identity_solution from "../../assets/services_icon/identity_solution.svg";
 import { card1, card2, card3, card4, no1, no2, no3, no4 } from "../../assets";
 
-
 const services = [
-
   {
     id: "div1",
     image: no1,
@@ -50,30 +48,17 @@ const services = [
 
 const Hero = () => {
   const navigate = useNavigate();
-  const [showModal, setShowModal] = useState(false);
-  const [selectedService, setSelectedService] = useState(null);
-
   const handleClick = () => {
     if (window.location.pathname !== "/our-services") {
-    navigate("/our-services");
+      navigate("/our-services");
     }
-    };
-
-  // const handleServiceClick = (service) => {
-  //   setSelectedService(service);
-  //   setShowModal(true);
-  // };
-
-  const handleModalClose  = () => {
-    setShowModal(false);
-    setSelectedService(null);
   };
 
   return (
-    <div id="section-1" className="w-full">
+    <div id="section-1" className="w-full mt-[20%] md:-mt-[20%]">
       <div className="max-w-screen-xl mx-auto text-center items-center justify-center">
         <div className="text-center text-black">
-          <p className="text-xl md:text-3xl mt-12 md:mt-24  font-bold"> OUR SERVICES </p>
+          <p className="text-xl md:text-3xl font-bold"> OUR SERVICES </p>
           <p className="text-xs md:text-xl"> Our solutions are all about simplification and optimization </p>
         </div>
 
@@ -85,18 +70,17 @@ const Hero = () => {
               className="group cursor-pointer border rounded-md relative hover:scale-110 flex flex-col items-center 
                         overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl p-8 grid-cols-1 
                         text-center duration-500"
-                        
-              
-                        // onClick={() => handleServiceClick(service)}
-               >
-               <div className={`card-bg absolute bg-cover bg-center bg-no-repeat inset-0 transition-opacity duration-500 ${service.id}`}
-               style={{ backgroundImage: `url(${service.bgImg})` }}>
-               </div>
-                <div className="overlay absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-500"></div>
 
-                <img src={service.img} className="w-20 z-10 group-hover:filter group-hover:invert group-hover:brightness-0" alt={service.title} />
-                <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold z-10 group-hover:text-white"> {service.title} </p>
-                <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 z-10 group-hover:text-white"> {service.description}</p>
+            >
+              <div className={`card-bg absolute bg-cover bg-center bg-no-repeat inset-0 transition-opacity duration-500 ${service.id}`}
+                style={{ backgroundImage: `url(${service.bgImg})` }}>
+              </div>
+              <div className="overlay absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-500"></div>
+
+              <img src={service.img} className="w-20 z-10 group-hover:filter group-hover:invert group-hover:brightness-0" alt={service.title} />
+              <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold z-10 group-hover:text-white"> {service.title} </p>
+              <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 z-10 group-hover:text-white"> {service.description}</p>
+              {/* <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 z-10 group-hover:text-white"> {service.details}</p> */}
             </div>
           ))}
         </div>
@@ -107,33 +91,50 @@ const Hero = () => {
             onClick={handleClick} >
             See all services {"⇾"}
           </button>
-        </div>   
-      </div>
-
-      {showModal && selectedService && (
-        <div className="fixed top-10 left-0 right-0 md:w-full text-white mx-auto bg-[#003997] bg-opacity-95 z-50 flex items-center justify-center">
-          <div className="p-8 rounded-md shadow-md grid grid-cols-1">
-            <h2 className="text-xl font-bold mb-4 text-center">{selectedService.title}</h2>
-            <img
-              src={selectedService.image}
-              alt={selectedService.title}
-              className="w-[20%] mx-auto mb-4"
-            />
-            <p className="text-sm text-balance">{selectedService.details}</p>
-            <button
-              className="bg-white text-[#970000] border rounded-full p-2 mt-4 w-fit hover:scale-110"
-              onClick={handleModalClose}
-            >
-              Close
-            </button>
-          </div>
         </div>
-      )}
-
-
+      </div>   
 
       <style>
         {`
+         {/* @keyframes slide-up{
+           from{
+            transform: translateY(100%);
+            opacity: 0
+            }
+             to{
+            transform: translateY(0%);
+              opacity: 1
+            }
+          }
+          .animate-slide-up {
+          animation: slide-up 2s ease-out;
+        } */}
+
+        .group:hover img{
+          opacity: 0;
+        }
+
+         .group:hover .title{
+          transform: translateY(0)
+          transition: transform 0.5s ease-in-out
+        }
+
+          .group:hover .description{
+          transform: translateY(100%)
+          transition: transform 0.5s ease-in-out
+        }
+
+       .details {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+          .group:hover .details{
+          transform: translateY(0)
+          transition: transform 0.5s ease-in-out
+          opacity: 1;
+        } 
+
         .card-bg{
           opacity: 0;
         }
@@ -153,11 +154,9 @@ const Hero = () => {
           background-image: url(${card4});
         }
         `}
-      </style>    
-
+      </style>
     </div>
   );
 };
-
 
 export default Hero;

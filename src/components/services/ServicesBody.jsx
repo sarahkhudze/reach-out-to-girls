@@ -4,31 +4,21 @@ import {
   no10,
   no11,
   no12,
-  no13,
-  no14,
-  no15,
-  no17,
-  no18,
-  no19,
-  no2,
-  no20,
-  no21,
-  no23,
-  no25,
-  no27,
   no3,
+  no2,
   no4,
   no5,
   no6,
   no7,
   no8,
-  no9,
+  no9, card1, card2, card3, card4,
 } from "../../assets";
 
 const servicesData = [
   {
     no: 1,
     image: no1,
+    bgImg: card2,
     title: "Identity Based Solution",
     description:
       "Our solutions are all about simpl Our solutions are all about",
@@ -38,6 +28,7 @@ const servicesData = [
   {
     no: 2,
     image: no2,
+    bgImg: card1,
     title: "Software Application services",
     description:
       "Our solutions are all about simpl Our solutions are all about",
@@ -56,6 +47,7 @@ const servicesData = [
   {
     no: 4,
     image: no4,
+    bgImg: card3,
     title: "ABIS (Civil & Criminal) Solution",
     description:
       "Our solutions are all about simpl Our solutions are all about",
@@ -65,6 +57,7 @@ const servicesData = [
   {
     no: 5,
     image: no5,
+    bgImg: card4,
     title: "Foundational Civil Registration",
     description: "Our solutions are all about sweetness and delight",
     details:
@@ -73,6 +66,7 @@ const servicesData = [
   {
     no: 6,
     image: no6,
+    bgImg: card2,
     title: "Card Production & Personalization",
     description: "Our solutions are all about innovation and excellence",
     details:
@@ -82,6 +76,7 @@ const servicesData = [
   {
     no: 7,
     image: no7,
+    bgImg: card1,
     title: "Identity Verification Solution",
     description: "Our solutions are all about simplification and optimization",
     details:
@@ -90,6 +85,7 @@ const servicesData = [
   {
     no: 8,
     image: no8,
+    bgImg: card4,
     title: "Mobile verification services",
     description: "Our solutions are all about sweetness and delight",
     details:
@@ -97,6 +93,7 @@ const servicesData = [
   },
   {
     no: 9,
+    bgImg: card2,
     image: no9,
     title: "Electronic Voting Solution",
     description: "Our solutions are all about innovation and excellence",
@@ -105,6 +102,7 @@ const servicesData = [
   },
   {
     no: 10,
+    bgImg: card3,
     image: no10,
     title: "Traffic Management Systems",
     description: "Our solutions are all about simplification and optimization",
@@ -114,6 +112,7 @@ const servicesData = [
   {
     no: 11,
     image: no11,
+    bgImg: card2,
     title: "Electronic Surveilance",
     description: "Our solutions are all about sweetness and delight",
     details:
@@ -122,118 +121,13 @@ const servicesData = [
   {
     no: 12,
     image: no12,
+    bgImg: card1,
     title: "IOT and electronic sensor",
     description: "Our solutions are all about innovation and excellence",
     details:
       "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
   },
-  {
-    no: 13,
-    title: "Monitoring & Management",
-    description: "Our solutions are all about sweetness and delight",
-    image: no13,
-    details:
-      "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
-  },
-  {
-    no: 14,
-    title: "Software Development",
-    description: "Our solutions are all about simplification and optimization",
-    image: no14,
-    details:
-      "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
-  },
-  {
-    no: 15,
-    title: "Software Integration Services",
-    description: "Our solutions are all about sweetness and delight",
-    image: no15,
-    details:
-      "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
-  },
-  {
-    no: 16,
-    title: "Software Application Services",
-    description: "Our solutions are all about innovation and excellence",
-    image: no14,
-    details:
-      "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
-  },
-  {
-    no: 17,
-    title: "State, National ID & Civil Registration",
-    description: "Our solutions are all about simplification and optimization",
-    image: no17,
-    details:
-      "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
-  },
-  {
-    no: 18,
-    title: "E-government Services Platform",
-    description: "Our solutions are all about sweetness and delight",
-    image: no18,
-    details:
-      "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
-  },
-  {
-    no: 19,
-    title: "Health Programs Services",
-    description: "Our solutions are all about innovation and excellence",
-    image: no19,
-    details:
-      "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
-  },
-
-  {
-    no: 20,
-    title: "Time & Attendance Services",
-    description: "Our solutions are all about simplification and optimization",
-    image: no20,
-    details:
-      "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
-  },
-  {
-    no: 21,
-    title: "Security & Access Control",
-    description: "Our solutions are all about sweetness and delight",
-    image: no21,
-  },
-  {
-    no: 22,
-    title: "E-passport Solutions",
-    description: "Our solutions are all about innovation and excellence",
-    image: no2,
-  },
-  {
-    no: 23,
-    title: "Drivers License Services",
-    description: "Our solutions are all about simplification and optimization",
-    image: no23,
-  },
-  {
-    no: 24,
-    title: "Border Control Services",
-    description: "Our solutions are all about sweetness and delight",
-    image: no6,
-  },
-  {
-    no: 25,
-    title: "Criminal Database Services",
-    description: "Our solutions are all about innovation and excellence",
-    image: no25,
-  },
-  {
-    no: 26,
-    title: "Prisons/Correctional Facility Management",
-    description: "Our solutions are all about sweetness and delight",
-    image: no12,
-  },
-  {
-    no: 27,
-    title: "Smart City/Campus Services",
-    description: "Our solutions are all about sweetness and delight",
-    image: no27,
-  },
+  
 ];
 
 const ServicesBody = () => {
@@ -247,11 +141,6 @@ const ServicesBody = () => {
 
   const handleShowLess = () => {
     setNumServices(12);
-  };
-
-  const handleServiceClick = (service) => {
-    setSelectedService(service);
-    setShowModal(true);
   };
 
   const handleModalClose = () => {
@@ -274,26 +163,18 @@ const ServicesBody = () => {
             <div
               key={idx}
               id={`div${idx + 1}`}
-              // onClick={handleClick}
-              className={`cursor-pointer border duration-500 rounded-md relative hover:scale-110 overflow-hidden bg-white 
-                                        hover:text-[#003997] shadow-md hover:shadow-xl p-8
-                                           grid-cols-1 text-center transition-all scroll-smooth`}
-              onClick={() => handleServiceClick(service)}
+              className={`group cursor-pointer border rounded-md relative hover:scale-110 flex flex-col items-center 
+                        overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl p-8 grid-cols-1 
+                        text-center duration-500`}
             >
-              <div className=" flex justify-center">
-                {" "}
-                <img
-                  src={service.image}
-                  className="w-[100%] h-40 group-hover:filter group-hover:[#003997]"
-                  alt={service.title}
-                />{" "}
+              <div className={`card-bg absolute bg-cover bg-center bg-no-repeat inset-0 transition-opacity duration-500 ${service.id}`}
+                style={{ backgroundImage: `url(${service.bgImg})` }}>
               </div>
-              <p className="text-sm md:text-[17px] mt-4 md:mt-8 mb-2 md:mb-0 font-bold uppercase">
-                {service.title}
-              </p>
-              <p className="text-sm md:text-md md:mt-8 mb-2 md:mb-0">
-                {service.description}{" "}
-              </p>
+              <div className="overlay absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-500"></div>
+
+              <img src={service.image} className="w-20 z-10 group-hover:filter group-hover:invert group-hover:brightness-0" alt={service.title} />
+              <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold z-10 group-hover:text-white"> {service.title} </p>
+              <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 z-10 group-hover:text-white"> {service.description}</p>
             </div>
           ))}
         </div>
@@ -340,6 +221,47 @@ const ServicesBody = () => {
           </div>
         )}
       </div>
+
+
+      <style>
+        {`
+        .group:hover img{
+          opacity: 0;
+        }
+         .group:hover .title{
+          transform: translateY(-100%)
+          transition: transform 0.5s ease-in-out
+        }
+          .group:hover .description{
+          transform: translateY(-100%)
+          transition: transform 0.5s ease-in-out
+        }
+          .group:hover .details{
+          transform: translateY(-100%)
+          transition: transform 0.5s ease-in-out
+        }        
+        .card-bg{
+          opacity: 0;
+        }
+        .group:hover .card-bg{
+          opacity: 1;
+        }
+        #div1.card-bg{
+          background-image: url(${card1});
+        }
+        #div2.card-bg{
+          background-image: url(${card2});
+        }
+        #div3.card-bg{
+          background-image: url(${card3});
+        }
+        #div4.card-bg{
+          background-image: url(${card4});
+        }
+        `}
+      </style>
+
+
     </div>
   );
 };

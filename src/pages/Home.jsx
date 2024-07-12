@@ -1,4 +1,4 @@
-import CTAHome from "../components/home/CTAHome"
+// import CTAHome from "../components/home/CTAHome"
 import Hero from "../components/home/Hero";
 import { useState, useEffect } from "react"
 import ContactSubscribe from "../components/contact/ContactSubscribe";
@@ -6,6 +6,7 @@ import Partners from "../components/about/Partners";
 import AboutHome from "../components/home/AboutHome";
 import GallerySwipe from "../components/home/GallerySwipe"
 import { identiko_logo } from "../assets";
+import MainHero from "../components/home/MainHero";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,7 +23,8 @@ const Home = () => {
     </div>
   ) : (
     <div className="overflow-x-hidden overflow-y-hidden">
-      <CTAHome />
+    <MainHero/>
+      {/* <CTAHome /> */}
       <Hero />
       {/* <VdHome /> */}
       <AboutHome />

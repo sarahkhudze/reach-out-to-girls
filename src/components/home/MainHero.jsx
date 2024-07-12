@@ -1,0 +1,77 @@
+import { useState, useEffect } from "react";
+import { off1, off2, off3, off4 } from "../../assets";
+// import UseTypingEffect from "../others/UseTypingEffect";
+
+const MainHero = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const data = [off1, off2, off3, off4];
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const slides = [
+    { image: data[0], text: "CLASSIC TECH EXPERT" },
+    { image: data[1], text: "CRAFTED WITH AI PRECISION" },
+    { image: data[2], text: "TECH MEETS COMFORT" },
+    { image: data[3], text: "USEFUL FOR YOU & I" },
+  ];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentSlide((currentSlide + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(intervalId);
+  }, [currentSlide, slides]);
+
+  // const typedText =
+  //   UseTypingEffect(slides[currentSlide].text, 100)
+
+  return (
+    <div className="overflow-y-hidden w-full h-auto overflow-x-hidden bg-[#edebe8] md:-translate-y-[45%]">
+      <div className="w-screen h-50vh relative">
+        <div
+          style={{
+            transform: `translateX(-${currentSlide * 100}vw)`,
+            transition: "transform 1s ease",
+          }}
+          className="w-fit h-full flex transition-transform duration-1000 flex-1 relative ease-out" >
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className="relative w-screen h-50vh flex  items-center justify-center" >
+              <img
+                className="w-screen"
+                src={slide.image}
+                alt={`img-${index}`}
+              />
+              <div className="absolute z-30 flex flex-col items-center justify-center md:translate-y-[400%] text-center md:transform">
+                <p className={`text-white font-bold text-xl md:text-5xl text-shadow-xl transform animate-slide-up`}
+                  key={`${index}-${currentSlide}`} >
+                  {slide.text}
+                  {/* <UseTypingEffect/> */}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <style>
+          {`
+          @keyframes slide-up{
+            from{
+            transform: translateY(100%);
+            opacity: 0
+            }
+             to{
+            transform: translateY(0%);
+              opacity: 1
+            }
+          }
+          .animate-slide-up {
+          animation: slide-up 2s ease-out;
+        }
+        `}
+        </style>
+      </div>
+
+    </div>
+  );
+};
+export default MainHero;
