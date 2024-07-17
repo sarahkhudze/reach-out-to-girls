@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { off1, off2, off3, off4 } from "../../assets";
+import { aboutUs, officeSpace2 } from "../../assets";
 // import UseTypingEffect from "../others/UseTypingEffect";
 
 const MainHero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const data = [off1, off2, off3, off4];
+  const data = [aboutUs, officeSpace2, aboutUs, officeSpace2];
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const slides = [
     { image: data[0], text: "CLASSIC TECH EXPERT" },

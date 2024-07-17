@@ -34,6 +34,7 @@ import logoPicu from "../assets/logoPicu.png"
 import contactIde from "../assets/recognito.png"
 import contactIde2 from "../assets/recognition02.png"
 import officeSpace from "../assets/newS.jpg"
+import officeSpace2 from "../assets/officeSpace.jpg"
 import aCareer from "../assets/aCareer.jpg"
 import LandingVid from "../assets/lanlan.mp4"
 import AboutVid from "../assets/aboutU.mp4"
@@ -107,5 +108,5 @@ export {
     home2, identikoWeb, vmware, veritas, neuro, microsoft, lenovo, idemia, hp,
     cisco, msPix, nigPix, recognition, identiko, no1, no2, no3, no4, no5, no6,
     no7, no8, no9, no10, no11, no12, no13, no14, no15, no17, no18, no19, no20, 
-    no21, no23, no25, no27
+    no21, no23, no25, no27, officeSpace2
 };
