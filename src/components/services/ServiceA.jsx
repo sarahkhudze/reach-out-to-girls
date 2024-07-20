@@ -1,46 +1,67 @@
-// import { useState } from "react"
-import tech_solution from "../../assets/services_icon/tech_solution.svg";
-import enrollment_services from "../../assets/services_icon/enrollment_services.svg";
-import software_application from "../../assets/services_icon/software_application.svg";
-import identity_solution from "../../assets/services_icon/identity_solution.svg";
-import { card1, card2, card3, card4, no1, no2, no3, no4 } from "../../assets";
 
 const services = [
     {
-        id: "div1",
-        image: no1,
-        img: identity_solution,
-        title: "Identity & Security Solutions",
+        title: "Biometric Solutions",
         description:
-            "Comprehensive identity and security services safeguard personal and organizational data. We provide advanced biometric and verification solutions to ensure secure and reliable identity management.",
-        bgImg: card2,
+            "Biometric identification has evolved beyond security to mainstream applications, offering reliable, convenient recognition through physiological or behavioral traits. Driven by technological advances and growing security needs, Identiko provides innovative biometric solutions across various industries for identity management and authentication Solutions",
     },
     {
-        id: "div2",
-        image: no2,
-        img: software_application,
-        title: "Software & IT Solutions",
+        title: "Identity-Based Solution",
         description:
-            "Innovative software and IT services streamline operations and enhance efficiency. From development to integration, we deliver robust solutions tailored to your business needs, ensuring security and scalability.",
-        bgImg: card4,
+            "A strong identification system requires robust ID verification for benefits administration, health insurance, border control, online authentication, voter and driving license checks, and social security entitlement. Each case demands precise validation of the document holder’s identity",
     },
     {
-        id: "div3",
-        image: no3,
-        img: tech_solution,
-        title: "Managed Services & SmartCity Solutions",
+        title: "State National ID & Civic Registration",
         description:
-            "Tailored managed services and smart solutions optimize business processes and customer experiences. We offer specialized support to enhance operational efficiency and meet unique organizational needs.",
-        bgImg: card3,
+            "Security is a priority for governments, and unique identity verification is crucial to prevent identity theft and ensure fair resource allocation. Our solution offers customizable systems—enrolment, data cleansing, deduplication, and databases—to support effective civil registration and societal security",
     },
     {
-        id: "div4",
-        image: no4,
-        img: enrollment_services,
-        title: "Surveillance & Monitoring Solutions",
-        description:
-            "Advanced surveillance and monitoring systems ensure security and real-time management. Our solutions include electronic voting, traffic management, and IoT-enabled systems to maintain safety and control.",
-        bgImg: card1,
+        title: "Enrolment Services",
+        description: "",
+    },
+    {
+        title: "Demographic Data Harmonized",
+        description: "",
+    },
+    {
+        title: "ABIS (Civil & Criminal) Solution",
+        description: "",
+    },
+    {
+        title: "Foundational Civil Registration",
+        description: "",
+    },
+    {
+        title: "Card Production & Personalization",
+        description: "",
+    },
+    {
+        title: "Identity Verification Solution",
+        description: "",
+    },
+    {
+        title: "Mobile Verification Services",
+        description: "",
+    },
+    {
+        title: "E-passport Solutions",
+        description: "",
+    },
+    {
+        title: "Drivers License Services",
+        description: "",
+    },
+    {
+        title: "Border Control Services",
+        description: "",
+    },
+    {
+        title: "Criminal Database Services",
+        description: "",
+    },
+    {
+        title: "Security & Access Control",
+        description: "",
     },
 ];
 
@@ -50,9 +71,9 @@ const ServiceA = () => {
             <div className="max-w-screen-xl mx-auto text-center items-center justify-center px-2 md:px-0">
                 <div className="text-center text-black">
                     <p className="text-xl md:text-3xl font-bold"> IDENTITY AND SECURITY SOLUTIONS </p>
-                    <p className="text-xs md:text-xl">
+                    <p className="text-xs md:text-xl md:ml-40 md:mr-40 text-center flex justify-center items-center">
                         {" "}
-                        Empowering Your Business with Innovative Solutions and Expert Support{" "}
+                        We provide advanced biometric and verification solutions to ensure secure and reliable identity management{" "}
                     </p>
                 </div>
 
@@ -63,7 +84,7 @@ const ServiceA = () => {
                             id={service.id}
                             className="group cursor-pointer border rounded-md relative flex flex-col 
                         overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl 
-                        text-center duration-500 h-40 p-4"
+                        text-center duration-500 h-56 p-4"
                         >
                             <p className="absolute description text-balance text-sm md:text-md mb-12 md:mb-0 font-bold z-10">
                                 {" "}

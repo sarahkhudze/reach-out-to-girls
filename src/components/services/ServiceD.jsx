@@ -1,47 +1,24 @@
-// import { useState } from "react"
-import tech_solution from "../../assets/services_icon/tech_solution.svg";
-import enrollment_services from "../../assets/services_icon/enrollment_services.svg";
-import software_application from "../../assets/services_icon/software_application.svg";
-import identity_solution from "../../assets/services_icon/identity_solution.svg";
-import { card1, card2, card3, card4, no1, no2, no3, no4 } from "../../assets";
-
 const services = [
     {
-        id: "div1",
-        image: no1,
-        img: identity_solution,
-        title: "Identity & Security Solutions",
-        description:
-            "Comprehensive identity and security services safeguard personal and organizational data. We provide advanced biometric and verification solutions to ensure secure and reliable identity management.",
-        bgImg: card2,
+        title: "Electronic Voting Solution",
+        description: "",
     },
     {
-        id: "div2",
-        image: no2,
-        img: software_application,
-        title: "Software & IT Solutions",
-        description:
-            "Innovative software and IT services streamline operations and enhance efficiency. From development to integration, we deliver robust solutions tailored to your business needs, ensuring security and scalability.",
-        bgImg: card4,
+        title: "Traffic Management Systems",
+        description: "",
     },
     {
-        id: "div3",
-        image: no3,
-        img: tech_solution,
-        title: "Managed Services & SmartCity Solutions",
-        description:
-            "Tailored managed services and smart solutions optimize business processes and customer experiences. We offer specialized support to enhance operational efficiency and meet unique organizational needs.",
-        bgImg: card3,
+        title: "Electronic Surveillance",
+        description: "",
     },
     {
-        id: "div4",
-        image: no4,
-        img: enrollment_services,
-        title: "Surveillance & Monitoring Solutions",
-        description:
-            "Advanced surveillance and monitoring systems ensure security and real-time management. Our solutions include electronic voting, traffic management, and IoT-enabled systems to maintain safety and control.",
-        bgImg: card1,
+        title: "IOT and Electronic Sensor",
+        description: "",
     },
+    {
+        title: "Monitoring & Management",
+        description: "",
+    },  
 ];
 
 const ServiceD = () => {
@@ -50,8 +27,8 @@ const ServiceD = () => {
             <div className="max-w-screen-xl mx-auto text-center items-center justify-center px-2 md:px-0">
                 <div className="text-center text-black">
                     <p className="text-xl md:text-3xl font-bold"> SURVEILLANCE AND MONITORING SOLUTIONS </p>
-                    <p className="text-xs md:text-xl">
-                        {" "}
+                    <p className="text-xs md:text-xl md:ml-40 md:mr-40 text-center flex justify-center items-center">
+                    {" "}
                         Our solutions include electronic voting, traffic management, and IoT-enabled systems to maintain safety and control{" "}
                     </p>
                 </div>
@@ -63,7 +40,7 @@ const ServiceD = () => {
                             id={service.id}
                             className="group cursor-pointer border rounded-md relative flex flex-col 
                         overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl 
-                        text-center duration-500 h-40 p-4"
+                        text-center duration-500 h-56 p-4"
                         >
                             <p className="absolute description text-balance text-sm md:text-md mb-12 md:mb-0 font-bold z-10">
                                 {" "}

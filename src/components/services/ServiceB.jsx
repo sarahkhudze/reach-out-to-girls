@@ -1,47 +1,57 @@
-// import { useState } from "react"
-import tech_solution from "../../assets/services_icon/tech_solution.svg";
-import enrollment_services from "../../assets/services_icon/enrollment_services.svg";
-import software_application from "../../assets/services_icon/software_application.svg";
-import identity_solution from "../../assets/services_icon/identity_solution.svg";
-import { card1, card2, card3, card4, no1, no2, no3, no4 } from "../../assets";
 
 const services = [
     {
-        id: "div1",
-        image: no1,
-        img: identity_solution,
-        title: "Identity & Security Solutions",
-        description:
-            "Comprehensive identity and security services safeguard personal and organizational data. We provide advanced biometric and verification solutions to ensure secure and reliable identity management.",
-        bgImg: card2,
+        
+        title: "Software Services",
+        description: "We provide flexible, low-cost solutions to enhance business operations. From IT strategy consulting to end-to-end software development, Identiko Solutions delivers scalable, impactful technology solutions. Our international expertise ensures reliable software development with best practice methodologies and deep domain expertise",
+    
     },
     {
-        id: "div2",
-        image: no2,
-        img: software_application,
-        title: "Software & IT Solutions",
+        
+        title: "Software Application",
         description:
-            "Innovative software and IT services streamline operations and enhance efficiency. From development to integration, we deliver robust solutions tailored to your business needs, ensuring security and scalability.",
-        bgImg: card4,
+            "Identiko offers comprehensive software development services, focusing on agility and scalability. We conduct thorough domain analysis, assemble expert teams, and create innovative, reliable solutions that drive business transformation and meet specific organizational goals.",
+        
     },
     {
-        id: "div3",
-        image: no3,
-        img: tech_solution,
-        title: "Managed Services & SmartCity Solutions",
+        
+        title: "Software Development",
         description:
             "Tailored managed services and smart solutions optimize business processes and customer experiences. We offer specialized support to enhance operational efficiency and meet unique organizational needs.",
-        bgImg: card3,
+       
     },
-    {
-        id: "div4",
-        image: no4,
-        img: enrollment_services,
-        title: "Surveillance & Monitoring Solutions",
-        description:
-            "Advanced surveillance and monitoring systems ensure security and real-time management. Our solutions include electronic voting, traffic management, and IoT-enabled systems to maintain safety and control.",
-        bgImg: card1,
-    },
+    {       
+        title: "Software Integration Service",
+        description:  "Identiko specializes in software integration, ensuring seamless connectivity between systems. Our expert team develops tailored strategies and solutions to optimize workflows, enhance data accuracy, and improve operational efficiency, driving business success",
+     },
+     {       
+        title: "Cloud Solutions",
+        description:  "Modernize, migrate, manage, and optimize cloud infrastructure with multi-cloud strategies, automation, and top security practices. We guide you through your cloud journey, from migration to management, enhancing growth and value across your enterprise",
+     },
+     {       
+        title: "Cyber Security Solutions",
+        description:  "The evolving cyber threat landscape poses risks that many companies can’t manage in-house. Our custom cybersecurity solutions protect your technology and data, ensuring business continuity and safeguarding against costly breaches and reputational damage with expert, tailored defense strategies",
+     },
+     {       
+        title: "Data Analytics",
+        description:  "Data is growing rapidly, and businesses must quickly derive insights from it. Our cost-effective Business Intelligence (BI) and Analytics services offer a solid foundation for actionable insights, enabling faster, informed decision-making and efficient data management",
+     },
+     {       
+        title: "Migrations & System Integration",
+        description:  "Enterprises often face information silos from various technology solutions. Identiko Solutions connects disparate systems, enabling seamless collaboration across teams without disrupting existing systems. Our integration services enhance delivery speed, reporting, and automation for efficient data synchronization and process management",
+     },
+     {       
+        title: "Workplace Modernization Solutions",
+        description:  "Transforming the workplace requires a holistic strategy integrating technology, operations, culture, and employee experience. We provide cost-efficient, secure platforms that enhance mobility, productivity, collaboration, and security, empowering workers in a digitally advanced, automated environment",
+     },
+     {       
+        title: "Advanced Infrastructure Solutions",
+        description:  "Today’s IT environments are complex, requiring interconnected systems that deliver secure, scalable, and resilient infrastructure. We design and implement effective IT solutions that meet real-world demands, expertly pairing top technologies to fit each client’s needs",
+     },
+     {       
+        title: "Network Modernization Solution",
+        description:  "Aging networks pose challenges like higher failure rates and compromised security, limiting responsiveness and business opportunities. Network modernization is crucial for digital transformation, as IT leaders seek agile, software-driven solutions to meet evolving demands and enhance network agility",
+     },
 ];
 
 const ServiceB = () => {
@@ -50,9 +60,9 @@ const ServiceB = () => {
             <div className="max-w-screen-xl mx-auto text-center items-center justify-center px-2 md:px-0">
                 <div className="text-center text-black">
                     <p className="text-xl md:text-3xl font-bold"> SOFTWARE AND IT SOLUTIONS </p>
-                    <p className="text-xs md:text-xl">
+                    <p className="text-xs md:text-xl md:ml-40 md:mr-40 text-center flex justify-center items-center">
                         {" "}
-                        Innovative software and IT services streamline operations and enhance efficiency{" "}
+                        From development to integration, we deliver robust solutions tailored to your business needs{" "}
                     </p>
                 </div>
 
@@ -63,7 +73,7 @@ const ServiceB = () => {
                             id={service.id}
                             className="group cursor-pointer border rounded-md relative flex flex-col 
                         overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl 
-                        text-center duration-500 h-40 p-4"
+                        text-center duration-500 h-56  p-4"
                         >
                             <p className="absolute description text-balance text-sm md:text-md mb-12 md:mb-0 font-bold z-10">
                                 {" "}

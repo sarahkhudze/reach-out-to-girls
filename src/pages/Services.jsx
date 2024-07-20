@@ -24,8 +24,9 @@ const Services = () => {
     <div>
       <CTAServices />
       {/* <ServicesBody /> */}
-      <ServiceA />
+     
       <ServiceB/>
+      <ServiceA />
       <ServiceC/>
       <ServiceD/>
     </div>
