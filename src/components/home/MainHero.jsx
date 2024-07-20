@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
-import { aboutUs, officeSpace2 } from "../../assets";
-// import UseTypingEffect from "../others/UseTypingEffect";
+import { aboutUs, officeSpace2, homela} from "../../assets";
 
 const MainHero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const data = [aboutUs, officeSpace2, aboutUs, officeSpace2];
+  const data = [aboutUs, officeSpace2, homela, officeSpace2];
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const slides = [
     { image: data[0], text: "Your Trusted Experts in Identity & ICT Solutions" },
@@ -13,26 +12,36 @@ const MainHero = () => {
     { image: data[3], text: "Expert Tech Solutions for Secure Identification" },
   ];
 
+  const duplicatedSlides = slides.concat(slides);
+
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentSlide((currentSlide + 1) % slides.length);
+      setCurrentSlide((prev) => prev + 1);
     }, 5000);
-    return () => clearInterval(intervalId);
-  }, [currentSlide, slides]);
 
-  // const typedText =
-  //   UseTypingEffect(slides[currentSlide].text, 100)
+    return () => clearInterval(intervalId);
+  }, []);
+
+  // Reset slide index when it reaches the end of the first set
+  useEffect(() => {
+    if (currentSlide === slides.length) {
+      const timeoutId = setTimeout(() => {
+        setCurrentSlide(0);
+      }, 1000);
+      return () => clearTimeout(timeoutId);
+    }
+  }, [currentSlide, slides.length]);
 
   return (
     <div className="overflow-y-hidden w-full h-auto overflow-x-hidden bg-[#edebe8] md:-translate-y-[45%]">
       <div className="w-screen relative">
         <div
           style={{
-            transform: `translateX(-${currentSlide * 100}vw)`,
-            transition: "transform 1s ease",
+            transform: `translateX(-${(currentSlide % slides.length) * 100}vw)`,
+            transition: currentSlide === slides.length ? "none" : "transform 1s ease",
           }}
           className="w-fit h-full flex transition-transform duration-1000 flex-1 relative ease-out" >
-          {slides.map((slide, index) => (
+          {duplicatedSlides.map((slide, index) => (
             <div
               key={index}
               className="relative w-screen flex items-center justify-center" >
@@ -45,7 +54,6 @@ const MainHero = () => {
                 <p className={`text-white font-bold text-xl md:text-5xl text-shadow-xl transform animate-slide-up`}
                   key={`${index}-${currentSlide}`} >
                   {slide.text}
-                  {/* <UseTypingEffect/> */}
                 </p>
               </div>
             </div>
