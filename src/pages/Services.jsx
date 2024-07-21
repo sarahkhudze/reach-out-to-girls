@@ -1,7 +1,11 @@
 import CTAServices from "../components/services/CTAServices"
-import ServicesBody from "../components/services/ServicesBody"
+// import ServicesBody from "../components/services/ServicesBody"
 import { useState, useEffect } from "react"
 import { identiko_logo } from "../assets";
+import ServiceA from "../components/services/ServiceA";
+import ServiceB from "../components/services/ServiceB";
+import ServiceC from "../components/services/ServiceC";
+import ServiceD from "../components/services/ServiceD";
 
 const Services = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,9 +23,15 @@ const Services = () => {
   ) : (
     <div>
       <CTAServices />
-      <ServicesBody />
+      {/* <ServicesBody /> */}
+     
+      <ServiceB/>
+      <ServiceA />
+      <ServiceC/>
+      <ServiceD/>
     </div>
   )
 }
 
 export default Services
+
