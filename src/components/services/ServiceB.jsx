@@ -10,14 +10,14 @@ const services = [
         
         title: "Software Application",
         description:
-            "Identiko offers comprehensive software development services, focusing on agility and scalability. We conduct thorough domain analysis, assemble expert teams, and create innovative, reliable solutions that drive business transformation and meet specific organizational goals.",
+            "At Identiko, we transform businesses through robust, scalable application development. Our enterprise services use a proven agile process for innovative solutions, including deep domain analysis, the right team, and a structured 4D methodology for implementation",
         
     },
     {
         
         title: "Software Development",
         description:
-            "Tailored managed services and smart solutions optimize business processes and customer experiences. We offer specialized support to enhance operational efficiency and meet unique organizational needs.",
+            "Identiko offers comprehensive software development services, focusing on agility and scalability. We conduct thorough domain analysis, assemble expert teams, and create innovative, reliable solutions that drive business transformation and meet specific organizational goals",
        
     },
     {       

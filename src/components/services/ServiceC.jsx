@@ -1,31 +1,31 @@
 const services = [
     {
         title: "Managed Services & Outsourcing",
-        description: "",
+        description: "Modern businesses need advanced technology to thrive, but managing data growth, apps, multiclouds, and cyberthreats is challenging. Our Managed Services and Outsourcing provide expert support to handle these tasks, optimizing your IT environment and supporting innovation",
     },
     {
         title: "Smart Customer Experience Solutions",
-        description: "",
+        description: "Customer expectations are evolving rapidly, pushing organizations to adapt. As consumers go digital-first, we offer advanced AI and contact center analytics to enhance customer experience, identify key touchpoints, and use data analytics for improved business results",
     },
-    {
-        title: "E-government Services Platform",
-        description: "",
-    },
-    {
-        title: "Smart City/Campus Services",
-        description: "",
-    },
-    {
-        title: "Smart Customer Experience Solutions",
-        description: "",
-    },
-    {
-        title: "Workplace Modernization Solution",
-        description: "",
-    },
+    // {
+    //     title: "E-government Services Platform",
+    //     description: "",
+    // },
+    // {
+    //     title: "Smart City/Campus Services",
+    //     description: "",
+    // },
+    // {
+    //     title: "Smart Customer Experience Solutions",
+    //     description: "",
+    // },
+    // {
+    //     title: "Workplace Modernization Solution",
+    //     description: "",
+    // },
     {
         title: "Prisons/Correctional Facility Management",
-        description: "",
+        description: "Jail ID uses multi-biometric technologies to verify inmates and visitors, confirming identities during booking, release, transfers, and visits. It integrates with NEC's security management for centralized access control, CCTV, and alarm monitoring",
     },
 ];
 
