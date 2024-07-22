@@ -20,11 +20,11 @@ const services = [
     {
         title: "Service",
         description: "We are dedicated to providing quality experiences for our clients, nurturing relationships to contribute to their success",
-    },  
+    },
     {
         title: "Integrity",
         description: "We adhere to the highest ethical standards, ensuring honesty and transparency in all our actions",
-    },  
+    },
 ];
 
 
@@ -42,25 +42,17 @@ const Mission = () => {
             <div className="relative max-w-screen-xl mx-auto mt-4 md:mt-0 px-4 md:px-8 lg:px-12 xl:px-16 flex flex-col justify-center items-center gap-y-10 text-center z-50">
 
                 <h2 className="font-semibold text-xl md:text-3xl md:mb-2 mt-0">
-                    Our Primary Pillars
+                    Our Core Values
                 </h2>
 
-                <p className="md:w-[40%] text-sm md:text-sm pr-4 md:pr-0">
-                    Identiko specializes in identity management technology, verification,
-                    and digital identity solutions. Our ICT professionals are experts in
-                    biometrics, identity management systems, and system integration.
-                    Our enrolment solutions provide a wide
-                    selection of customizable functionality
-                    for our clients.
-                </p>
 
                 <div className="w-full mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-[2%] md:pl-12 md:pr-12">
                     {services.map((service, idx) => (
                         <div
                             key={idx}
                             id={service.id}
-                            className="group cursor-pointer border rounded-md relative flex flex-col 
-                        overflow-hidden bg-[#014c98] text-[#ffffff] shadow-md hover:shadow-xl 
+                            className="group cursor-pointer border rounded-md relative flex flex-col
+                        overflow-hidden bg-[#014c98] text-[#ffffff] shadow-md hover:shadow-xl
                         text-center justify-center duration-500 h-48 p-4"
                         >
                             <p className="absolute description top-5 md:top-10 text-balance text-sm md:text-md mb-12 md:mb-0 font-bold z-10">
