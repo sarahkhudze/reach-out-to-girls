@@ -20,20 +20,14 @@ const Vision = () => {
                     <div className={` flex flex-col justify-center text-center text-white'
                             }`} >
                         <p className="text-xl md:text-2xl font-bold">Our Mission</p>
-                        <p className="text-xs md:text-xl text-justify mt-2">From the private sector for
-                            employee enrolment to the public sector Our enrolment solutions provide a wide
-                            selection of customizable functionality for our clients. From the private sector for
-                            employee enrolment to the public sector
+                        <p className="text-xs md:text-xl text-justify mt-2">To drive innovation, technology, and economic development while building a sustainable, value-driven business.
                         </p>
                     </div>
 
                     <div className={`overflow-x-hidden  flex flex-col justify-center text-white  z-50 text-center mb-16 md:mb-0'
                             }`} >
                         <p className="text-xl md:text-2xl font-bold">Our Vision</p>
-                        <p className="text-xs md:text-xl text-justify mt-2">Our enrolment solutions provide a wide
-                            Our enrolment solutions provide a wide
-                            selection of customizable functionality for our clients. From the private sector for
-                            employee enrolment to the public sector
+                        <p className="text-xs md:text-xl text-justify mt-2">To be a leading, competent, and dependable ICT solutions provider.
                         </p>
                     </div>
 
@@ -42,7 +36,7 @@ const Vision = () => {
                 </div>
             </div>
 
-           
+
         </div>
     )
 }
