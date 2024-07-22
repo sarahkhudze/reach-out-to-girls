@@ -41,7 +41,6 @@
     "react-slick": "^0.30.2",
     "react-text-truncate": "^0.19.0",
     "react-toastify": "^10.0.4",
-    "react-truncate": "^2.4.0",
     "slick-carousel": "^1.8.1",
     "tailwindcss-textshadow": "^2.1.3"
   },
