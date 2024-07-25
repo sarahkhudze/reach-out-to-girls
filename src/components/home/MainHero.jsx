@@ -7,9 +7,9 @@ const MainHero = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const slides = [
     { image: data[0], text: "Your Trusted Experts in Identity & ICT Solutions" },
-    { image: data[1], text: "Cutting-Edge Tech for Public & Private Sectors" },
+    { image: data[1], text: "Cutting-Edge Technology for Public & Private Sectors" },
     { image: data[2], text: "Dedicated to Excellence in Identity & ICT" },
-    { image: data[3], text: "Expert Tech Solutions for Secure Identification" },
+    { image: data[3], text: "Expert Technology Solutions for Secure Identification" },
   ];
 
   const duplicatedSlides = slides.concat(slides);
