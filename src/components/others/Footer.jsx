@@ -35,7 +35,7 @@ const Footer = () => {
                         <span>2nd Floor, CITN House, Plot 16, Jobi Fele Way, Ikeja, Lagos</span>
                         </span>
 
-                    <span className="flex items-center gap-2 cursor-pointer">
+                    <span className="flex items-center gap-2 cursor-pointer text-nowrap">
                     <FaLocationDot />
                         <span>2nd Floor, Oakland Centre, Plot 2940 Aguiyi Ironsi Street, Maitama, Abuja</span>
                         </span>
