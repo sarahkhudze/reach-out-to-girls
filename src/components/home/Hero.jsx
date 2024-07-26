@@ -1,10 +1,9 @@
 // import { useState } from "react"
 import { useNavigate } from "react-router-dom/dist";
 import tech_solution from "../../assets/services_icon/tech_solution.svg";
-import enrollment_services from "../../assets/services_icon/enrollment_services.svg";
 import software_application from "../../assets/services_icon/software_application.svg";
 import identity_solution from "../../assets/services_icon/identity_solution.svg";
-import { card1, card2, card3, card4, no1, no2, no3, no4 } from "../../assets";
+import { card1, card2, card3, card4, no1, no2, no3 } from "../../assets";
 
 const services = [
   {
@@ -29,20 +28,20 @@ const services = [
     id: "div3",
     image: no3,
     img: tech_solution,
-    title: "Managed Services & SmartCity Solutions",
+    title: "SmartCity & Surveillance Solutions",
     description:
       "Tailored managed services and smart solutions optimize business processes and customer experiences. We offer specialized support to enhance operational efficiency and meet unique organizational needs.",
     bgImg: card3,
   },
-  {
-    id: "div4",
-    image: no4,
-    img: enrollment_services,
-    title: "Surveillance & Monitoring Solutions",
-    description:
-      "Advanced surveillance and monitoring systems ensure security and real-time management. Our solutions include electronic voting, traffic management, and IoT-enabled systems to maintain safety and control.",
-    bgImg: card1,
-  },
+  // {
+  //   id: "div4",
+  //   image: no4,
+  //   img: enrollment_services,
+  //   title: "Surveillance & Monitoring Solutions",
+  //   description:
+  //     "Advanced surveillance and monitoring systems ensure security and real-time management. Our solutions include electronic voting, traffic management, and IoT-enabled systems to maintain safety and control.",
+  //   bgImg: card1,
+  // },
 ];
 
 const Hero = () => {
@@ -64,7 +63,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="max-w-screen-xl mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2%] md:gap-[2%]  pl-12 md:pl-12 pr-12 md:pr-12">
+        <div className="max-w-screen-xl mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2%] md:gap-[2%]  pl-12 md:pl-12 pr-12 md:pr-12">
           {services.map((service, idx) => (
             <div
               key={idx}
@@ -82,14 +81,14 @@ const Hero = () => {
 
               <img
                 src={service.img}
-                className=" title w-20 z-10 group-hover:filter group-hover:invert group-hover:brightness-0 mb-20 group-hover:text-white  group-hover:translate-y-[-300%]"
+                className=" title w-20 z-10 group-hover:filter group-hover:invert group-hover:brightness-0 mt-[-40px] mb-20 group-hover:text-white  group-hover:translate-y-[-300%]"
                 alt={service.title}
               />
-              <p className="absolute description text-balance text-sm md:text-md mt-20 mb-12 md:mb-0 font-bold z-10 group-hover:text-white group-hover:translate-y-[-500%]">
+              <p className="absolute description text-balance text-sm md:text-xl mt-16 mb-12 md:mb-0 font-bold z-10 group-hover:text-white group-hover:translate-y-[-300%]">
                 {" "}
                 {service.title}{" "}
               </p>
-              <p className="absolute description p-1 text-balance  text-sm md:text-md mt-28 mb-12 md:mb-10 z-10 group-hover:text-white w-40 group-hover:w-full group-hover:translate-y-[-50%] group-hover:text-overflow-ellipsis">
+              <p className="absolute description pl-6 pr-6 text-justify  text-sm md:text-md mt-28 mb-12 md:mb-10 z-10 group-hover:text-white w-fit group-hover:w-full group-hover:translate-y-[-50%] group-hover:text-overflow-ellipsis">
                 {service.description}
                 <span className="hidden group-hover:inline">{service.description.slice(service.description.indexOf(" ", 50))}</span>
               </p>
