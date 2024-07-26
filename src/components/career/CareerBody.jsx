@@ -168,12 +168,12 @@ const CareerBody = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
       <div className="col-span-2">
-  <div className="relative">
+  <div className="relative bg-[#F7F8FA]">
     <select
       type="text"
       name="services"
       onChange={(e) => handleInputChange("service", e.target.value)}
-      className="w-full bg-[#F7F8FA] border border-[#7F9395] rounded-md focus:outline-none focus:border-[#1F6FE2] text-sm p-3 appearance-none"
+      className="w-full border border-[#7F9395] rounded-md focus:outline-none focus:border-[#1F6FE2] text-sm p-3 shadow appearance-none"
     >
       <option value="Select a Service" className="font-bold">VACANCIES</option>
       <option value="Enrollment Options">Enrollment Options</option>
@@ -182,8 +182,8 @@ const CareerBody = () => {
       <option value="Prisons/ Correctional Facility Management">Prisons/ Correctional Facility Management</option>
       <option value="Smart City/Campus">Smart City/Campus</option>
     </select>
-    <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-      <svg className="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+    <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none">
+      <svg className="w-4 h-4 text-gray-400 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
         <path d="M10 12a1 1 0 01-.707-.293l-3-3a1 1 0 011.414-1.414L10 9.586l2.293-2.293a1 1 0 111.414 1.414l-3 3A1 1 0 0110 12z" />
       </svg>
     </div>
@@ -191,9 +191,10 @@ const CareerBody = () => {
 </div>
 
 
-        <div className="col-span-2 md:col-span-1">
+        <div className="col-span-2">
+          <label htmlFor="name" className="mb-2">Name*</label>
           <input
-            className="mb-2 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="mb-2 shadow appearance-none border cursor-pointer rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             name="name"
             type="text"
             placeholder="Name"
@@ -202,26 +203,29 @@ const CareerBody = () => {
             required
           />
         </div>
-        <div className="col-span-2 md:col-span-1">
-          <PhoneInput
-            defaultCountry="NG"
-            className="mb-2 shadow bg-white appearance-none cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            name="phone"
-            placeholder="0800-0000-000"
-            value={formData.phoneNumber}
-            onChange={(value) => handleInputChange("phone", value)}
-            required
-          />
-        </div>
 
         <div className="col-span-2 md:col-span-1">
+        <label htmlFor="name" className="mb-2">E-mail*</label>
           <input
-            className="mb-2 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="mb-2 shadow appearance-none border cursor-pointer rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             name="email"
             type="email"
             placeholder="Email"
             value={formData.email}
             onChange={(e) => handleInputChange("email", e.target.value)}
+            required
+          />
+        </div>
+
+        <div className="col-span-2 md:col-span-1">
+        <label htmlFor="name" className="mb-2">Phone*</label>
+          <PhoneInput
+            defaultCountry="NG"
+            className="mb-2 shadow bg-white appearance-none cursor-pointer rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            name="phone"
+            placeholder="0800-0000-000"
+            value={formData.phoneNumber}
+            onChange={(value) => handleInputChange("phone", value)}
             required
           />
         </div>
@@ -237,6 +241,7 @@ const CareerBody = () => {
         </div>
 
         <div className="col-span-2">
+          <label htmlFor="cv" className="mb-2">Upload CV*</label>
         <input
                 className="shadow appearance-none border cursor-pointer rounded w-full py-3 px-4 text-black leading-tight focus:outline-none focus:shadow-outline"
                 name="file" type="file"
@@ -257,7 +262,7 @@ const CareerBody = () => {
           className="mr-2"
         />
         <label htmlFor="terms" className="text-gray-700 text-sm cursor-pointer">
-          I agree to the <Link to="/privacy" className="underline">Privacy Policy & Terms and Conditions</Link>
+          I agree to the <Link className="underline">Privacy Policy & Terms and Conditions</Link>
         </label>
       </div>
 
