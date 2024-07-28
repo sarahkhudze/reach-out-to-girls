@@ -2,9 +2,10 @@ import { careero } from "../../assets";
 const CTACareer = () => {
   return (
     <div
-      className="bg-no-repeat bg-cover bg-center relative h-[40vh] md:h-[60vh] w-full z-1"
+      className="bg-no-repeat bg-cover bg-center relative h-[50vh] md:h-[60vh] w-full z-1"
       style={{
         backgroundImage: `url(${careero})`,
+        backgroundPosition: 'top',
         position: "relative",
         className: "overflow-x-hidden"
       }}
