@@ -20,7 +20,7 @@ const Header = () => {
           <img
             src={identiko}
             alt="webImg"
-            className="w-[70%] max-w-[200px] cursor-pointer rounded-lg"
+            className="w-[50%] max-w-[200px] cursor-pointer rounded-lg"
             onClick={handleClick || setIsMenuOpen(false)}
           />
         </div>
@@ -55,7 +55,7 @@ const Header = () => {
 
       {isMenuOpen && (
         <div
-          className="md:hidden absolute top-[9%] left-0 right-0 z-50 border-b bg-[#000000] transition delay-150 duration-300 ease-in-out"
+          className="md:hidden absolute top-[7%] left-0 right-0 z-50 border-b bg-[#000000] transition delay-150 duration-300 ease-in-out"
           style={{ maxHeight: isMenuOpen ? "300px" : "0" }}
         >
           <MobileNavLink to="/about-us" onClick={() => setIsMenuOpen(false)}>

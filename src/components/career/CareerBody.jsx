@@ -66,7 +66,7 @@ const CareerBody = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-    >
+     >
       <div className="absolute top-0 left-0 w-full h-full bg-white opacity-95"></div>
       <ToastContainer />
 

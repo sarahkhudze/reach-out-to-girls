@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <div style={{ position: 'relative', bottom: 0, left: 0, right: 0, backgroundColor: 'black', color: 'white', padding: '1rem', textAlign: 'center', zIndex: 1}}>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-8 mt-4'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-8 mt-4 overflow-hidden'>
                 <div className="flex flex-col items-center align-middle gap-2 md:gap-4">
                     <div className="font-bold text-md md:text-xl">Compliance</div>
                     <Link to = '/isms-policy'><span className="cursor-pointer">ISO Policy</span></Link>
@@ -35,7 +35,7 @@ const Footer = () => {
                         <span>2nd Floor, CITN House, Plot 16, Jobi Fele Way, Ikeja, Lagos</span>
                         </span>
 
-                    <span className="flex items-center gap-2 cursor-pointer text-nowrap">
+                    <span className="flex items-center gap-2 cursor-pointer">
                     <FaLocationDot />
                         <span>2nd Floor, Oakland Centre, Plot 2940 Aguiyi Ironsi Street, Maitama, Abuja</span>
                         </span>
