@@ -23,9 +23,7 @@ const services = [
     },
 ];
 
-
 const Mission = () => {
-
     return (
         <div className="relative bg-white pb-[8%] pt-[4%] overflow-x-hidden bg-cover bg-center"
             style={{
@@ -34,36 +32,17 @@ const Mission = () => {
                 backgroundPosition: 'center',
             }}>
             <div className="absolute top-0 left-0 w-full h-full bg-white opacity-95"></div>
-
             <>
                 <div className="relative max-w-screen-xl mx-auto mt-4 md:mt-0 px-4 md:px-8 lg:px-12 xl:px-16 flex flex-col justify-center items-center gap-y-10 text-center z-50">
-
-                    <h2 className="font-semibold text-xl md:text-4xl md:mb-2 mt-0">
-                        Our Core Values
-                    </h2>
-
-
+                    <h2 className="font-semibold text-xl md:text-4xl md:mb-2 mt-0"> Our Core Values  </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                        {services.slice(0, 3).map((service, idx) => (
-                            <div key={idx} className="grid grid-cols-1 mx-auto border rounded-lg p-6 overflow-hidden bg-blue-900 text-white shadow-md hover:shadow-lg transition-shadow duration-300"
-                            >
-
-                                        <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
-                                        <p className="text-base text-justify">{service.description}</p>
-
+                        {services.slice(0, 5).map((service, idx) => (
+                            <div key={idx} className="grid grid-cols-1 mx-auto border rounded-lg p-6 overflow-hidden bg-blue-900 text-white shadow-md hover:shadow-lg transition-shadow duration-300">
+                                <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
+                                <p className="text-base text-justify">{service.description}</p>
                             </div>
                         ))}
-
-                        <div className="grid grid-cols-1 mx-auto border rounded-lg p-6 overflow-hidden bg-blue-900 text-white shadow-md hover:shadow-lg transition-shadow duration-300 md:col-span-1  md:col-start-2">
-                                <h3 className="text-2xl font-bold mb-2">{services[3].title}</h3>
-                                <p className="text-base text-justify">{services[3].description}</p>
-                        </div>
-
-
                     </div>
-
-
-
                 </div>
             </>
             <style>{`@keyframes slide-up{ from{ transform: translateY(100%); opacity: 0 } to{ transform: translateY(0%); opacity: 1 }} .animate-slide-up {animation: slide-up 2s ease-out;`} </style>

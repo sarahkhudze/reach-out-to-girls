@@ -20,7 +20,7 @@ const Header = () => {
           <img
             src={identiko}
             alt="webImg"
-            className="w-[50%] max-w-[200px] cursor-pointer rounded-lg"
+            className="w-[65%] max-w-[200px] cursor-pointer rounded-lg"
             onClick={handleClick || setIsMenuOpen(false)}
           />
         </div>
