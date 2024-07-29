@@ -33,15 +33,7 @@ const services = [
       "Tailored managed services and smart solutions optimize business processes and customer experiences. We offer specialized support to enhance operational efficiency and meet unique organizational needs.",
     bgImg: card3,
   },
-  // {
-  //   id: "div4",
-  //   image: no4,
-  //   img: enrollment_services,
-  //   title: "Surveillance & Monitoring Solutions",
-  //   description:
-  //     "Advanced surveillance and monitoring systems ensure security and real-time management. Our solutions include electronic voting, traffic management, and IoT-enabled systems to maintain safety and control.",
-  //   bgImg: card1,
-  // },
+ 
 ];
 
 const Hero = () => {
@@ -68,8 +60,8 @@ const Hero = () => {
             <div
               key={idx}
               id={service.id}
-              className="w-[50%] md:w-[100%] group cursor-pointer border rounded-md relative h-fit flex flex-col items-center
-                        overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl p-8 grid-cols-1
+              className="w-[100%] group cursor-pointer border rounded-md relative h-fit flex flex-col items-center
+                        overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl md:p-8 grid-cols-1
                         text-center duration-500 pb-20 pt-20"
             >
               <div
@@ -89,7 +81,7 @@ const Hero = () => {
                 {" "}
                 {service.title}{" "}
               </p>
-              <p className="absolute description pl-6 pr-6 text-center  text-sm md:text-md mt-28 mb-12 md:mb-10 z-10 group-hover:text-white w-fit group-hover:w-full group-hover:translate-y-[-60%] group-hover:text-overflow-ellipsis">
+              <p className="absolute description md:pl-6 md:pr-6 text-center  text-sm md:text-md mt-28 mb-12 md:mb-10 z-10 group-hover:text-white w-fit group-hover:w-full group-hover:translate-y-[-60%] group-hover:text-overflow-ellipsis">
                 {service.description}
                 <span className="hidden group-hover:inline">{service.description.slice(service.description.indexOf(" ", 50))}</span>
               </p>

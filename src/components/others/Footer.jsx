@@ -31,12 +31,12 @@ const Footer = () => {
                         <a href={`mailto:info@identikosolutions.com`}><span>info@identikosolutions.com</span></a>
                     </span>
                     <span className="flex items-center gap-2 cursor-pointer">
-                    <FaLocationDot />
+                    {/* <FaLocationDot /> */}
                         <span>2nd Floor, CITN House, Plot 16, Jobi Fele Way, Ikeja, Lagos</span>
                         </span>
 
                     <span className="flex items-center gap-2 cursor-pointer">
-                    <FaLocationDot />
+                    {/* <FaLocationDot /> */}
                         <span>2nd Floor, Oakland Centre, Plot 2940 Aguiyi Ironsi Street, Maitama, Abuja</span>
                         </span>
 
@@ -44,8 +44,7 @@ const Footer = () => {
 
                     <div className="flex gap-8 cursor-pointer">
                         <a href="https://www.instagram.com/identiko_solutions?igsh=MTF2eTdsdzlqd2t6dg=="><div className="rounded-full border border-white p-2"><FaInstagram /> </div></a>
-                        {/* <div className="rounded-full border border-white p-2"><MdFacebook /></div> */}
-                        {/* <div className="rounded-full border border-white p-2"><FaXTwitter /></div> */}
+                      
                         <a href="https://www.linkedin.com/company/identikosolutions/"><div className="rounded-full border border-white p-2"><FaLinkedin /> </div> </a>
                     </div>
                 </div>
