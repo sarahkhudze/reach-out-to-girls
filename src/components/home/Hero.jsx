@@ -33,7 +33,6 @@ const services = [
       "Tailored managed services and smart solutions optimize business processes and customer experiences. We offer specialized support to enhance operational efficiency and meet unique organizational needs.",
     bgImg: card3,
   },
- 
 ];
 
 const Hero = () => {
@@ -61,7 +60,7 @@ const Hero = () => {
               key={idx}
               id={service.id}
               className="w-[100%] group cursor-pointer border rounded-md relative h-fit flex flex-col items-center
-                        overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl md:p-8 grid-cols-1
+                        overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl p-8 grid-cols-1
                         text-center duration-500 pb-20 pt-20"
             >
               <div

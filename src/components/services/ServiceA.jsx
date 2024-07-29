@@ -39,30 +39,6 @@ const services = [
         title: "Identity Verification Solution",
         description: "A robust identification system relies on integrated ID verification for benefits, health insurance, border control, and more. Identiko offers comprehensive verification solutions, including biometrics and mobile options, ensuring accurate, flexible identity checks in any condition",
     },
-    // {
-    //     title: "Mobile Verification Services",
-    //     description: "",
-    // },
-    // {
-    //     title: "E-passport Solutions",
-    //     description: "",
-    // },
-    // {
-    //     title: "Drivers License Services",
-    //     description: "",
-    // },
-    // {se
-    //     title: "Border Control Services",
-    //     description: "",
-    // },
-    // {
-    //     title: "Criminal Database Services",
-    //     description: "",
-    // },
-    // {
-    //     title: "Security & Access Control",
-    //     description: "",
-    // },
 ];
 
 const ServiceA = () => {
@@ -77,20 +53,20 @@ const ServiceA = () => {
                     </p>
                 </div>
 
-                <div className="max-w-screen-xl mx-auto py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-12">
-  {services.map((service, idx) => (
-    <div
-      key={idx}
-      id={service.id}
-      className="group cursor-pointer border rounded-lg relative flex flex-col overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow duration-300 h-64 p-6"
-    >
-      <div className="flex flex-col items-center justify-center h-full space-y-4">
-        <p className="text-lg font-bold text-center text-gray-900">{service.title}</p>
-        <p className="text-sm text-justify text-gray-700 px-4">{service.description}</p>
-      </div>
-    </div>
-  ))}
-</div>
+                <div className="max-w-screen-xl mx-auto py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-12">
+                    {services.map((service, idx) => (
+                        <div
+                            key={idx}
+                            id={service.id}
+                            className="group cursor-pointer border rounded-lg relative flex flex-col overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow duration-300 h-64 p-6"
+                        >
+                            <div className="flex flex-col items-center justify-center h-full space-y-4">
+                                <p className="text-lg font-bold text-center text-gray-900">{service.title}</p>
+                                <p className="text-sm text-justify text-gray-700 px-4">{service.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
 
             </div>
         </div>

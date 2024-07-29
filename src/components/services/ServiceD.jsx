@@ -1,13 +1,4 @@
 const services = [
-    // {
-    //     title: "Electronic Voting Solution",
-    //     description: "",
-    // },
- 
-    // {
-    //     title: "Monitoring & Management",
-    //     description: "",
-    // },
 ];
 
 const ServiceD = () => {
@@ -22,7 +13,7 @@ const ServiceD = () => {
                     </p>
                 </div>
 
-                <div className="max-w-screen-xl mx-auto py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-12">
+                <div className="max-w-screen-xl mx-auto py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-12">
   {services.map((service, idx) => (
     <div
       key={idx}

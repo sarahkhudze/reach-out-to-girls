@@ -1,21 +1,4 @@
 const services = [
-
-    // {
-    //     title: "E-government Services Platform",
-    //     description: "",
-    // },
-    // {
-    //     title: "Smart City/Campus Services",
-    //     description: "",
-    // },
-    // {
-    //     title: "Smart Customer Experience Solutions",
-    //     description: "",
-    // },
-    // {
-    //     title: "Workplace Modernization Solution",
-    //     description: "",
-    // },
     {
         title: "Traffic Management Systems",
         description: "Smart Traffic Management Systems (STMS) expand city capacity without new highways, reducing traffic jams, pollution, and delays. Our STMS integrates traffic cabinets and transportation systems to enhance citywide flow and safety, improving overall quality of life",
@@ -46,20 +29,20 @@ const ServiceC = () => {
                     </p>
                 </div>
 
-                <div className="max-w-screen-xl mx-auto py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-12">
-  {services.map((service, idx) => (
-    <div
-      key={idx}
-      id={service.id}
-      className="group cursor-pointer border rounded-lg relative flex flex-col overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow duration-300 h-64 p-6"
-    >
-      <div className="flex flex-col items-center justify-center h-full space-y-4">
-        <p className="text-lg font-bold text-center text-gray-900">{service.title}</p>
-        <p className="text-sm text-justify text-gray-700 px-4">{service.description}</p>
-      </div>
-    </div>
-  ))}
-</div>
+                <div className="max-w-screen-xl mx-auto py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-12">
+                    {services.map((service, idx) => (
+                        <div
+                            key={idx}
+                            id={service.id}
+                            className="group cursor-pointer border rounded-lg relative flex flex-col overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow duration-300 h-64 p-6"
+                        >
+                            <div className="flex flex-col items-center justify-center h-full space-y-4">
+                                <p className="text-lg font-bold text-center text-gray-900">{service.title}</p>
+                                <p className="text-sm text-justify text-gray-700 px-4">{service.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
 
             </div>
 
