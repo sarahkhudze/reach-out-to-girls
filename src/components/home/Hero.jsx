@@ -7,15 +7,6 @@ import { card1, card2, card3, card4, no1, no2, no3 } from "../../assets";
 
 const services = [
   {
-    id: "div1",
-    image: no1,
-    img: identity_solution,
-    title: "Identity & Security Solutions",
-    description:
-      "Comprehensive identity and security services safeguard personal and organizational data. We provide advanced biometric and verification solutions to ensure secure and reliable identity management.",
-    bgImg: card2,
-  },
-  {
     id: "div2",
     image: no2,
     img: software_application,
@@ -23,6 +14,15 @@ const services = [
     description:
       "Innovative software and IT services streamline operations and enhance efficiency. From development to integration, we deliver robust solutions tailored to your business needs, ensuring security and scalability.",
     bgImg: card4,
+  },
+  {
+    id: "div1",
+    image: no1,
+    img: identity_solution,
+    title: "Identity & Security Solutions",
+    description:
+      "Comprehensive identity and security services safeguard personal and organizational data. We provide advanced biometric and verification solutions to ensure secure and reliable identity management.",
+    bgImg: card2,
   },
   {
     id: "div3",

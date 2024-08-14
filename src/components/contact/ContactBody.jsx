@@ -91,7 +91,7 @@ const ContactBody = () => {
         <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0 text-center text-balance transform animate-slide-up">
             <div className="mb-4 w-full text-lg font-semibold text-black">
               <p className="py-2">
-                If you have any questions or require advice, please feel free to
+              If you have any questions, please feel free to…
                 <a href={`mailto:info@identikosolutions.com`} className="cursor-pointer text-blue-800"> Get In Touch</a> with us ( <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@identikosolutions.com" target="_blank" className="cursor-pointer text-blue-800">Gmail</a>,   <a href="https://outlook.live.com/owa/?path=/mail/action/compose&to=info@identikosolutions.com" target="_blank" className="cursor-pointer text-blue-800">Outlook.com</a>, <a href="https://compose.mail.yahoo.com/?to=info@identikosolutions.com" target="_blank" className="cursor-pointer text-blue-800">Yahoo Mail</a>
                 ). Our team is here and ready to assist you.
               </p>
