@@ -1,7 +1,7 @@
 
 const services = [
     {
-        title: "Biometric Solutions",
+        title: "Biometric Solution",
         description:
             "Biometric identification has evolved beyond security to mainstream applications, offering reliable, convenient recognition through physiological or behavioral traits. Driven by technological advances and growing security needs, Identiko provides innovative biometric solutions across various industries for identity management and authentication",
     },
@@ -46,7 +46,7 @@ const ServiceA = () => {
         <div id="section-1" className="w-full mt-[10%] md:mt-[5%]">
             <div className="w-full mx-auto text-center items-center justify-center px-28 md:px-0">
                 <div className="text-center text-black">
-                    <p className="text-xl md:text-3xl font-bold"> IDENTITY AND SECURITY SOLUTIONS </p>
+                    <p className="text-xl md:text-3xl font-bold"> IDENTITY AND SECURITY SOLUTION </p>
                     <p className="text-sm md:text-xl md:ml-40 md:mr-40 text-center flex justify-center items-center">
                         {" "}
                         We provide advanced biometric and verification solutions to ensure secure and reliable identity management{" "}
