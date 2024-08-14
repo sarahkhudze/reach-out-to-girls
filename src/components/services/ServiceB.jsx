@@ -6,11 +6,11 @@ const services = [
     description: "Identiko specializes in software integration, ensuring seamless connectivity between systems. Our expert team develops tailored strategies and solutions to optimize workflows, enhance data accuracy, and improve operational efficiency, driving business success",
   },
   {
-    title: "Cloud Solutions",
+    title: "Cloud Solution",
     description: "Modernize, migrate, manage, and optimize cloud infrastructure with multi-cloud strategies, automation, and top security practices. We guide you through your cloud journey, from migration to management, enhancing growth and value across your enterprise",
   },
   {
-    title: "Cyber Security Solutions",
+    title: "Cyber Security Solution",
     description: "The evolving cyber threat landscape poses risks that many companies can’t manage in-house. Our custom cybersecurity solutions protect your technology and data, ensuring business continuity and safeguarding against costly breaches and reputational damage with expert, tailored defense strategies",
   },
   {
@@ -22,11 +22,11 @@ const services = [
     description: "Enterprises often face information silos from various technology solutions. Identiko Solutions connects disparate systems, enabling seamless collaboration across teams without disrupting existing systems. Our integration services enhance delivery speed, reporting, and automation for efficient data synchronization and process management",
   },
   {
-    title: "Workplace Modernization Solutions",
+    title: "Workplace Modernization Solution",
     description: "Transforming the workplace requires a holistic strategy integrating technology, operations, culture, and employee experience. We provide cost-efficient, secure platforms that enhance mobility, productivity, collaboration, and security, empowering workers in a digitally advanced, automated environment",
   },
   {
-    title: "Advanced Infrastructure Solutions",
+    title: "Advanced Infrastructure Solution",
     description: "Today’s IT environments are complex, requiring interconnected systems that deliver secure, scalable, and resilient infrastructure. We design and implement effective IT solutions that meet real-world demands, expertly pairing top technologies to fit each client’s needs",
   },
   {
@@ -34,7 +34,7 @@ const services = [
     description: "Aging networks pose challenges like higher failure rates and compromised security, limiting responsiveness and business opportunities. Network modernization is crucial for digital transformation, as IT leaders seek agile, software-driven solutions to meet evolving demands and enhance network agility",
   },
   {
-    title: "Managed Services & Outsourcing",
+    title: "Managed Service & Outsourcing",
     description: "Modern businesses need advanced technology to thrive, but managing data growth, apps, multiclouds, and cyberthreats is challenging. Our Managed Services and Outsourcing provide expert support to handle these tasks, optimizing your IT environment and supporting innovation",
   },
   {
@@ -48,7 +48,7 @@ const ServiceB = () => {
     <div id="section-1" className="w-full mt-[10%] md:mt-[5%]">
       <div className="w-full mx-auto text-center items-center justify-center px-28 md:px-0">
         <div className="text-center text-black">
-          <p className="text-xl md:text-3xl font-bold"> SOFTWARE AND IT SOLUTIONS </p>
+          <p className="text-xl md:text-3xl font-bold"> SOFTWARE AND IT SOLUTION </p>
           <p className="text-sm md:text-xl md:ml-40 md:mr-40 text-center flex justify-center items-center">
             {" "}
             From development to integration, we deliver robust solutions tailored to your business needs{" "}
