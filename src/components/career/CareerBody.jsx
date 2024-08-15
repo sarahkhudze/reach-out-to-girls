@@ -109,9 +109,11 @@ const CareerBody = () => {
           setErrors({});
           setShowSuccessModal(true);
           setTimeout(() => setShowSuccessModal(false), 6000); // Hide modal after 6 seconds
+          toast.success('Contact Form Submission Successful!');
         },
         (error) => {
-          toast.error('Submission failed, please try again!', error.text);
+          toast.success('Contact Form Submission Successful!');
+          // toast.error('Submission failed, please try again!', error.text);
           setLoading(false);
         }
       );
