@@ -46,7 +46,7 @@ const AboutHome = () => {
           </p>
           <br /><br />
           <Link to='/about-us'>
-            <button className="w-fit hover:text-[#003a97b3] text-[#003997]">Read More {'⇾'}</button>
+            <button className="w-fit hover:text-[#003a97b3] text-[#003997]">Learn More {'⇾'}</button>
           </Link>
         </p>
       </div>

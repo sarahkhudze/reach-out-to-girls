@@ -44,7 +44,7 @@ const Footer = () => {
 
                     <div className="flex gap-8 cursor-pointer">
                         <a href="https://www.instagram.com/identiko_solutions?igsh=MTF2eTdsdzlqd2t6dg=="><div className="rounded-full border border-white p-2"><FaInstagram /> </div></a>
-                      
+
                         <a href="https://www.linkedin.com/company/identikosolutions/"><div className="rounded-full border border-white p-2"><FaLinkedin /> </div> </a>
                     </div>
                 </div>
@@ -52,8 +52,9 @@ const Footer = () => {
 
                 <div className="flex flex-col items-center align-middle gap-2 md:gap-4">
                     <div className="font-bold text-md md:text-xl">Resources</div>
-                    <span className="cursor-pointer">Success Stories</span>
-                    <Link to = '/about-us'><span className="cursor-pointer">Partners</span></Link>
+                    {/* <span className="cursor-pointer">Success Stories</span> */}
+                    <Link to = '/career-page'><span className="cursor-pointer">Careers</span></Link>
+                    <Link to = '/our-services'><span className="cursor-pointer">Services</span></Link>
                 </div>
             </div>
 
