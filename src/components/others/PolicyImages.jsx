@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 // import { Link } from "react-scroll";
 // import { msPix, nigPix } from "../../assets";
-import NDPR from "../../assets/NDPR.svg";
+import NDPR from "../../assets/NDPR.png";
 // import NDPR_QR from "../../assets/NDPR_QR.svg";
-import ISO_IEC_27001_T from "../../assets/ISO_IEC_27001_T.svg";
-import ISO_IEC_27701_T from "../../assets/ISO_IEC_27701_T.svg";
+import ISO_IEC_27001_T from "../../assets/ISO_IEC_27001_T.png";
+import ISO_IEC_27701_T from "../../assets/ISO_IEC_27701_T.png";
 
 const PolicyImages = () => {
     // const [isVisible, setIsVisible] = useState(false);
@@ -35,7 +35,7 @@ const PolicyImages = () => {
                 <div
 
                     // onClick={scrollToTop}
-                    className="fixed flex items-center justify-end bottom-2 z-50 right-2 gap-2 transition-all duration-300"
+                    className="fixed flex items-end justify-end bottom-2 z-50 right-2 gap-2 transition-all duration-300"
                 >
                     <a href = '/isms-policy'>
                     <img src={ISO_IEC_27701_T} alt="ISO_IEC_27701_T" className="w-[52px] cursor-pointer"/>
