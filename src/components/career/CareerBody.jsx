@@ -150,20 +150,20 @@ const CareerBody = () => {
       )}
 
       <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-12 z-10">
-        <div className="w-full flex flex-col justify items-center pl-4 md:pl-0 pr-4 md:pr-0 gap-8 md:gap-0 transform animate-slide-up">
-          <div className="md:mt-4 flex flex-col items-center md:gap-5 text-center">
+        <div className="w-full flex flex-col justify items-center pl-1 md:pl-0 pr-1 md:pr-0 gap-8 md:gap-0 transform animate-slide-up">
+          <div className="md:mt-4 flex flex-col items-center gap-1 text-center">
             <div className="w-[100%] md:p-2 text-2xl font-semibold">
               WHY JOIN US
             </div>
 
-            <div className="w-[100%] md:w-[70%] text-lg md:text-xl text-center sm:mt-2 md:mt-[-10px]">
+            <div className="w-[100%] md:w-[70%] text-base md:text-xl text-center">
               Identiko is a leading ICT player with deep expertise in identity management systems. We partner with
               top companies like Cisco, Lenovo, Neuro Technology, and Idemia to deliver world-class solutions, helping clients
               excel in today’s and tomorrow’s knowledge-driven society.
             </div>
           </div>
         </div>
-        <div className="mt-5">
+        <div className="md:mt-5">
           <p className="text-lg md:text-xl font-medium">Why Identiko? Discover Our Dynamic Work Culture</p>
         <Cards />
         </div>
@@ -276,7 +276,7 @@ const CareerBody = () => {
                     className="form-checkbox"
                     required
                   />
-                  <span className="ml-2 text-sm text-gray-700">I agree to the <Link to="/terms" className="text-blue-500 underline">Terms and Conditions</Link> <span className="text-red-700">*</span></span>
+                  <span className="ml-2 text-sm text-gray-700 text-nowrap">I agree to the <Link to="/terms" className="text-blue-500 underline">Terms and Conditions</Link> <span className="text-red-700">*</span></span>
                 </label>
                 {errors.terms && <p className="text-red-500 text-xs mt-1">{errors.terms}</p>}
               </div>
@@ -284,7 +284,7 @@ const CareerBody = () => {
 
             <button
               type="submit"
-              className={`w-full py-3 px-4 bg-[#003997] text-white font-bold rounded-md shadow-lg ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
+              className={`w-full py-3 px-4 bg-blue-800 hover:bg-blue-700 text-white font-bold rounded-md shadow-lg ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
               disabled={loading}
             >
               {loading ? 'Submitting...' : 'Submit'}

@@ -4,7 +4,7 @@ import Cards from "./Cards"
 
 const Vision = () => {
     return (
-        <div className="relative bg-white pb-[8%] pt-[4%] overflow-x-hidden bg-cover bg-center grid p-20"
+        <div className="relative bg-white overflow-x-hidden bg-cover bg-center grid p-8"
         style={{
                 backgroundImage: `url(${circular})`,
                 backgroundSize: 'cover',

@@ -86,11 +86,11 @@ const ContactBody = () => {
       }}>
       <div className="absolute top-0 left-0 w-full h-full bg-blue-50 opacity-95"></div>
       <ToastContainer />
-      <div className="text-center font-extrabold text-shadow-xl transform animate-slide-up text-4xl py-4">
+      <div className="text-center font-extrabold text-shadow-xl transform animate-slide-up text-4xl py-3 md:py-4">
         Connect With Us
       </div>
       <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-28 z-10">
-        <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0 text-center text-balance transform animate-slide-up">
+        <div className="w-full md:pl-0 md:pr-0 text-center text-balance transform animate-slide-up">
             <div className="mb-4 w-full text-lg font-normal text-black">
               <p className="py-2">
               If you have any questions, please feel free to <br />
@@ -114,11 +114,11 @@ const ContactBody = () => {
                   <FaLocationDot className="text-xl text-blue-800" />
                   <span className="py-2 text-black text-lg font-semibold">Address</span>
                 </span>
-                <p className="text-black text-lg py-1">2nd Floor, CITN House, Plot 16, Jobi Fele Way, Ikeja, Lagos</p>
-                <p className="text-black text-lg py-1">2nd Floor, Oakland Centre, Plot 2940 Aguiyi Ironsi Street, Maitama, Abuja</p>
+                <p className="text-black text-lg py-1 mb-2 md:mb-0">2nd Floor, CITN House, Plot 16, Jobi Fele Way, Ikeja, Lagos.</p>
+                <p className="text-black text-lg py-1">2nd Floor, Oakland Centre, Plot 2940 Aguiyi Ironsi Street, Maitama, Abuja.</p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row md:justify-around text-center justify-center">
+            <div className="flex flex-col md:flex-row md:justify-around text-center justify-center items-center md:items-start">
               <div className="mt-4 flex gap-5">
                 <div className="flex flex-col gap-2">
                   <span className="flex items-center justify-center gap-2 cursor-pointer">
@@ -253,7 +253,7 @@ const ContactBody = () => {
                     className="form-checkbox"
                     required
                   />
-                  <span className="ml-2 text-sm text-gray-700">I agree to the <Link to="/terms" className="text-blue-500 underline">Terms and Conditions</Link> <span className="text-red-700">*</span></span>
+                  <span className="ml-2 text-sm text-gray-700 text-nowrap">I agree to the <Link to="/terms" className="text-blue-500 underline">Terms and Conditions</Link> <span className="text-red-700">*</span></span>
                 </label>
                 {errors.terms && <p className="text-red-500 text-xs mt-1">{errors.terms}</p>}
               </div>
@@ -261,7 +261,7 @@ const ContactBody = () => {
         <button
           type="submit"
           disabled={loading}
-          className="w-full py-3 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full py-3 px-4 bg-blue-800 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           {loading ? 'Submitting...' : 'Submit'}
         </button>

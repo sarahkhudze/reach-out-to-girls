@@ -34,9 +34,9 @@ const ServiceC = () => {
                         <div
                             key={idx}
                             id={service.id}
-                            className="group cursor-pointer border rounded-lg relative flex flex-col overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow duration-300 h-64 p-6"
+                            className="group cursor-pointer border rounded-lg relative flex flex-col overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow duration-300 h-64 p-3 md:p-6"
                         >
-                            <div className="flex flex-col items-center justify-start h-full space-y-4">
+                            <div className="flex flex-col items-center justify-start h-full space-y-2 md:space-y-4">
                                 <p className="text-lg font-bold text-center text-gray-900">{service.title}</p>
                                 <p className="text-sm text-center text-gray-700 px-4">{service.description}</p>
                             </div>
