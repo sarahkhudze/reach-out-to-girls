@@ -13,8 +13,8 @@ const CTAServices = () => {
       }}
     >
 
-      <div className="absolute md:z-50 text-4xl md:text-5xl text-white w-full h-full md:top-8 flex items-end md:justify-start justify-center">
-        <div className="block ml-9 text-left font-extrabold text-shadow-xl mb-[15%] transform animate-slide-up">
+      <div className="absolute md:z-50 text-3xl md:text-5xl text-white w-full h-full  flex items-end md:justify-start justify-center">
+        <div className="block font-extrabold text-shadow-xl mb-[15%] transform animate-slide-up mx-auto">
           Our Services
         </div>
       </div>

@@ -9,8 +9,9 @@ const PreCTAAbout = () => {
                 position: "relative",
             }}
         >
-            <div className=" absolute md:z-50 text-[50%] md:text-5xl text-left text-white w-full h-full md:top-8 flex items-end justify-start">
-                <div className="hidden md:block ml-9 text-left font-extrabold text-shadow-xl mb-[15%] transform animate-slide-up">
+            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+            <div className=" absolute md:z-50 text-lg md:text-5xl text-left text-white w-full h-full md:top-8 flex items-end justify-start">
+                <div className="block ml-2 md:ml-9 text-left font-extrabold text-shadow-xl mb-[31%] md:mb-[15%] transform animate-slide-up">
                     <p> Advancing Technology With Innovation</p>
                 </div>
             </div>
