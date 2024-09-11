@@ -108,7 +108,7 @@ export {
     aCareer, officeSpace, contactIde, logoPicu, aboutUs, careerPic, aboutUsPic,
     off1, off2, off3, off4, off5, off6, off7, off8, Sunset, jideAgbaje, circular,
     bg, robot, zeroreg, face, finger, home, card1, card2, card3, card4,
-    home2, identikoWeb, vmware, veritas, neuro, microsoft, lenovo, idemia, hp,
+    home2, identikoWeb, vmware, veritas, microsoft, lenovo, idemia, hp,
     cisco, msPix, nigPix, recognition, identiko, no1, no2, no3, no4, no5, no6,
     no7, no8, no9, no10, no11, no12, no13, no14, no15, no17, no18, no19, no20,
     no21, no23, no25, no27, officeSpace2, homela, serviceso, careero,
