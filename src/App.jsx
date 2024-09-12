@@ -25,7 +25,7 @@ const Layout = () => {
       {<Header />}
       <ScrollRestoration />
       <Outlet />
-      {<Footer />} 
+      {<Footer />}
     </div>
   );
 };

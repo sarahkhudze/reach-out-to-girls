@@ -3,6 +3,7 @@ import sterlingL from "../../assets/partners/sterlingL.svg";
 import n_logo from "../../assets/partners/n_logo.svg";
 import telpoL from "../../assets/partners/telpoL.svg";
 import veeamL from "../../assets/partners/veeamL.svg";
+import lassraL from "../../assets/partners/lasrraL.png";
 
 const partners1 = [
   { logo: microsoftL, alt: "msImg" },
@@ -21,6 +22,8 @@ const partners2 = [
   { logo: telpoL, alt: "telpo" },
   { logo: veeamL, alt: "veeam" },
   { logo: lenovoL, alt: "msImg" },
+  { logo: lassraL, alt: "lassraLogo" },
+
 ];
 
 const Partners = () => {
@@ -50,7 +53,7 @@ const Partners = () => {
 
 <div className="w-full mt-4 text-center overflow-hidden relative">
   <div className="marquee">
-    <div className="marquee-content reverse gap-6">
+    <div className="marquee-content gap-6">
       {partners2.concat(partners2).map((partner, index) => (
         <div key={index} className="flex md:p-1 md:gap-4 justify-center items-center">
           <img
