@@ -42,7 +42,7 @@ const Partners = () => {
           <img
             src={partner.logo}
             alt={partner.alt}
-            className="h-24 md:h-48 object-contain"
+            className="h-24 md:h-32 object-contain"
             // Ensures uniform height and proper aspect ratio
           />
         </div>
@@ -59,7 +59,7 @@ const Partners = () => {
           <img
             src={partner.logo}
             alt={partner.alt}
-            className="h-24 md:h-48 object-contain"
+            className="h-24 md:h-32 object-contain"
             // Ensures uniform height and proper aspect ratio
           />
         </div>
