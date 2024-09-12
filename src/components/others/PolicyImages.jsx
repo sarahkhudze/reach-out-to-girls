@@ -5,6 +5,7 @@ import NDPR from "../../assets/NDPR.png";
 // import NDPR_QR from "../../assets/NDPR_QR.svg";
 import ISO_IEC_27001_T from "../../assets/ISO_IEC_27001_T.png";
 import ISO_IEC_27701_T from "../../assets/ISO_IEC_27701_T.png";
+import {Link} from "react-router-dom";
 
 const PolicyImages = () => {
     // const [isVisible, setIsVisible] = useState(false);
@@ -37,9 +38,10 @@ const PolicyImages = () => {
                     // onClick={scrollToTop}
                     className="fixed flex items-end justify-end bottom-2 z-50 right-2 gap-2 transition-all duration-300"
                 >
-                    <a href = '/isms-policy'>
+                    {/* <a href = '/isms-policy'>
                     <img src={ISO_IEC_27701_T} alt="ISO_IEC_27701_T" className="w-[52px] cursor-pointer"/>
-                    </a>
+                    </a> */}
+                    <Link to ={'/isms-policy'}><img src={ISO_IEC_27701_T} alt="ISO_IEC_27701_T" className="w-[52px] cursor-pointer"/></Link>
 
                     <a href = '/isms-policy'>
                     <img src={ISO_IEC_27001_T} alt="ISO_IEC_27001_T" className="w-[52px] cursor-pointer" />
