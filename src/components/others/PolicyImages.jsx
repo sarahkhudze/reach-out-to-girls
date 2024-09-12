@@ -42,10 +42,11 @@ const PolicyImages = () => {
                     <img src={ISO_IEC_27701_T} alt="ISO_IEC_27701_T" className="w-[52px] cursor-pointer"/>
                     </a> */}
                     <Link to ={'/isms-policy'}><img src={ISO_IEC_27701_T} alt="ISO_IEC_27701_T" className="w-[52px] cursor-pointer"/></Link>
+                    <Link to ={'/isms-policy'}><img src={ISO_IEC_27001_T} alt="ISO_IEC_27001_T" className="w-[52px] cursor-pointer"/></Link>
 
-                    <a href = '/isms-policy'>
+                    {/* <a href = '/isms-policy'>
                     <img src={ISO_IEC_27001_T} alt="ISO_IEC_27001_T" className="w-[52px] cursor-pointer" />
-                    </a>
+                    </a> */}
 
                     <a href = 'https://services.ndpc.gov.ng/portal/?page=verify-c&d=ang3592545471880&id=94692&sn=4064f8e0fc63229562d2c4932282427e&t=audit_filing&tp=nwp_audit'>
                     <img src={NDPR} alt="NDPR" className="w-[52px] cursor-pointer" />
