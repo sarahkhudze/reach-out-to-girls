@@ -52,7 +52,7 @@ const PrivacyBody = () => {
         <br />
         <p id="div6" className={` text-md md:text-lg`}>
           6) For questions about this policy or our privacy practices, please
-          contact us at privacy@solutionsincmw.com
+          contact us at info@solutionsincmw.com
         </p>
         <br />
         <br />

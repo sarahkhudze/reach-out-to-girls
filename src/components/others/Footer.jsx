@@ -29,7 +29,7 @@ const Footer = () => {
               </div>
             </a>
 
-            <a href="https://www.linkedin.com/company/solutionsincmw/">
+            <a href="https://www.linkedin.com/in/solutions-inc-3561b138b/">
               <div className="rounded-full border border-white p-2">
                 <FaLinkedin />{" "}
               </div>{" "}
