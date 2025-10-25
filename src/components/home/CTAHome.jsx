@@ -1,61 +1,24 @@
-import { LandingVid } from "../../assets";
-import { Link } from "react-router-dom";
-import arrow_down from "../../assets/arrow_down.svg";
-import { useState, useEffect } from "react";
-
 const CTAHome = () => {
-  const [videoLoaded, setVideoLoaded] = useState(false);
-  const [videoLoading, setVideoLoading] = useState(true);
-
-  useEffect(() => {
-    const video = document.querySelector("video");
-    video.addEventListener("loadeddata", () => {
-      setVideoLoaded(true);
-      setVideoLoading(false);
-    });
-    setTimeout(() => {
-      if (!videoLoaded) {
-        setVideoLoading(false);
-      }
-    }, 5000);
-  }, [videoLoaded]);
-
   return (
-    <div
-      className="h-full md:h-screen overflow-hidden relative"
-      style={{
-        backgroundColor: videoLoading ? "#2959A7" : "transparent",
-      }}
-    >
-      <video
-        className="h-full md:h-auto bg:cover bg:center min-w-full min-h-full relative m-0 p-0"
-        src={LandingVid}
-        autoPlay
-        loop
-        muted
-        alt="img1"
-      />
-
-      <div className=" absolute md:z-50 text-[50%] md:text-[150%] text-left text-white w-full h-full md:top-0 flex items-end justify-start">
-        <div className="ml-9 text-left text-shadow-lg mb-[15%]">
-          <p className="md:text-[40px] mb-4">Identiko Integrated Solutions</p>
-          <p> Your Ultimate Destination for Digital Identity,  </p>
-          <p> Verification, and Technology Solutions.</p>{" "}
-        </div>
-
-        <Link to="#section-1">
-          <div
-            className="absolute top-[80%] left-0 right-0 mx-auto hidden md:flex justify-center
-            items-center text-white font-bold rounded-full"
-          >
-            <div className="rounded-full p-3 animate-bounce">
-              <img src={arrow_down} className="w-6 h-auto" />
+        <div
+            className="bg-no-repeat bg-cover relative h-[40vh] lg:h-[70vh] w-full"
+            style={{
+              
+                backgroundPosition: 'center',
+                position: "relative",
+            }}
+        >
+            <div className="absolute top-0 left-0 w-full h-full bg-[#096E6A]"></div>
+            <div className=" absolute text-3xl lg:text-5xl text-left text-white w-full h-full lg:top-8 flex items-end justify-start">
+                <div className="block ml-2 lg:ml-9 text-left font-extrabold text-shadow-xl mb-[22%] lg:mb-[15%] transform animate-slide-up pl-4 w-[60%] lg:w-fit">
+                    <p> Solution Inc: Where Innovation meets Impact</p>
+                </div>
+              
             </div>
-          </div>
-        </Link>
-      </div>
-    </div>
-  );
+          
+            <style>{`@keyframes slide-up{ from{ transform: translateY(100%); opacity: 0 } to{ transform: translateY(0%); opacity: 1 }} .animate-slide-up {animation: slide-up 2s ease-out;`} </style>
+        </div>
+    );
 };
 
 export default CTAHome;

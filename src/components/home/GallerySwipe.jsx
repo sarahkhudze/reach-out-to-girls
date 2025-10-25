@@ -1,79 +1,71 @@
 import { useState, useEffect } from 'react';
-// import { lagg, , las } from '../../assets';
-import lasrra from '../../assets/lasrra.svg';
-import nimc from '../../assets/nimc.svg';
-import mysd from '../../assets/mysd.svg';
+import { salai, salaii } from '../../assets';
 
 const GallerySwipe = () => {
   const [loading, setLoading] = useState(true);
-  const projects = [
+
+  const founders = [
     {
-      img: mysd,
-      title: 'LAGOS STATE MINISTRY OF YOUTH & SOCIAL DEVELOPMENT',
-      description: 'MYSD Engagement portal',
+      img: salai,
+      title: 'Sarah Khudze',
+      description:
+        'Sarah Khudze is a visionary leader and dedicated advocate for STEM education, women empowerment, and digital literacy, with a strong passion for empowering young girls and women from underserved communities. As a skilled innovation manager, data manager, and software developer, Sarah brings a unique combination of technical expertise and leadership acumen to her work. A Mandela Washington Fellow, she has received extensive training in organizational leadership and is well-equipped to drive meaningful change.',
     },
     {
-      img: nimc,
-      title: 'NATIONAL IDENTITY MANAGEMENT COMMISSION',
-      description: 'ABIS Upgrade and Support',
-    },
-    {
-      img: lasrra,
-      title: 'LAGOS STATE RESIDENTS’ REGISTRATION AGENCY',
-      description: 'Lagos Resident Smart ID CARD',
+      img: salaii,
+      title: 'Philip Banda',
+      description:
+        'Philip is a passionate and proficient professional with over 7 years of experience in program and project management. His detailed expertise lies in research, monitoring and evaluation, data management, community engagement, project design, and implementation. He is strongly committed to providing sustainable solutions for social, public, and environmental health challenges. Philip is dedicated to improving community well-being and making a positive impact on our environment.',
     },
   ];
 
   useEffect(() => {
-    // Simulate an API call or image loading time
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000); // Set loading to false after 2 seconds
+    const timer = setTimeout(() => setLoading(false), 2000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className='overflow-x-hidden overflow-y-hidden flex flex-col items-center mb-4'>
-      <h2 className="text-center text-xl md:text-3xl font-bold text-black md:mt-12 mb-2">
+    <div className="overflow-hidden py-24 px-4 flex flex-col items-center">
+      <h2 className="text-center text-3xl md:text-4xl font-bold text-[#E8B504] mb-10">
         {loading ? (
-          <div className="h-8 bg-gray-300 animate-pulse w-3/4 md:w-1/2 mx-auto"></div>
+          <div className="h-8 bg-gray-300 animate-pulse w-48 md:w-64 mx-auto rounded"></div>
         ) : (
-          'OUR FEATURED WORKS'
+          'Meet the Founders'
         )}
       </h2>
-      <span className="text-base md:text-xl text-center w-[90%] md:w-[70%]">
-        {loading ? (
-          <div className="h-4 bg-gray-300 animate-pulse w-3/4 md:w-2/3 mx-auto mt-2"></div>
-        ) : (
-          'Explore some of our top projects, showcasing our expertise and innovation in software and identity solutions.'
-        )}
-      </span>
-      <div className='flex flex-col md:flex-row justify-center items-center gap-10 md:gap-12 md:p-12 p-3'>
-        {projects.map((project, idx) => (
-          <div key={idx} className="shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 w-80 md:w-[30%] h-[330px] border rounded-lg">
-            <div className='bg-white border rounded-lg overflow-hidden h-full flex flex-col items-center gap-1'>
-              {loading ? (
-                <div className="w-[280px] h-40 bg-gray-300 animate-pulse mt-4"></div>
-              ) : (
-                <img
-                  src={project.img}
-                  alt='projectImg'
-                  className='w-[80%] md:w-[80%] h-40 object-cover mt-4'
-                />
-              )}
-              <div className='p-4 flex flex-col justify-between w-full gap-2'>
-                {loading ? (
-                  <div className="h-4 bg-gray-300 animate-pulse w-3/4 mx-auto mt-2"></div>
-                ) : (
-                  <p className='text-base md:text-lg font-bold text-gray-800 text-center'>{project.title}</p>
-                )}
-                {loading ? (
-                  <div className="h-4 bg-gray-300 animate-pulse w-2/3 mx-auto mt-2"></div>
-                ) : (
-                  <p className='text-gray-600 mt-2 text-center'>{project.description}</p>
-                )}
-              </div>
-            </div>
+
+      {/* Founders container — side by side on medium+ screens */}
+      <div className="w-full max-w-6xl flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 ">
+        {founders.map((founder, idx) => (
+          <div
+            key={idx}
+            className="flex flex-col items-center text-justify w-full md:w-auto max-w-xs"
+          >
+            {loading ? (
+              <div className="w-32 h-32 md:w-40 md:h-40 bg-gray-300 animate-pulse rounded-full"></div>
+            ) : (
+              <img
+                src={founder.img}
+                alt={founder.title}
+                className="w-32 h-32 md:w-48 bg-gray-800 md:h-72 object-contain rounded-full mb-4 "
+              />
+            )}
+
+            {loading ? (
+              <>
+                <div className="h-6 bg-gray-300 animate-pulse w-3/4 mx-auto mt-2 rounded"></div>
+                <div className="h-4 bg-gray-300 animate-pulse w-2/3 mx-auto mt-3 rounded"></div>
+                <div className="h-4 bg-gray-300 animate-pulse w-2/3 mx-auto mt-2 rounded"></div>
+                <div className="h-4 bg-gray-300 animate-pulse w-1/2 mx-auto mt-2 rounded"></div>
+              </>
+            ) : (
+              <>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">{founder.title}</h3>
+                <p className="text-gray-600 text-lg md:text-base leading-relaxed">
+                  {founder.description}
+                </p>
+              </>
+            )}
           </div>
         ))}
       </div>

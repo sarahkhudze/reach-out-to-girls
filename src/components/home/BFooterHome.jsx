@@ -1,55 +1,36 @@
-import { officeSpace } from "../../assets";
-import { useState, useEffect } from "react";
-
+import { sala7 } from "../../assets";
 const BFooterHome = () => {
-    const [isVisible1, setIsVisible1] = useState(false);
-    const [isVisible2, setIsVisible2] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const top1 = document.getElementById('div1').getBoundingClientRect().top;
-            const top2 = document.getElementById('div2').getBoundingClientRect().top;
-
-            const windowHeight = window.innerHeight;
-
-            setIsVisible1(top1 < windowHeight);
-            setIsVisible2(top2 < windowHeight);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-
-    return (
-
-        <div className="w-full mx-auto h-fit flex flex-col md:flex-row justify-center items-center mt-20 mb-20">
-            <div id="div2" className={`bg-white text-black gap-10 pt-4 md:pt-10 items-center md:w-[40%] text-left ml-[6%] mr-[6%] justify-start duration-500 transition-all scroll-smooth delay-300 ${isVisible2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'}`}>
-                <h2 className="font-semibold text-xl md:text-3xl md:mb-2 ">
-                    LATEST NEWS IN IDENTIKO: IDENTIKO BLOG
-                </h2>
-                <p className="text-xs md:text-xs pr-4 md:pr-0 py-4 md:py-0">
-                    <p>
-                        When you use Identiko Integrated Solutions Limited Services, we collect
-                        information sent to us by your computer, mobile phone or other electronic
-                        access device. The automatically collected information includes but not
-                        limited to- data about the pages you access, computer IP address, device
-                        ID or unique identifier, device type, geo-location information, computer and connection information, mobile network information, statistics on page views, traffic to and from the sites, referral URL, ad data, standard web log data, still and
-                        moving images.</p>  <br /><br />
-
-                    <p>We may also collect information you provide us including but not limited to
-                        information on web form, survey responses account update information, email,
-                        phone number.</p> 
-                   
-                </p>
-            </div>
-            <div id="div1" className={` md:w-[50%] ml-[6%] mr-[6%] duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
-                <img src={officeSpace} className="bg-no-repeat bg-center z-1 shadow-xl rounded-md" />
-            </div>
-        </div>
-    );
+  return (
+    <div className="w-full mx-auto h-[50%] flex flex-col lg:flex-row justify-center items-center mt-8 mb-20 lg:pl-48 lg:pr-48">
+      <div className={`bg-white text-black lg:gap-10 pt-4 lg:pt-10 items-center lg:w-[40%] text-left ml-[6%] mr-[6%] justify-start duration-500 transition-all scroll-smooth delay-300 
+         `}
+      >
+        <h2 className="text-3xl lg:text-3xl md:mb-2 text-center lg:text-justify font-bold mb-4">About Us</h2>
+        <p className="text-lg lg:text-2xl text-justify mb-12 lg:mb-0">
+          Solutions Inc. is a dynamic social enterprise that bridges the gap
+          between business success and social responsibility. Our mission is to
+          harness the power of a for-profit business model to drive positive
+          social change. By reinvesting our profits into community-focused
+          initiatives, we aim to create a sustainable cycle of empowerment and
+          development.
+          <br />
+          <br />
+          At Solutions Inc., we believe that business can be a powerful force
+          for good. Our approach involves delivering high-quality products and
+          services while simultaneously addressing pressing social issues. This
+          dual focus allows us to create lasting value for our customers, our
+          community, and our stakeholders. .
+        </p>
+      </div>
+      <div className={` md:w-[50%] duration-500 transition-all scroll-smooth  `}
+      >
+        <img
+          src={sala7}
+          className="bg-no-repeat bg-center z-1 shadow-xl rounded-md size-[100%] lg:size-[90%]"
+        />
+      </div>
+    </div>
+  );
 };
 
 export default BFooterHome;

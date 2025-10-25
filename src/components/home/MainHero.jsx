@@ -1,17 +1,15 @@
 import { useState, useEffect } from "react";
-import aboutUs from "../../assets/aboutUs.jpg";
-import heroImage from "../../assets/heroImage.jpg";
-import slide3 from "../../assets/slide3.jpg";
-import slide4 from "../../assets/slide4.jpg";
+import sala1 from "../../assets/sala1.jpg";
+import sala2 from "../../assets/sala2.jpg";
+import sala3 from "../../assets/sala3.jpg";
 
 const MainHero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loading, setLoading] = useState(true);
   const slides = [
-    { image: heroImage, text: "Ensuring Reliable and Secure Identity Management" },
-    { image: aboutUs, text: "Empowering Businesses with Cutting-Edge Technology" },
-    { image: slide3, text: "Optimizing Operations for a Smarter Future" },
-    { image: slide4, text: "Ensuring Safety with Real-Time Management" },
+    { image: sala1, text: "Ensuring Reliable and Secure Identity Management" },
+    { image: sala2, text: "Empowering Businesses with Cutting-Edge Technology" },
+    { image: sala3, text: "Optimizing Operations for a Smarter Future" },
   ];
 
   const duplicatedSlides = slides.concat(slides);

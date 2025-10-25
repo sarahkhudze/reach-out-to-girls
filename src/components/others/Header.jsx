@@ -1,21 +1,29 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { identiko } from "../../assets";
-import { MdMenu, MdClose } from "react-icons/md";
+import { salalogo } from "../../assets";
+import { MdMenu, MdClose, MdArrowDropDown } from "react-icons/md";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
+  const [isMobileSolutionsOpen, setIsMobileSolutionsOpen] = useState(false);
   const navigate = useNavigate();
+
   const handleClick = () => {
     if (window.location.pathname !== "/") {
       navigate("/");
     }
   };
 
+  const solutionsItems = [
+    { name: "SoilSmart", url: "https://www.solutionsincmwsoilsmart.online/" },
+  ];
+
   return (
-    <div className="overflow-x-hidden top-0 flex items-center text-black shadow-sm justify-between px-8 py-2 bg-white relative z-50">
+    <div className="overflow-hidden top-0 flex items-center text-black shadow-sm justify-between px-8 py-2 bg-white relative z-50">
+      {/* Logo & Mobile Menu Toggle */}
       <div className="flex items-center gap-4">
-        <div className="md:hidden cursor-pointer z-50">
+        <div className="md:hidden cursor-pointer">
           {isMenuOpen ? (
             <MdClose
               onClick={() => setIsMenuOpen(false)}
@@ -30,27 +38,66 @@ const Header = () => {
         </div>
         <Link to="/" className="flex items-center">
           <img
-            src={identiko}
-            alt="webImg"
+            src={salalogo}
+            alt="Solutions Inc Logo"
             className="w-[65%] max-w-[200px] cursor-pointer rounded-lg ml-4"
-            onClick={handleClick || (() => setIsMenuOpen(false))}
+            onClick={handleClick}
           />
         </Link>
       </div>
 
+      {/* Desktop Navigation */}
       <div className="hidden md:flex items-center justify-center">
         <div className="flex justify-center items-center gap-12">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about-us">About Us</NavLink>
-          <NavLink to="/our-services">Services</NavLink>
-          <NavLink to="/career-page">Career</NavLink>
-          <div className="border p-2 cursor-pointer rounded-md text-white bg-black hover:bg-opacity-90 flex justify-end duration-300">
-            <NavLink to="/contact-us">Contact Us</NavLink>
+
+          {/* Solutions Dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setIsSolutionsOpen(true)}
+            onMouseLeave={() => setIsSolutionsOpen(false)}
+          >
+            <div className="flex items-center gap-1 cursor-pointer">
+              <span>Solutions</span>
+              <MdArrowDropDown
+                className={`transition-transform duration-300 ${
+                  isSolutionsOpen ? "rotate-180" : ""
+                }`}
+              />
+              <span
+                style={{
+                  transform: isSolutionsOpen ? "scaleX(1)" : "scaleX(0)",
+                }}
+                className="absolute -bottom-1 left-0 h-1 w-full bg-[#096E6A] rounded-full transition-transform duration-300 origin-left"
+              />
+            </div>
+
+            {/* Dropdown Menu */}
+            <div
+              className={`absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 py-2 z-[9999] transition-all duration-200 ease-out ${
+                isSolutionsOpen
+                  ? "opacity-100 visible translate-y-0"
+                  : "opacity-0 invisible -translate-y-2"
+              }`}
+            >
+              {solutionsItems.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.url}
+                  className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#096E6A] hover:text-white transition-colors duration-200"
+                  target={item.url.startsWith("http") ? "_blank" : "_self"}
+                  rel={item.url.startsWith("http") ? "noopener noreferrer" : ""}
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Background Blur and Menu */}
+      {/* Mobile Navigation Overlay */}
       {isMenuOpen && (
         <>
           <div
@@ -58,22 +105,69 @@ const Header = () => {
             onClick={() => setIsMenuOpen(false)}
           ></div>
           <div
-            className="md:hidden fixed top-0 left-0 h-screen w-[30vw] bg-black text-white z-50 transform translate-x-[-100%] transition-transform duration-500 ease-in-out"
-            style={{ transform: isMenuOpen ? "translateX(0)" : "translateX(-100%)" }}
+            className="md:hidden fixed top-0 left-0 h-screen w-[70vw] bg-[#096E6A] text-white z-50 transform transition-transform duration-300 ease-in-out"
+            style={{
+              transform: isMenuOpen ? "translateX(0)" : "translateX(-100%)",
+            }}
           >
-            {/* Close Button at the Top */}
-            <div className="flex justify-end p-4">
+            <div className="flex justify-between items-center p-4 border-b border-white">
+              <span className="text-lg font-bold">Menu</span>
               <MdClose
-                className="text-3xl cursor-pointer"
+                className="text-2xl cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               />
             </div>
-            <div>
-              <MobileNavLink to="/" onClick={() => setIsMenuOpen(false)}>Home</MobileNavLink>
-              <MobileNavLink to="/about-us" onClick={() => setIsMenuOpen(false)}>About Us</MobileNavLink>
-              <MobileNavLink to="/our-services" onClick={() => setIsMenuOpen(false)}>Services</MobileNavLink>
-              <MobileNavLink to="/career-page" onClick={() => setIsMenuOpen(false)}>Career</MobileNavLink>
-              <MobileNavLink to="/contact-us" onClick={() => setIsMenuOpen(false)}>Contact Us</MobileNavLink>
+
+            <div className="py-4">
+              <MobileNavLink to="/" onClick={() => setIsMenuOpen(false)}>
+                Home
+              </MobileNavLink>
+              <MobileNavLink
+                to="/about-us"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About Us
+              </MobileNavLink>
+
+              {/* Mobile Solutions Accordion */}
+              <div className="border-t border-white/20">
+                <div
+                  className="py-4 px-6 font-semibold flex items-center justify-between cursor-pointer"
+                  onClick={() =>
+                    setIsMobileSolutionsOpen(!isMobileSolutionsOpen)
+                  }
+                >
+                  <span>Solutions</span>
+                  <MdArrowDropDown
+                    className={`transition-transform duration-300 ${
+                      isMobileSolutionsOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
+                <div
+                  className={`transition-all duration-300 overflow-hidden ${
+                    isMobileSolutionsOpen
+                      ? "max-h-48 opacity-100"
+                      : "max-h-0 opacity-0"
+                  }`}
+                >
+                  {solutionsItems.map((item, index) => (
+                    <a
+                      key={index}
+                      href={item.url}
+                      className="block py-3 px-8 text-sm hover:bg-white hover:text-black transition-colors duration-200 border-b border-white/10"
+                      onClick={() => {
+                        setIsMenuOpen(false);
+                        setIsMobileSolutionsOpen(false);
+                      }}
+                      target={item.url.startsWith("http") ? "_blank" : "_self"}
+                      rel={item.url.startsWith("http") ? "noopener noreferrer" : ""}
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </>
@@ -82,55 +176,46 @@ const Header = () => {
   );
 };
 
+// Desktop NavLink
+// eslint-disable-next-line react/prop-types
 const NavLink = ({ to, children }) => {
-  const [open, setOpen] = useState(false);
   const [active, setActive] = useState(false);
   const currentUrl = window.location.pathname;
 
   useEffect(() => {
-    if (currentUrl === to) {
-      setActive(true);
-    } else {
-      setActive(false);
-    }
+    setActive(currentUrl === to);
   }, [currentUrl, to]);
 
   return (
-    <div
-  onMouseEnter={() => setOpen(true)}
-  onMouseLeave={() => setOpen(false)}
-  className="relative h-fit w-fit cursor-pointer"
->
-  <Link
-    to={to}
-    className={`${active ? "font-bold" : ""} relative`}
-  >
-    {children}
-    <span
-      style={{
-        transform: active || open ? "scaleX(1)" : "scaleX(0)",
-      }}
-      className="absolute -bottom-1 left-0 h-1 w-full bg-black rounded-full transition-transform duration-300 origin-left"
-    />
-  </Link>
-</div>
-
+    <div className="relative cursor-pointer">
+      <Link to={to} className={`${active ? "font-bold" : ""} relative`}>
+        {children}
+        <span
+          style={{
+            transform: active ? "scaleX(1)" : "scaleX(0)",
+          }}
+          className="absolute -bottom-1 left-0 h-1 w-full bg-[#096E6A] rounded-full transition-transform duration-300 origin-left"
+        />
+      </Link>
+    </div>
   );
 };
 
+// Mobile NavLink
+// eslint-disable-next-line react/prop-types
 const MobileNavLink = ({ to, children, onClick }) => {
   const currentUrl = window.location.pathname;
 
   return (
     <div
-      className={`py-4 cursor-pointer hover:bg-white  hover:text-black duration-300 ${
-        currentUrl === to ? "font-extrabold border-white border-r-4" : "font-light"
+      className={`py-4 px-6 cursor-pointer hover:bg-white hover:text-black duration-300 border-b border-white/20 ${
+        currentUrl === to ? "font-extrabold bg-white text-black" : "font-light"
       }`}
       onClick={onClick}
     >
-      <p className="text-center">
-        <Link to={to}>{children}</Link>
-      </p>
+      <Link to={to} className="block">
+        {children}
+      </Link>
     </div>
   );
 };

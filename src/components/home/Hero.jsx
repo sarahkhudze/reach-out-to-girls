@@ -1,188 +1,74 @@
-// import { useState } from "react"
-import { useNavigate } from "react-router-dom/dist";
-import tech_solution from "../../assets/services_icon/tech_solution.svg";
-import software_application from "../../assets/services_icon/software_application.svg";
-import identity_solution from "../../assets/services_icon/identity_solution.svg";
-import { card1, card2, card3, card4, no1, no2, no3 } from "../../assets";
-
 const services = [
   {
-    id: "div2",
-    image: no2,
-    img: software_application,
-    title: "Software & IT Solutions",
+    title: "Public Environmental Health and ICT",
     description:
-      "Innovative software and IT services streamline operations and enhance efficiency. From development to integration, we deliver robust solutions tailored to your business needs, ensuring security and scalability.",
-    bgImg: card4,
+      "At Solutions Inc., we recognize the trans-formative power of information and communication technologies (ICT) in enhancing public health. Our initiatives in this area are designed to leverage the latest technological advancements to improve health outcomes and promote environmental sustainability.",
   },
   {
-    id: "div1",
-    image: no1,
-    img: identity_solution,
-    title: "Advanced Technology & Secure Systems",
+    title: "Data & Information Management for Decision Making",
     description:
-      "Comprehensive identity and security services safeguard personal and organizational data. We provide advanced biometric and verification solutions to ensure secure and reliable identity management.",
-    bgImg: card2,
+      "Effective data management is crucial for any organisation aiming to make informed decisions and achieve operational excellence. Solutions Inc. offers comprehensive data and information management services to help organizations harness the power of their data.",
   },
   {
-    id: "div3",
-    image: no3,
-    img: tech_solution,
-    title: "Urban Innovation & Surveillance Solutions",
+    title: "Smart Agriculture and Value Addition",
     description:
-      "Tailored managed services and smart solutions optimize business processes and customer experiences. We offer specialized support to enhance operational efficiency and meet unique organizational needs.",
-    bgImg: card3,
+      "Agriculture is the backbone of many communities, and at Solutions Inc., we aim to revolutionize this sector through the integration of smart technologies. Our programs in smart agriculture and value addition are designed to boost productivity, improve sustainability, and increase the economic value of agricultural products.",
+  },
+
+  {
+    title: "Digital Skills Training",
+    description:
+      "In today's digital age, ICT skills are essential for personal and professional growth. Solutions Inc. offers comprehensive training programs designed to enhance digital literacy and technical skills. Our ICT courses cover a wide range of topics, including basic computer skills, software development, networking, cybersecurity, and more.",
+  },
+
+  {
+    title: "Workspace",
+    description:
+      "Innovation thrives in environments that foster creativity and collaboration. Solutions Inc. provides dedicated workspace for innovators, offering a conducive environment for entrepreneurs, startups, and creative professionals to work, meet, and collaborate. Our workspaces are equipped with modern amenities, including high-speed internet, meeting rooms, and collaborative areas, designed to inspire creativity and facilitate networking.",
+  },
+
+  {
+    title: "Woodwork and Crafting",
+    description:
+      "At Solutions Inc., we pride ourselves on offering bespoke woodwork products crafted with precision and care. Our skilled artisans create unique and custom pieces tailored to our customers' specifications, ensuring each product is a work of art that meets the highest standards of quality and craftsmanship. From furniture and home decor to personalized gifts and custom installations, our woodwork products are designed to add elegance and functionality to any space.",
   },
 ];
 
 const Hero = () => {
-  const navigate = useNavigate();
-  const handleClick = () => {
-    if (window.location.pathname !== "/our-services") {
-      navigate("/our-services");
-    }
-  };
-
   return (
-    <div id="section-1" className="w-full mt-16">
+    <div
+      id="section-1"
+      className="w-full pt-[16%] lg:pt-[10%] pb-[6%] px-4 md:px-0 bg-black"
+    >
       <div className="max-w-screen-xl mx-auto text-center items-center justify-center">
-        <div className="text-center text-black w-[90%] mx-auto">
-          <p className="text-xl md:text-3xl font-bold mb-2"> OUR SERVICES </p>
-          <p className="text-base md:text-xl">
-            {" "}
-            Empowering Your Business with Innovative Solutions and Expert Support{" "}
-          </p>
+        <div className="text-center text-[#E8B504] w-[90%] mx-auto font-bold">
+          <p className="text-2xl md:text-3xl mb-1"> OUR SERVICES </p>
         </div>
 
-        <div className="max-w-screen-xl mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2%] md:gap-[2%] px-3 md:px-12 place-items-center">
+        <div className="max-w-screen-xl mx-auto  py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[2%] md:gap-[4%] px-3 md:px-12 place-items-center">
           {services.map((service, idx) => (
             <div
               key={idx}
               id={service.id}
-              className="w-[100%] group cursor-pointer border rounded-md relative h-fit flex flex-col items-center
-                        overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl
+              className="w-[100%] group cursor-pointer bg-black  border rounded-md relative h-[100%] flex flex-col items-center
+                        overflow-hidden text-[#ffffff]  shadow-md hover:shadow-3xl hover:scale-105 transition-all duration-300
                         grid-cols-1
-                        text-center duration-500 pb-20 pt-20"
+                        text-center pb-20 pt-20"
             >
-              <div
-                className={`card-bg absolute bg-cover bg-center bg-no-repeat inset-0 transition-opacity duration-500 ${service.id}`}
-                style={{ backgroundImage: `url(${service.bgImg})` }}
-              ></div>
-              <div className="overlay absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-500"></div>
-
-
-              <img
-                src={service.img}
-                className=" title w-20 z-10 group-hover:filter group-hover:invert group-hover:brightness-0 mt-[-40px] mb-20 group-hover:text-white  group-hover:translate-y-[-300%]"
-                alt={service.title}
-              />
-              <p className="absolute description text-balance text-base md:text-lg mt-16 mb-12 md:mb-0 font-bold z-10 group-hover:text-white group-hover:translate-y-[-380%]
-              md:group-hover:translate-y-[-350%]">
+              <p
+                className="description text-2xl md:text-2xl z-10 text-[#E8B504] font-bold mb-4 md:mb-6
+             "
+              >
                 {" "}
                 {service.title}{" "}
               </p>
-              <p className="absolute description md:px-8 text-center px-10 text-base md:text-md mt-28 mb-12 md:mb-10 z-10 group-hover:text-white w-fit group-hover:w-full group-hover:translate-y-[-60%] group-hover:text-overflow-ellipsis">
+              <p className="description md:px-8 text-justify px-10 text-lg md:text-xl mt-8 mb-8 md:mb-8 z-10  w-fit group-hover:w-full  ">
                 {service.description}
-                {/* <span className="hidden group-hover:inline">{service.description.slice(service.description.indexOf(" ", 50))}</span> */}
               </p>
             </div>
           ))}
         </div>
-
-
-        <div className="text-center md:mt-2 mb-24">
-          <button
-            className="text-[#003997] hover:text-white shadow-md border rounded-full w-fit p-3 bg-[#ffffff] hover:bg-[#003997]"
-            onClick={handleClick}
-          >
-            See all services {"⇾"}
-          </button>
-        </div>
       </div>
-
-      <style>
-        {`
-          @keyframes slide-up{
-           from{
-            transform: translateY(100%);
-            opacity: 0
-            }
-             to{
-            transform: translateY(0%);
-              opacity: 1
-            }
-          }
-          .animate-slide-up {
-          animation: slide-up 2s ease-out;
-        }
-
-        .group:hover img{
-          opacity: 1;
-        }
-
-         .group:hover .title{
-          transform: translateY(0)
-          transition: transform 0.5s ease-in-out
-        }
-
-          .group:hover .description{
-          transform: translateY(100%)
-          transition: transform 0.5s ease-in-out
-        }
-
-       .details {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-
-          .group:hover .details{
-          transform: translateY(0)
-          transition: transform 0.5s ease-in-out
-          opacity: 1;
-        }
-
-        .card-bg{
-          opacity: 0;
-        }
-        .group:hover .card-bg{
-          opacity: 1;
-        }
-        #div1.card-bg{
-          background-image: url(${card1});
-        }
-        #div2.card-bg{
-          background-image: url(${card2});
-        }
-        #div3.card-bg{
-          background-image: url(${card3});
-        }
-        #div4.card-bg{
-          background-image: url(${card4});
-        }
-
-         .title {
-          overflow: hidden;
-          display: -webkit-box;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
-          transition: all 1s ease-in-out;
-        }
-
-        .description {
-          overflow: hidden;
-          display: -webkit-box;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
-          transition: all 1s ease-in-out;
-        }
-
-        .group:hover .description {
-        -webkit-line-clamp:unset;
-        max-height: 500px;
-        overflow: visible
-        }
-        `}
-      </style>
     </div>
   );
 };
