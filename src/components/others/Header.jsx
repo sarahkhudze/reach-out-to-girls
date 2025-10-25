@@ -129,7 +129,6 @@ const Header = () => {
                 About Us
               </MobileNavLink>
 
-              {/* Mobile Solutions Accordion */}
               <div className="border-t border-white/20">
                 <div
                   className="py-4 px-6 font-semibold flex items-center justify-between cursor-pointer"
@@ -161,7 +160,9 @@ const Header = () => {
                         setIsMobileSolutionsOpen(false);
                       }}
                       target={item.url.startsWith("http") ? "_blank" : "_self"}
-                      rel={item.url.startsWith("http") ? "noopener noreferrer" : ""}
+                      rel={
+                        item.url.startsWith("http") ? "noopener noreferrer" : ""
+                      }
                     >
                       {item.name}
                     </a>
@@ -176,7 +177,6 @@ const Header = () => {
   );
 };
 
-// Desktop NavLink
 // eslint-disable-next-line react/prop-types
 const NavLink = ({ to, children }) => {
   const [active, setActive] = useState(false);
@@ -201,7 +201,6 @@ const NavLink = ({ to, children }) => {
   );
 };
 
-// Mobile NavLink
 // eslint-disable-next-line react/prop-types
 const MobileNavLink = ({ to, children, onClick }) => {
   const currentUrl = window.location.pathname;

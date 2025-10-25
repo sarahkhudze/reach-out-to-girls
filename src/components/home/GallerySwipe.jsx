@@ -34,7 +34,6 @@ const GallerySwipe = () => {
         )}
       </h2>
 
-      {/* Founders container — side by side on medium+ screens */}
       <div className="w-full max-w-6xl flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 ">
         {founders.map((founder, idx) => (
           <div

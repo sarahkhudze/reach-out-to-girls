@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import {sala5, circular } from '../../assets';
 
 const SkeletonLoader = () => {
   return (
