@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    font-family: Roboto; /* Apply default font */
+    font-family: Roboto; 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
