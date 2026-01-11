@@ -6,7 +6,6 @@ import { new9 } from "../assets";
 const EmpowermentPage = () => {
   return (
     <div className="w-full bg-white py-12 md:py-16 px-4">
-      {/* Hero Section — matches your card style */}
       <div className="max-w-4xl mx-auto text-center mb-16">
         <div className="flex justify-center mb-8">
           <img
@@ -27,7 +26,6 @@ const EmpowermentPage = () => {
         </p>
       </div>
 
-      {/* Full Content */}
       <div className="max-w-5xl mx-auto space-y-8 text-gray-700">
         <div className="bg-[#f8fbfd] border-l-4 border-[#65a7b2] p-6 rounded-r-lg">
           <h2 className="text-xl font-bold text-[#292496] mb-3">Our Approach</h2>
@@ -46,7 +44,6 @@ const EmpowermentPage = () => {
           </p>
         </div>
 
-        {/* Impact Stats (optional) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
           <div className="text-center p-5 bg-white border border-[#65a7b2]/20 rounded-xl">
             <div className="text-3xl font-bold text-[#292496]">200+</div>
@@ -62,7 +59,6 @@ const EmpowermentPage = () => {
           </div>
         </div>
 
-        {/* CTA */}
         <div className="text-center mt-12">
           <p className="text-lg mb-6">Support our mission to bring digital opportunity to every girl.</p>
           <Link

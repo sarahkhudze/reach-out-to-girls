@@ -22,11 +22,11 @@ import EmpowermentPage from "./pages/EmpowermentPage";
 import Hero from "./components/home/Hero";
 import ScrollToTop from "./components/others/ScrollToTop";
 import AOS from "aos";
-import "aos/dist/aos.css"; // AOS styles
+import "aos/dist/aos.css"; 
 
 AOS.init({
   duration: 800,
-  once: true, // animate only once when scrolling down
+  once: true, 
 });
 
 const Layout = () => {
