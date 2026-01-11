@@ -1,55 +1,55 @@
-import { sala8 } from "../../assets";
+import { new13 } from "../../assets";
 
 const CTAHome = () => {
   const colors = ["#FF6B6B", "#4ECDC4", "#45B7D1", "#FFBE0B", "#FB5607"];
 
   return (
     <div
-      className="relative h-[40vh] lg:h-[70vh] w-full bg-no-repeat bg-cover bg-center overflow-hidden"
+      className="relative h-[40vh] lg:h-[90vh] w-full bg-no-repeat bg-cover bg-center overflow-hidden"
       style={{
-        backgroundImage: `url(${sala8})`,
+        backgroundImage: `url(${new13})`,
       }}
     >
-      <div className="absolute top-0 left-0 w-full h-full bg-[#096E6A]/70"></div>
+    
+      {/* <div className="absolute inset-0 bg-blue-20/40"></div> */}
 
       <div
-        className="absolute top-0 left-0 w-full h-2 z-20"
+        className="absolute top-6 right-6 w-32 h-32 rounded-full opacity-30 blur-xl z-10"
         style={{
-          background: `linear-gradient(to right, ${colors[0]}, ${colors[1]}, ${colors[2]}, ${colors[3]}, ${colors[4]})`,
-        }}
-      ></div>
-      <div
-        className="absolute bottom-0 left-0 w-full h-2 z-20"
-        style={{
-          background: `linear-gradient(to right, ${colors[4]}, ${colors[3]}, ${colors[2]}, ${colors[1]}, ${colors[0]})`,
-        }}
-      ></div>
-      <div
-        className="absolute top-0 left-0 h-full w-2 z-20"
-        style={{
-          background: `linear-gradient(to bottom, ${colors[0]}, ${colors[1]}, ${colors[2]}, ${colors[3]}, ${colors[4]})`,
-        }}
-      ></div>
-      <div
-        className="absolute top-0 right-0 h-full w-2 z-20"
-        style={{
-          background: `linear-gradient(to bottom, ${colors[4]}, ${colors[3]}, ${colors[2]}, ${colors[1]}, ${colors[0]})`,
+          background: `radial-gradient(circle, ${colors[1]}, ${colors[3]})`,
         }}
       ></div>
 
-      <div className="absolute text-3xl lg:text-5xl text-white w-full h-full flex items-end justify-start px-4 lg:px-9 pb-[22%] lg:pb-[15%] z-10">
-        <p className="font-extrabold text-shadow-xl max-w-[60%] lg:max-w-none animate-slide-up">
-          Solution Inc: Where Innovation meets Impact
-        </p>
+      <div className="absolute inset-0 flex flex-col items-center justify-center z-20 px-4">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center leading-tight drop-shadow-lg max-w-4xl">
+          <span className="bg-clip-text text-transparent"
+                style={{
+                  backgroundImage: "linear-gradient(to right, #FFFFFF, #FFFFFF)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent"
+                }}>
+            Reach Out to Girls
+          </span>
+        </h1>
       </div>
+     
+      <div className="absolute top-10 left-8 w-3 h-3 rounded-full bg-white opacity-50 animate-bounce"></div>
+      <div className="absolute bottom-16 right-12 w-2 h-2 rounded-full bg-white opacity-60 animate-ping"></div>
 
       <style>{`
         @keyframes slide-up {
-          from { transform: translateY(100%); opacity: 0; }
+          from { transform: translateY(30px); opacity: 0; }
           to { transform: translateY(0); opacity: 1; }
         }
-        .animate-slide-up {
-          animation: slide-up 1.2s ease-out forwards;
+        h1 {
+          animation: slide-up 1s ease-out forwards;
+        }
+        @keyframes pulse {
+          0%, 100% { opacity: 0.8; transform: scale(1); }
+          50% { opacity: 1; transform: scale(1.05); }
+        }
+        .animate-pulse {
+          animation: pulse 2s infinite;
         }
       `}</style>
     </div>

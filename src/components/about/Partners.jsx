@@ -1,90 +1,100 @@
+
 import {
-  sala1,
-  sala10,
-  sala14,
-  sala15,
-  sala2,
-  sala3,
-  sala7,
-  sala8,
-  sala9,
+  new10,
+  new15,
+  new16,
+  new3,
+  new7,
+  reach1,
+  reach10,
+  reach14,
+  reach19,
+  reach2,
+  reach4,
+  reach6,
+  reach7,
+  reach8,
 } from "../../assets";
 
-const partners1 = [
-  { logo: sala1, alt: "Event or Partner 1" },
-  { logo: sala2, alt: "Event or Partner 2" },
-  { logo: sala3, alt: "Event or Partner 3" },
-  { logo: sala7, alt: "Event or Partner 4" },
-  { logo: sala8, alt: "Event or Partner 5" },
-  { logo: sala9, alt: "Event or Partner 6" },
-  { logo: sala10, alt: "Event or Partner 7" },
-  { logo: sala14, alt: "Event or Partner 8" },
-  { logo: sala15, alt: "Event or Partner 9" },
+// All your highlight images
+const highlights = [
+  { img: reach1, alt: "Girls in ICT workshop" },
+  { img: new10, alt: "Scholarship award ceremony" },
+  { img: reach8, alt: "Health education session" },
+  { img: new16, alt: "STEM activity day" },
+  { img: reach14, alt: "Mentorship circle" },
+  { img: new15, alt: "Community outreach" },
+  { img: new3, alt: "Digital literacy training" },
+  { img: new7, alt: "Leadership camp" },
+  { img: reach19, alt: "University admission celebration" },
+  { img: reach7, alt: "Coding club" },
+  { img: reach6, alt: "Women empowerment forum" },
+  { img: reach4, alt: "Rural school visit" },
+  { img: reach2, alt: "Graduation day" },
+  { img: reach10, alt: "Tech demo by girls" },
 ];
 
 const Partners = () => {
   return (
-    <div className="mb-16 md:mb-24 text-center overflow-hidden pt-24 md:pt-32 lg:pt-40 relative">
+    <div className="mb-16 md:mb-24 pt-24 md:pt-16 lg:pt-20 relative overflow-hidden">
+      {/* Subtle background texture */}
       <div
-        className="absolute top-0 left-0 w-full h-full -z-10"
+        className="absolute top-0 left-0 w-full h-full -z-10 opacity-5"
         style={{
-          background:
-            "radial-gradient(circle at top right, #E8B504 0%, transparent 30%), radial-gradient(circle at bottom left, #096E6A 0%, transparent 40%)",
-          opacity: 0.03,
+          backgroundImage: `
+            radial-gradient(circle at 10% 20%, #292496 2px, transparent 3px),
+            radial-gradient(circle at 90% 80%, #65a7b2 2px, transparent 3px)
+          `,
+          backgroundSize: "40px 40px",
         }}
       ></div>
 
-      <div className="flex flex-col items-center justify-center px-4 md:px-6 max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#E8B504] mb-6 relative">
-          Featured Events and Works
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-[#096E6A] rounded-full"></span>
+      <div className="text-center px-4 md:px-6 max-w-4xl mx-auto relative z-10">
+        {/* Handwritten Title */}
+        <h2
+          className="text-3xl md:text-4xl lg:text-5xl font-normal tracking-wide drop-shadow-sm mb-8"
+          style={{
+            fontWeight: 700,
+            color: "#292496",
+            letterSpacing: "0.02em",
+          }}
+        >
+          Highlights
         </h2>
+        <div className="w-20 h-1 bg-[#65a7b2] -translate-y-3 mx-auto rounded-full mb-10"></div>
 
-        <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-          To deliver exceptional results for you, we forge powerful alliances.
-          By collaborating with premier specialists, we enhance our service and
-          product portfolio, ensuring you get innovative, battle-tested
-          solutions that drive growth.
+        {/* Mission-focused description */}
+        <p className="text-gray-700 leading-relaxed text-base md:text-lg max-w-3xl mx-auto">
+          From rural classrooms to university campuses, these are the moments that fuel our mission — 
+          where curiosity meets opportunity, and every girl steps into her power.
         </p>
       </div>
 
-      <div className="w-full mt-16 px-4 md:px-8">
-        <div className="marquee-container overflow-hidden rounded-2xl bg-white/80 backdrop-blur-sm border border-[#096E6A]/10 shadow-lg">
-          <div className="marquee">
-            <div className="marquee-content">
-              {partners1.concat(partners1).map((partner, index) => (
-                <div
-                  key={index}
-                  className="flex justify-center items-center mx-4 md:mx-8 py-8"
-                >
+      {/* Marquee of Highlight Photos */}
+      <div className="w-full mt-12 px-4 md:px-8">
+        <div className="overflow-hidden rounded-2xl bg-white/60 backdrop-blur-sm border border-[#292496]/10 shadow-lg py-6">
+          <div className="flex animate-marquee">
+            {/* Show all images twice for seamless loop */}
+            {[...highlights, ...highlights].map((item, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 mx-3 md:mx-4 flex items-center justify-center"
+              >
+                <div className="bg-white p-2 rounded-xl shadow-sm border border-gray-100">
                   <img
-                    src={partner.logo}
-                    alt={partner.alt}
-                    className="h-48 md:h-64 lg:h-80 xl:h-96 w-auto object-contain rounded-xl shadow-md transition-all duration-500 hover:scale-110 hover:shadow-xl"
+                    src={item.img}
+                    alt={item.alt}
+                    className="h-72 w-72 md:h-80 md:w-80 object-cover rounded-lg transition-transform duration-300 hover:scale-105"
                   />
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
 
+      {/* Animation Styles */}
       <style>{`
-        .marquee-container {
-          position: relative;
-        }
-        .marquee {
-          display: flex;
-          width: 100%;
-        }
-        .marquee-content {
-          display: flex;
-          animation: marquee 50s linear infinite;
-          min-width: max-content;
-        }
-        .marquee-content:hover {
-          animation-play-state: paused;
-        }
         @keyframes marquee {
           0% {
             transform: translateX(0);
@@ -92,6 +102,14 @@ const Partners = () => {
           100% {
             transform: translateX(calc(-50%));
           }
+        }
+        .animate-marquee {
+          display: flex;
+          animation: marquee 40s linear infinite;
+          width: max-content;
+        }
+        .animate-marquee:hover {
+          animation-play-state: paused;
         }
       `}</style>
     </div>

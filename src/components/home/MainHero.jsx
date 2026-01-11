@@ -1,146 +1,56 @@
-import { useState, useEffect } from "react";
-import sala1 from "../../assets/sala1.jpg";
-import sala2 from "../../assets/sala2.jpg";
-import sala3 from "../../assets/sala3.jpg";
+
 
 const MainHero = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [loading, setLoading] = useState(true);
-  const slides = [
-    { image: sala1, text: "Ensuring Reliable and Secure Identity Management" },
-    {
-      image: sala2,
-      text: "Empowering Businesses with Cutting-Edge Technology",
-    },
-    { image: sala3, text: "Optimizing Operations for a Smarter Future" },
-  ];
-
-  const duplicatedSlides = slides.concat(slides);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentSlide((prev) => prev + 1);
-    }, 5000);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
-  useEffect(() => {
-    if (currentSlide === slides.length) {
-      const timeoutId = setTimeout(() => {
-        setCurrentSlide(0);
-      }, 1000);
-      return () => clearTimeout(timeoutId);
-    }
-  }, [currentSlide, slides.length]);
-
-  useEffect(() => {
-    const loadImages = () => {
-      const promises = slides.map((slide) => {
-        return new Promise((resolve) => {
-          const img = new Image();
-          img.src = slide.image;
-          img.onload = resolve;
-        });
-      });
-      Promise.all(promises).then(() => setLoading(false));
-    };
-    loadImages();
-  }, [slides]);
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
-
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
-  };
-
   return (
-    <div className="overflow-hidden w-full h-auto bg-[#edebe8]">
-      <div className="w-full relative">
-        <div
+    <div
+      id="donate"
+      className="w-full py-16 md:py-24 px-4 md:px-8 lg:px-16 relative overflow-hidden"
+      style={{ backgroundColor: "#f8f9fa" }}
+    >
+      {/* Subtle background pattern */}
+      <div
+        className="absolute top-0 left-0 w-full h-full -z-10 opacity-5"
+        style={{
+          backgroundImage: `
+            radial-gradient(circle at 10% 20%, #292496 1px, transparent 2px),
+            radial-gradient(circle at 90% 80%, #65a7b2 1px, transparent 2px)
+          `,
+          backgroundSize: "50px 50px",
+        }}
+      ></div>
+
+      <div className="max-w-5xl mx-auto text-center relative z-10">
+        {/* Handwritten Title */}
+        <h2
+          className="text-3xl md:text-4xl lg:text-5xl font-normal tracking-wide mb-6"
           style={{
-            transform: `translateX(-${(currentSlide % slides.length) * 100}vw)`,
-            transition:
-              currentSlide === slides.length ? "none" : "transform 1s ease",
+            fontWeight: 700,
+            color: "#292496",
+            letterSpacing: "0.02em",
           }}
-          className="w-fit h-full flex transition-transform duration-1000 ease-out"
         >
-          {duplicatedSlides.map((slide, index) => (
-            <div
-              key={index}
-              className="relative w-screen flex items-center justify-center"
-            >
-              {loading ? (
-                <div className="w-full h-64 md:h-96 lg:h-[600px] bg-gray-300 animate-pulse"></div>
-              ) : (
-                <img
-                  className="w-full h-64 md:h-96 lg:h-[70vh] object-cover"
-                  src={slide.image}
-                  alt={`img-${index}`}
-                />
-              )}
-              <div className="absolute z-30 flex flex-col items-center justify-center text-center w-full h-full bg-black bg-opacity-50">
-                <p
-                  className={`text-white font-bold text-xl md:text-4xl text-shadow-xl transform animate-slide-up`}
-                  key={`${index}-${currentSlide}`}
-                >
-                  {slide.text}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+          Support Reach Out to Girls
+        </h2>
+        <div className="w-20 h-1 bg-[#65a7b2] mx-auto -translate-y-3 rounded-full mb-8"></div>
 
-        {/* Navigation Arrows */}
-        <button
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3"
-          onClick={prevSlide}
+        {/* Impact Message */}
+        <p className="text-gray-700 leading-relaxed text-base md:text-lg max-w-3xl mx-auto mb-10">
+          Your gift helps girls in rural Malawi access education, health resources, ICT training, and mentorship. 
+          Every contribution — big or small — plants a seed of change that grows into a lifetime of opportunity.
+        </p>
+
+        {/* Donate Button */}
+        <a
+          href="/donate" // 👈 Link to your dedicated /donate page
+          className="inline-block bg-[#292496] text-white font-bold text-lg md:text-xl px-8 py-4 rounded-full shadow-lg hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl"
         >
-          &#10094;
-        </button>
-        <button
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3"
-          onClick={nextSlide}
-        >
-          &#10095;
-        </button>
+          Donate Now
+        </a>
 
-        {/* Indicators */}
-        <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-3">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              className={`w-3 h-3 rounded-full ${
-                currentSlide === index ? "bg-white" : "bg-gray-500"
-              }`}
-              onClick={() => goToSlide(index)}
-            ></button>
-          ))}
-        </div>
-
-        <style>
-          {`
-          @keyframes slide-up {
-            from {
-              transform: translateY(100%);
-              opacity: 0;
-            }
-            to {
-              transform: translateY(0%);
-              opacity: 1;
-            }
-          }
-          .animate-slide-up {
-            animation: slide-up 2s ease-out;
-          }
-          `}
-        </style>
+        {/* Trust Note */}
+        <p className="mt-6 text-gray-500 text-sm italic">
+          100% of your donation goes directly to program support for girls in Malawi.
+        </p>
       </div>
     </div>
   );

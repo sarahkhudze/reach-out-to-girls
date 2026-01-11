@@ -1,25 +1,111 @@
-import no14 from "../assets/services_icon/no14.jpg"
-import sala1 from "../assets/sala1.jpg"
-import sala2 from "../assets/sala2.jpg"
-import sala3 from "../assets/sala3.jpg"
-import sala5 from "../assets/sala5.jpg"
-import sala6 from "../assets/sala6.jpg"
-import sala7 from "../assets/sala7.jpg"
-import sala8 from "../assets/sala8.jpg"
-import sala9 from "../assets/sala9.jpg"
-import salavid from "../assets/salavid.mp4"
-import sala10 from "../assets/sala10.jpg"
-import salalogo from "../assets/salalogo.jpg"
-import sala11 from "../assets/sala11.jpg"
-import sala12 from "../assets/sala12.jpg"
-import sala13 from "../assets/sala13.jpg"
-import sala14 from "../assets/sala14.jpg"
-import sala15 from "../assets/sala15.jpg"
-import salai from "../assets/salai.jpg"
-import salaii from "../assets/salaii.jpg"
-
+import board1 from "../assets/board1.jpg";
+import board2 from "../assets/board2.jpg";
+import board3 from "../assets/board3.jpg";
+import face1 from "../assets/face1.jpg";
+import face2 from "../assets/face2.jpg";
+import logo1 from "../assets/logo1.png";
+import found1 from "../assets/found1.png";
+import new1 from "../assets/new1.jpg";
+import new2 from "../assets/new2.jpg";
+import new3 from "../assets/new3.jpg";
+import new4 from "../assets/new4.jpg";
+import new5 from "../assets/new5.jpg";
+import new6 from "../assets/new6.jpg";
+import new7 from "../assets/new7.jpg";
+import new8 from "../assets/new8.jpg";
+import new9 from "../assets/new9.jpg";
+import new10 from "../assets/new10.jpg";
+import new11 from "../assets/new11.jpg";
+import new12 from "../assets/new12.jpg";
+import new13 from "../assets/new23.png";
+import new14 from "../assets/new14.jpg";
+import new15 from "../assets/new15.jpg"; 
+import new16 from "../assets/new16.jpg";   
+import new17 from "../assets/new17.jpg";
+import new18 from "../assets/new18.jpg";
+import new19 from "../assets/new19.jpg";
+import team1 from "../assets/team1.jpg";
+import team2 from "../assets/team2.jpg";
+import team3 from "../assets/team3.jpg";
+import team4 from "../assets/team4.jpg";
+import team5 from "../assets/team5.jpg";
+import reach1 from "../assets/reach1.jpg";
+import reach2 from "../assets/reach2.jpg";
+import reach3 from "../assets/reach3.jpg";
+import reach4 from "../assets/reach4.jpg";
+import reach5 from "../assets/reach5.jpg";
+import reach6 from "../assets/reach6.jpg";
+import reach7 from "../assets/reach7.jpg";
+import reach8 from "../assets/reach8.jpg";
+import reach9 from "../assets/reach9.jpg";
+import reach10 from "../assets/reach10.jpg";
+import reach11 from "../assets/reach11.jpg";
+import reach12 from "../assets/reach12.jpg";
+import reach13 from "../assets/reach13.jpg";
+import reach14 from "../assets/reach14.jpg";
+import reach15 from "../assets/reach15.jpg";
+import reach16 from "../assets/reach16.jpg";
+import reach17 from "../assets/reach17.jpg";
+import reach18 from "../assets/reach18.jpg";
+import reach19 from "../assets/reach19.jpg";
+import reach20 from "../assets/reach20.jpg";
+import reach21 from "../assets/reach21.jpg";
+import reach22 from "../assets/reach22.jpg";
+import reach23 from "../assets/reach23.jpg";
 
 export {
-     sala1, salalogo, sala5, sala10, sala7, sala9, salavid, salai,
-    sala11, sala12, sala13, no14, sala2, sala3, sala6, sala8, sala14, sala15, salaii
+  board1,
+  board2,
+  board3,
+  face1,
+  face2,
+  logo1,
+  new5,
+  new10,
+  new7,
+  new9,
+  new3,
+  new4,
+  new6,
+  new1,
+  new8,
+  new2,
+  new11,
+  new12,
+  new13,
+  new14,
+  new15,
+  new16,
+  new17,
+  new18,
+  new19,
+  team1,
+  team2,
+  team3,
+  team4,
+  team5,
+  reach1,
+  reach2,
+  reach3,
+  reach4,
+  reach5,
+  reach6,
+  reach7,
+  reach8,
+  reach9,
+  reach10,
+  reach11,
+  reach12,
+  reach13,
+  reach14,
+  reach15,
+  reach16,
+  reach17,
+  reach18,
+  reach19,
+  reach20,
+  reach21,
+  reach22,
+  reach23,
+  found1,
 };

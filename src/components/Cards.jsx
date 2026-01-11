@@ -1,4 +1,4 @@
-import { sala11, sala12, sala13, sala5 } from "../assets";
+import { new10, new7, new8, new9 } from "../assets";
 
 // eslint-disable-next-line react/prop-types
 const Card = ({ title, description, bgColor, borderColor }) => {
@@ -24,11 +24,11 @@ const Card = ({ title, description, bgColor, borderColor }) => {
 
 const ImageGrid = () => {
   return (
-    <div className="grid grid-cols-2 gap-2 relative z-10 p-2 bg-[#E8B504]">
-      <img src={sala5} alt="" />
-      <img src={sala11} alt="" />
-      <img src={sala12} alt="" />
-      <img src={sala13} alt="" />
+    <div className="grid grid-cols-2 gap-2 relative z-10 p-2 bg-[#292496]">
+      <img src={new10} alt="" />
+      <img src={new9} alt="" />
+      <img src={new8} alt="" />
+      <img src={new7} alt="" />
     </div>
   );
 };
@@ -43,7 +43,7 @@ const Cards = () => {
         borderColor="bg-[#47BDD9]"
       />
       <div className="relative max-w-sm w-full mx-auto md:mb-7 mt-20">
-        <div className="absolute inset-0 bg-[#E8B504] transform -translate-x-4 translate-y-4 sm:-translate-x-6 sm:translate-y-6" />
+        <div className="absolute inset-0 bg-[#292496] transform -translate-x-4 translate-y-4 sm:-translate-x-6 sm:translate-y-6" />
         <ImageGrid />
       </div>
 

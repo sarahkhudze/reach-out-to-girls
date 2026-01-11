@@ -35,7 +35,7 @@ const ObjectsSection = () => {
           <h1 className="text-3xl md:text-4xl font-bold text-[#096E6A] mb-4">
            Objectives
           </h1>
-          <div className="w-20 h-1 bg-[#E8B504] mx-auto rounded-full"></div>         
+          <div className="w-20 h-1 bg-[#292496] mx-auto rounded-full"></div>         
         </div>
 
        
@@ -46,7 +46,7 @@ const ObjectsSection = () => {
               className="group flex flex-col md:flex-row items-start gap-6 md:gap-8 p-6 rounded-xl border border-[#096E6A]/20 bg-white hover:shadow-lg transition-shadow duration-300"
             >
            
-              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#096E6A] flex items-center justify-center">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#292496] flex items-center justify-center">
                 <span className="text-white font-bold text-lg">0{idx + 1}</span>
               </div>
 

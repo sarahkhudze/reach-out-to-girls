@@ -1,5 +1,5 @@
 const CTAPrivacy = () => {
-  const colors = ["#FF6B6B", "#4ECDC4", "#45B7D1", "#FFBE0B", "#FB5607"];
+  const colors = ["#FF6B6B", "#FB5607", "#292496", "#096E6A", "#E8B504", "#47BDD9"];
 
   return (
     <div className="relative w-full py-[4%] overflow-hidden">

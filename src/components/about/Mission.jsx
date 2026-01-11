@@ -33,12 +33,12 @@ const Mission = () => {
 
       <div className="relative max-w-screen-xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 z-10">
         <div className="text-center mb-4">
-          <p className="text-[#096E6A] font-medium text-lg md:text-xl">
+          <p className="text-[#292496] font-medium text-lg md:text-xl">
             Upscaling Farmers Through our Ever Vibrant Zeal
           </p>
         </div>
 
-        <h2 className="font-bold text-3xl md:text-4xl text-[#096E6A] mb-16 text-center">
+        <h2 className="font-bold text-3xl md:text-4xl text-[#292496] mb-16 text-center">
           Our Core Values
         </h2>
 
@@ -52,11 +52,11 @@ const Mission = () => {
                 borderTop: "4px solid #E8B504",
               }}
             >
-              <div className="mb-6 text-[#096E6A] group-hover:text-[#E8B504] transition-colors duration-300">
+              <div className="mb-6 text-[#292496] group-hover:text-[#E8B504] transition-colors duration-300">
                 {value.icon}
               </div>
 
-              <h3 className="text-xl md:text-2xl font-bold text-[#096E6A] mb-4">
+              <h3 className="text-xl md:text-2xl font-bold text-[#292496] mb-4">
                 {value.title}
               </h3>
 

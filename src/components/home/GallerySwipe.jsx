@@ -1,19 +1,19 @@
 
 import { useState, useEffect } from "react";
-import { salai, salaii } from "../../assets";
+import { new2, new8 } from "../../assets";
 
 const GallerySwipe = () => {
   const [loading, setLoading] = useState(true);
 
   const founders = [
     {
-      img: salai,
+      img: new8,
       title: "Sarah Khudze",
       description:
         "Sarah Khudze is a visionary leader and dedicated advocate for STEM education, women empowerment, and digital literacy, with a strong passion for empowering young girls and women from underserved communities. As a skilled innovation manager, data manager, and software developer, Sarah brings a unique combination of technical expertise and leadership acumen to her work. A Mandela Washington Fellow, she has received extensive training in organizational leadership and is well-equipped to drive meaningful change.",
     },
     {
-      img: salaii,
+      img: new2,
       title: "Philip Banda",
       description:
         "Philip is a passionate and proficient professional with over 7 years of experience in program and project management. His detailed expertise lies in research, monitoring and evaluation, data management, community engagement, project design, and implementation. He is strongly committed to providing sustainable solutions for social, public, and environmental health challenges. Philip is dedicated to improving community well-being and making a positive impact on our environment.",
