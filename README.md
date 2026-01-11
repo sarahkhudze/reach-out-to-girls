@@ -2,7 +2,6 @@
 
 Empowering girls in Malawi through education, health, ICT skills, and mentorship.
 
-![Reach Out to Girls Banner](https://via.placeholder.com/1200x400/292496/FFFFFF?text=Reach+Out+to+Girls) \
 
 ## 🌍 Mission
 > "Every girl in Malawi deserves the opportunity to learn, grow, and lead."
