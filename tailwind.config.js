@@ -12,7 +12,7 @@ export default {
         '2xl': '0 25px 50px rgba(0, 0, 0, 0.25)',
       },
 
-      // important
+     
       fontFamily: {
         Roboto: ["Roboto", "sans-serif"],     
       }
