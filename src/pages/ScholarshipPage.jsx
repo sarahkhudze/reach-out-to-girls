@@ -1,16 +1,17 @@
 
 import { Link } from "react-router-dom";
-import { new12 } from "../assets";
+import { face2, face3, new11, new12, reach3 } from "../assets";
 
 const ScholarshipPage = () => {
   return (
     <div className="w-full bg-white py-12 md:py-16 px-4">
+      {/* Hero Section */}
       <div className="max-w-4xl mx-auto text-center mb-16">
         <div className="flex justify-center mb-8">
           <img
             src={new12}
             alt="Beautiful Minds Scholarship"
-             className="w-[350px] md:w-[500px] h-fit object-contain border-2 border-[#65a7b2]"
+            className="w-[350px] md:w-[500px] h-fit object-contain border-2 border-[#65a7b2] rounded-lg"
           />
         </div>
         <h1
@@ -21,53 +22,94 @@ const ScholarshipPage = () => {
         </h1>
         <div className="w-20 h-1 bg-[#65a7b2] mx-auto rounded-full mb-6"></div>
         <p className="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
-          Education is a powerful tool for breaking the cycle of poverty and creating a pathway to a brighter future. However, in rural Malawi, many bright and promising girls face significant...
+          Education is a powerful tool for breaking the cycle of poverty and creating a pathway to a brighter future.
         </p>
       </div>
 
-     
-      <div className="max-w-5xl mx-auto space-y-8 text-gray-700">
+      {/* Main Content */}
+      <div className="max-w-5xl mx-auto space-y-10 text-gray-700">
+        
+        {/* Program Overview */}
         <div className="bg-[#f8fbfd] border-l-4 border-[#65a7b2] p-6 rounded-r-lg">
-          <h2 className="text-xl font-bold text-[#292496] mb-3">Our Approach</h2>
+          <p className="mb-4">
+            In Malawi, many bright and promising girls face significant financial barriers that prevent them from accessing quality education. 
+            To address this, our <strong>Beautiful Minds Scholarship</strong> initiative sponsors talented yet underprivileged girls from rural community day secondary schools.
+          </p>
+          <p className="mb-4">
+            We cover school fees, provide essential learning materials, and offer ongoing mentorship to help them achieve their goals.
+          </p>
           <p>
-            We provide hands-on training in computer literacy, basic coding, internet safety, and digital creativity to girls in rural Malawi who have little to no prior exposure to technology.
+            One standout beneficiary, <strong>Trinity Ben from Nsipe CDSS</strong>, consistently ranks in the top three of her class — a testament to what’s possible when potential meets opportunity.
           </p>
         </div>
 
+        {/* Objectives */}
         <div>
-          <h2 className="text-2xl font-bold text-[#292496] mb-4 text-center">Why It Matters</h2>
+          <h2 className="text-2xl font-bold text-[#292496] mb-4 text-center">Our Objectives</h2>
+          <div className="bg-white border border-[#65a7b2]/20 rounded-xl p-6">
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Provide financial support for school fees and educational materials to bright girls from less privileged backgrounds.</li>
+              <li>Mentor and guide these girls, helping them set and achieve academic and personal goals.</li>
+              <li>Empower girls through education, fostering their personal and professional development.</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Monitoring & Performance */}
+        <div>
+          <h2 className="text-2xl font-bold text-[#292496] mb-4 text-center">Monitoring & Academic Performance</h2>
+          
           <p className="leading-relaxed mb-4">
-            Without digital skills, girls are excluded from education, jobs, and civic participation in an increasingly connected world. Our program bridges this gap early — building confidence and competence.
+            Regular monitoring is conducted for all 13 girls currently on scholarship to ensure they receive timely support.
           </p>
-          <p className="leading-relaxed">
-            Many of our graduates go on to teach peers, join tech clubs, or pursue further studies in STEM fields.
-          </p>
-        </div>
-
-      
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-          <div className="text-center p-5 bg-white border border-[#65a7b2]/20 rounded-xl">
-            <div className="text-3xl font-bold text-[#292496]">200+</div>
-            <div className="text-gray-600">Girls Trained</div>
-          </div>
-          <div className="text-center p-5 bg-white border border-[#65a7b2]/20 rounded-xl">
-            <div className="text-3xl font-bold text-[#292496]">12</div>
-            <div className="text-gray-600">Schools Reached</div>
-          </div>
-          <div className="text-center p-5 bg-white border border-[#65a7b2]/20 rounded-xl">
-            <div className="text-3xl font-bold text-[#292496]">85%</div>
-            <div className="text-gray-600">Continue to Advanced ICT</div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div className="bg-[#f0f9ff] border-l-4 border-[#4ECDC4] p-4 rounded-r-lg">
+              <h3 className="font-bold text-[#292496] mb-2">✅ Success</h3>
+              <p>Overall, scholarship recipients have shown satisfactory JCE performance, with most excelling academically.</p>
+            </div>
+            <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded-r-lg">
+              <h3 className="font-bold text-yellow-800 mb-2">⚠️ Challenge</h3>
+              <p>Three girls from Chisambe CDSS are underperforming due to a lack of essential learning materials.</p>
+            </div>
           </div>
         </div>
 
-   
-        <div className="text-center mt-12">
-          <p className="text-lg mb-6">Support our mission to bring digital opportunity to every girl.</p>
+        {/* Photo Gallery */}
+        <div>
+          <h2 className="text-2xl font-bold text-[#292496] mb-6 text-center">Scholars in Focus</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
+            {[new11, reach3, face3, face2].map((img, idx) => (
+              <div key={idx} className="rounded-xl overflow-hidden border border-[#65a7b2]/20 shadow-sm">
+                <img
+                  src={img}
+                  alt={`Scholarship moment ${idx + 1}`}
+                  className="w-full h-72 object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="bg-[#f8fbfd] border-l-4 border-[#FFBE0B] p-6 rounded-r-lg">
+          <h2 className="text-xl font-bold text-[#292496] mb-3">Join Us in Empowering Scholars</h2>
+          <p className="mb-4">
+            The Beautiful Minds Scholarship has transformed lives — but challenges remain. 
+            We are raising funds to purchase textbooks for the girls at Chisambe CDSS so they too can thrive.
+          </p>
+          <p>
+            Your support ensures that **no girl is left behind** because of poverty.
+          </p>
+        </div>
+
+        {/* Donate Button */}
+        <div className="text-center mt-8">
           <Link
-            to="/donate" SO
-            className="inline-block bg-[#292496] text-white px-8 py-3.5 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300 text-lg"
+            to="/donate"
+            className="inline-block bg-[#292496] text-white px-8 py-3.5 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300 text-lg shadow-md"
           >
-            Donate Now
+            Provide Textbooks Today
           </Link>
         </div>
       </div>

@@ -3,6 +3,7 @@ import board2 from "../assets/board2.jpg";
 import board3 from "../assets/board3.jpg";
 import face1 from "../assets/face1.jpg";
 import face2 from "../assets/face2.jpg";
+import face3 from "../assets/face3.jpg";
 import logo1 from "../assets/logo1.png";
 import found1 from "../assets/found1.png";
 import new1 from "../assets/new1.jpg";
@@ -24,6 +25,9 @@ import new16 from "../assets/new16.jpg";
 import new17 from "../assets/new17.jpg";
 import new18 from "../assets/new18.jpg";
 import new19 from "../assets/new19.jpg";
+import new30 from "../assets/new30.jpg";
+import new31 from "../assets/new31.jpg";
+import new32 from "../assets/new32.jpg";
 import team1 from "../assets/team1.jpg";
 import team2 from "../assets/team2.jpg";
 import team3 from "../assets/team3.jpg";
@@ -59,12 +63,15 @@ export {
   board3,
   face1,
   face2,
+  face3,
   logo1,
   new5,
   new10,
   new7,
   new9,
   new3,
+  new30,
+  new31,
   new4,
   new6,
   new1,
@@ -79,6 +86,7 @@ export {
   new17,
   new18,
   new19,
+  new32,
   team1,
   team2,
   team3,

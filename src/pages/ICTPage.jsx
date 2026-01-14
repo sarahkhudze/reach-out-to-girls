@@ -1,23 +1,25 @@
 
 import { Link } from "react-router-dom";
 import reach14 from "../assets/reach14.jpg";
+import { new30, new31, reach17 } from "../assets";
 
 const ICTPage = () => {
   return (
     <div className="w-full bg-white py-12 md:py-16 px-4">
+      {/* Hero Section */}
       <div className="max-w-4xl mx-auto text-center mb-16">
         <div className="flex justify-center mb-8">
           <img
             src={reach14}
             alt="ICT Skills for Girls"
-             className="w-[350px] md:w-[500px] h-fit object-contain border-2 border-[#65a7b2]"
+            className="w-[350px] md:w-[500px] h-fit object-contain border-2 border-[#65a7b2] rounded-lg"
           />
         </div>
         <h1
           className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4"
           style={{ color: "#292496" }}
         >
-          ICT Skills for Girls
+          ICT & STEM for Girls
         </h1>
         <div className="w-20 h-1 bg-[#65a7b2] mx-auto rounded-full mb-6"></div>
         <p className="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
@@ -25,48 +27,94 @@ const ICTPage = () => {
         </p>
       </div>
 
-      <div className="max-w-5xl mx-auto space-y-8 text-gray-700">
-        <div className="bg-[#f8fbfd] border-l-4 border-[#65a7b2] p-6 rounded-r-lg">
-          <h2 className="text-xl font-bold text-[#292496] mb-3">Our Approach</h2>
-          <p>
-            We provide hands-on training in computer literacy, basic coding, internet safety, and digital creativity to girls in rural Malawi who have little to no prior exposure to technology.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-bold text-[#292496] mb-4 text-center">Why It Matters</h2>
-          <p className="leading-relaxed mb-4">
-            Without digital skills, girls are excluded from education, jobs, and civic participation in an increasingly connected world. Our program bridges this gap early — building confidence and competence.
-          </p>
-          <p className="leading-relaxed">
-            Many of our graduates go on to teach peers, join tech clubs, or pursue further studies in STEM fields.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-          <div className="text-center p-5 bg-white border border-[#65a7b2]/20 rounded-xl">
-            <div className="text-3xl font-bold text-[#292496]">200+</div>
-            <div className="text-gray-600">Girls Trained</div>
+      {/* Main Content */}
+      <div className="max-w-5xl mx-auto space-y-12 text-gray-700">
+        
+        {/* ICT Skills for Girls */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#292496] mb-6 text-center">ICT Skills for Girls</h2>
+          
+          <div className="bg-[#f8fbfd] border-l-4 border-[#65a7b2] p-6 rounded-r-lg mb-8">
+            <p className="mb-4">
+              Recognizing the growing digital divide and the unique challenges faced by girls in Malawi, our organization launched the ICT Skills for Girls initiative. 
+              This program equips secondary school learners and MSCE graduates — particularly those from disadvantaged backgrounds — with essential ICT skills to thrive in the digital age.
+            </p>
+            
+            <h3 className="font-bold text-[#292496] mb-2">Objectives:</h3>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Bridge the digital divide by providing ICT training to girls from disadvantaged backgrounds.</li>
+              <li>Empower girls with skills for education and employment opportunities.</li>
+              <li>Enhance self-confidence and self-reliance through technological proficiency.</li>
+            </ul>
           </div>
-          <div className="text-center p-5 bg-white border border-[#65a7b2]/20 rounded-xl">
-            <div className="text-3xl font-bold text-[#292496]">12</div>
-            <div className="text-gray-600">Schools Reached</div>
-          </div>
-          <div className="text-center p-5 bg-white border border-[#65a7b2]/20 rounded-xl">
-            <div className="text-3xl font-bold text-[#292496]">85%</div>
-            <div className="text-gray-600">Continue to Advanced ICT</div>
-          </div>
-        </div>
+        </section>
 
-        <div className="text-center mt-12">
-          <p className="text-lg mb-6">Support our mission to bring digital opportunity to every girl.</p>
+        {/* Essentials for Young Women in STEM */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#292496] mb-6 text-center">Essentials for Young Women in STEM</h2>
+          
+          <div className="bg-[#f0f9ff] border-l-4 border-[#4ECDC4] p-6 rounded-r-lg mb-8">
+            <p className="mb-4">
+              In the modern world, Science, Technology, Engineering, and Mathematics (STEM) fields drive innovation and economic growth. 
+              Yet women — especially in developing countries like Malawi — remain underrepresented. 
+              Our Essentials for Young Women in STEM initiative mentors university students, connects them with internships, and enhances their practical skills.
+            </p>
+            <p className="font-medium mb-3">Impact: Over 10,000 young women have benefited from this initiative.</p>
+            
+            <h3 className="font-bold text-[#292496] mb-2">Objectives:</h3>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Provide mentorship to young women pursuing STEM degrees.</li>
+              <li>Facilitate internships by connecting students with employers.</li>
+              <li>Enhance practical and theoretical STEM skills for career success.</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Photo Gallery */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#292496] mb-6 text-center">Digital Futures in Action</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
+            {[new30, new31, reach17].map((img, idx) => (
+              <div key={idx} className="rounded-xl overflow-hidden border border-[#65a7b2]/20 shadow-sm">
+                <img
+                  src={img}
+                  alt={`ICT/STEM moment ${idx + 1}`}
+                  className="w-full h-72 object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Impact Stats */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#292496] mb-6 text-center">By the Numbers</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="text-center p-5 bg-white border border-[#65a7b2]/20 rounded-xl">
+              <div className="text-3xl font-bold text-[#292496]">200+</div>
+              <div className="text-gray-600">Girls Trained (ICT)</div>
+            </div>
+            <div className="text-center p-5 bg-white border border-[#65a7b2]/20 rounded-xl">
+              <div className="text-3xl font-bold text-[#292496]">10,000+</div>
+              <div className="text-gray-600">Women Reached (STEM)</div>
+            </div>
+            <div className="text-center p-5 bg-white border border-[#65a7b2]/20 rounded-xl">
+              <div className="text-3xl font-bold text-[#292496]">85%</div>
+              <div className="text-gray-600">Pursue Further Tech Studies</div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="text-center mt-12">
+          <p className="text-lg mb-6">Help us close the digital gender gap — one girl at a time.</p>
           <Link
             to="/donate"
-            className="inline-block bg-[#292496] text-white px-8 py-3.5 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300 text-lg"
+            className="inline-block bg-[#292496] text-white px-8 py-3.5 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300 text-lg shadow-md"
           >
-            Donate Now
+            Support Digital Education
           </Link>
-        </div>
+        </section>
       </div>
     </div>
   );
