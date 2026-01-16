@@ -55,7 +55,7 @@ const SuccessStory = () => {
   return (
     <div
       id="success-stories"
-      className="w-full py-20 mt-28 md:py-28 px-4 md:px-8 lg:px-16 relative overflow-hidden"
+      className="w-full py-20 md:py-28 px-4 md:px-8 lg:px-16 relative overflow-hidden"
       style={{ backgroundColor: "#292496" }}
     >     
       <div className="absolute inset-0 pointer-events-none z-0">{stars}</div>

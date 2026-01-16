@@ -10,31 +10,34 @@ const ICTPage = () => {
         backgroundImage: `
       radial-gradient(circle at 10% 20%, rgba(101, 167, 178, 0.03) 1px, transparent 1px),
       radial-gradient(circle at 90% 80%, rgba(41, 36, 150, 0.02) 1px, transparent 1px)
-    `,
+      `,
         backgroundSize: "60px 60px",
       }}
-    >
+      >
       {/* Hero Section */}
       <div className="max-w-4xl mx-auto text-center mb-16">
-        <div className="flex justify-center mb-8">
-          <img
-            src={reach14}
-            alt="ICT Skills for Girls"
-            className="w-[350px] md:w-[500px] h-fit object-contain border-2 border-[#65a7b2] rounded-lg"
-          />
-        </div>
+       
         <h1
           className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4"
           style={{ color: "#292496" }}
         >
           ICT & STEM for Girls
         </h1>
+        
         <div className="w-20 h-1 bg-[#65a7b2] mx-auto rounded-full mb-6"></div>
-        <p className="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+        
+        <p className="text-gray-700 text-lg max-w-md mx-auto leading-relaxed">
           In todays rapidly evolving digital landscape, possessing Information
           and Communication Technology (ICT) skills is crucial for personal and
           professional success.
         </p>
+         <div className="flex justify-center mb-12 mt-8">
+          <img
+            src={reach14}
+            alt="ICT Skills for Girls"
+            className="w-[350px] md:w-[500px] h-fit object-contain border-2 border-[#65a7b2] rounded-lg"
+          />
+        </div>
       </div>
 
       {/* Main Content */}

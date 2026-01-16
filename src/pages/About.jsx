@@ -31,24 +31,31 @@ const board = [
 const About = () => {
   return (
     <div className="w-full overflow-hidden">
-      <section
-        className="relative py-20 md:py-28 px-4"
-        style={{
-          background: "linear-gradient(135deg, #292496 0%, #65a7b2 100%)",
-        }}
-      >
-        <div className="max-w-4xl mx-auto text-center text-white">
+     
+
+
+       {/* Header with Handwritten Title */}
+        <div className="text-center mb-16 max-w-3xl mx-auto relative">
+          <div className="inline-block mb-24">
+              </div>
+          
           <h1
-            className="text-4xl md:text-6xl font-normal mb-6"
-            style={{ fontWeight: 700 }}
+            className="text-4xl md:text-5xl font-normal tracking-wide"
+            style={{
+              fontWeight: 700,
+              color: "#292496",
+              letterSpacing: "0.02em",
+            }}
           >
             About Reach Out to Girls
           </h1>
-          <p className="text-lg opacity-90 max-w-2xl mx-auto">
+          
+          <div className="w-24 h-1 bg-gradient-to-r from-[#65a7b2] to-[#FFBE0B] mx-auto rounded-full mt-6"></div>
+          
+          <p className="text-gray-700 mt-8 leading-relaxed max-w-2xl mx-auto">
             Empowering girls in Malawi since 2020.
           </p>
         </div>
-      </section>
 
       <section className="py-16 md:py-24 px-4 bg-[#faf9f7]">
         <div className="max-w-6xl mx-auto">
@@ -162,7 +169,7 @@ const About = () => {
               <img
                 src={reach12}
                 alt="Performance"
-                className="rounded-2xl shadow-lg border border-[#FFBE0B]/30"
+                className="w-full h-96 object-cover rounded-2xl shadow-lg border border-[#FFBE0B]/30"
               />
             </div>
             <div className="md:w-3/5">
@@ -196,9 +203,9 @@ const About = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div
-              className="p-8 rounded-2xl"
+              className="p-8 md:p-16 rounded-2xl border"
               style={{ backgroundColor: "#f8fbfd" }}
-            >
+              >
               <h3 className="text-xl font-bold text-[#292496] mb-4">
                 Our Vision
               </h3>
@@ -210,9 +217,9 @@ const About = () => {
               </p>
             </div>
             <div
-              className="p-8 rounded-2xl"
+              className="p-8 md:p-16 rounded-2xl border "
               style={{ backgroundColor: "#f0f9ff" }}
-            >
+              >
               <h3 className="text-xl font-bold text-[#292496] mb-4">
                 Our Mission
               </h3>
@@ -285,7 +292,7 @@ const About = () => {
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
             {board.map((member, idx) => (
               <div key={idx} className="flex flex-col items-center">
-                <div className="w-40 md:w-80 h-40 md:h-80 rounded-full overflow-hidden border-2 border-[#65a7b2]/30 shadow-md">
+                <div className="w-40 md:w-80 h-40 md:h-80 rounded-3xl overflow-hidden border-2 border-[#65a7b2]/30 shadow-md">
                   <img
                     src={member.photo}
                     alt={member.name}
@@ -318,10 +325,10 @@ const About = () => {
             Meet Our Team
           </h2>
           <div className="w-20 h-1 bg-[#65a7b2] mx-auto rounded-full mb-12"></div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
             {team.map((member, idx) => (
               <div key={idx} className="flex flex-col items-center">
-                <div className="w-28 md:w-44 h-28 md:h-44 rounded-full overflow-hidden border-2 border-[#65a7b2]/30 shadow-md">
+                <div className="w-28 md:w-52 h-28 md:h-52 rounded-full overflow-hidden border-2 border-[#65a7b2]/30 shadow-md">
                   <img
                     src={member.photo}
                     alt={member.name}

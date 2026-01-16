@@ -1,55 +1,90 @@
+/* eslint-disable react/no-unknown-property */
+
+import { Link } from "react-router-dom";
 import { new13 } from "../../assets";
 
 const CTAHome = () => {
-  const colors = ["#FF6B6B", "#4ECDC4", "#45B7D1", "#FFBE0B", "#FB5607"];
+  const scrollToContent = () => {
+    window.scrollTo({
+      top: window.innerHeight - 80,
+      behavior: "smooth",
+    });
+  };
 
   return (
-    <div
-      className="relative h-[40vh] lg:h-[90vh] w-full bg-no-repeat bg-cover bg-center overflow-hidden"
-      style={{
-        backgroundImage: `url(${new13})`,
-      }}
-    >
-    
-      {/* <div className="absolute inset-0 bg-blue-20/40"></div> */}
-
+    <div className="relative h-[80vh] min-h-[600px] w-full overflow-hidden">
       <div
-        className="absolute top-6 right-6 w-32 h-32 rounded-full opacity-30 blur-xl z-10"
-        style={{
-          background: `radial-gradient(circle, ${colors[1]}, ${colors[3]})`,
-        }}
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{ backgroundImage: `url(${new13})` }}
       ></div>
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center z-20 px-4">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center leading-tight drop-shadow-lg max-w-4xl">
-          <span className="bg-clip-text text-transparent"
-                style={{
-                  backgroundImage: "linear-gradient(to right, #FFFFFF, #FFFFFF)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent"
-                }}>
-            Reach Out to Girls
-          </span>
-        </h1>
-      </div>
-     
-      <div className="absolute top-10 left-8 w-3 h-3 rounded-full bg-white opacity-50 animate-bounce"></div>
-      <div className="absolute bottom-16 right-12 w-2 h-2 rounded-full bg-white opacity-60 animate-ping"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent z-10"></div>
 
-      <style>{`
-        @keyframes slide-up {
-          from { transform: translateY(30px); opacity: 0; }
-          to { transform: translateY(0); opacity: 1; }
+      <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-[#65a7b2]/20 blur-xl animate-float-slow"></div>
+      <div className="absolute bottom-32 right-20 w-24 h-24 rounded-full bg-[#FFBE0B]/20 blur-xl animate-float-medium"></div>
+
+      <div className="relative z-20 flex items-center justify-center h-full px-4">
+        <div className="text-center max-w-4xl mx-auto text-white">
+          <h1
+            className="text-4xl md:text-5xl lg:text-6xl font-normal mb-6 drop-shadow-lg"
+            style={{
+              fontWeight: 700,
+              letterSpacing: "0.02em",
+            }}
+          >
+            Reach Out to Girls
+          </h1>
+
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed opacity-90">
+            Empowering girls in Malawi through education, health, and
+            opportunity.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/donate"
+              className="bg-white text-[#292496] px-8 py-4 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300 shadow-lg"
+            >
+              Support a Girl
+            </Link>
+          </div>
+
+          <div onClick={scrollToContent} className="mt-28 cursor-pointer group">
+            <p className="font-extrabold text-sm opacity-70 group-hover:opacity-100 transition-opacity">
+              Discover our impact 
+            </p>
+            
+            <div className="w-6 h-10 mx-auto border-2 border-white rounded-full flex justify-center mt-2 group-hover:border-[#FFBE0B] transition-colors">
+              <div className="w-1 h-3 bg-white rounded-full mt-2 animate-bounce"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes float-slow {
+          0%,
+          100% {
+            transform: translateY(0px) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-20px) rotate(5deg);
+          }
         }
-        h1 {
-          animation: slide-up 1s ease-out forwards;
+        @keyframes float-medium {
+          0%,
+          100% {
+            transform: translateY(0px) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-25px) rotate(-5deg);
+          }
         }
-        @keyframes pulse {
-          0%, 100% { opacity: 0.8; transform: scale(1); }
-          50% { opacity: 1; transform: scale(1.05); }
+        .animate-float-slow {
+          animation: float-slow 8s ease-in-out infinite;
         }
-        .animate-pulse {
-          animation: pulse 2s infinite;
+        .animate-float-medium {
+          animation: float-medium 6s ease-in-out infinite;
         }
       `}</style>
     </div>

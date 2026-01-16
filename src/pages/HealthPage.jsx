@@ -15,13 +15,7 @@ const HealthPage = () => {
     >
       {/* Hero Section */}
       <div className="max-w-4xl mx-auto text-center mb-16">
-        <div className="flex justify-center mb-8">
-          <img
-            src={new19}
-            alt="Smart Period Initiative"
-            className="w-[350px] md:w-[500px] h-fit object-contain border-2 border-[#65a7b2] rounded-lg"
-          />
-        </div>
+        
         <h1
           className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4"
           style={{ color: "#292496" }}
@@ -29,10 +23,17 @@ const HealthPage = () => {
           Women`s Health
         </h1>
         <div className="w-20 h-1 bg-[#65a7b2] mx-auto rounded-full mb-6"></div>
-        <p className="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+        <p className="text-gray-700 text-lg max-w-md mx-auto leading-relaxed">
           Reach Out to Girls is deeply committed to addressing women`s health as
           one of our core thematic areas.
         </p>
+        <div className="flex justify-center mb-12 mt-8">
+          <img
+            src={new19}
+            alt="Smart Period Initiative"
+            className="w-[350px] md:w-[500px] h-fit object-contain border-2 border-[#65a7b2] rounded-lg"
+          />
+        </div>
       </div>
 
       {/* Main Content */}
@@ -81,7 +82,7 @@ const HealthPage = () => {
           <h2 className="text-2xl font-bold text-[#292496] mb-6 text-center">
             In Action
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
             {[new7, new5].map((img, idx) => (
               <div
                 key={idx}

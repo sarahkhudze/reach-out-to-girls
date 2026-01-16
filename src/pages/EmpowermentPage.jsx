@@ -15,13 +15,7 @@ const EmpowermentPage = () => {
     >
       {/* Hero Section */}
       <div className="max-w-4xl mx-auto text-center mb-16">
-        <div className="flex justify-center mb-8">
-          <img
-            src={new9}
-            alt="Women Empowerment Initiative"
-            className="w-[350px] md:w-[500px] h-fit object-contain border-2 border-[#65a7b2] rounded-lg"
-          />
-        </div>
+       
         <h1
           className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4"
           style={{ color: "#292496" }}
@@ -29,11 +23,18 @@ const EmpowermentPage = () => {
           Women Empowerment
         </h1>
         <div className="w-20 h-1 bg-[#65a7b2] mx-auto rounded-full mb-6"></div>
-        <p className="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+        <p className="text-gray-700 text-lg max-w-md mx-auto leading-relaxed">
           In rural areas of Malawi, women often face significant economic
           challenges, which can hinder their ability to support their families
           and contribute to their communities.
         </p>
+         <div className="flex justify-center mb-12 mt-8">
+          <img
+            src={new9}
+            alt="Women Empowerment Initiative"
+            className="w-[350px] md:w-[500px] h-fit object-contain border-2 border-[#65a7b2] rounded-lg"
+          />
+        </div>
       </div>
 
       {/* Main Content */}
