@@ -177,7 +177,7 @@ const About = () => {
               </h2>
               <p className="text-gray-700 leading-relaxed">
                 Between January and September 2024, Reach Out to Girls achieved significant milestones in empowering girls 
-                across Malawi. We co-facilitated a transformative Girls Retreat in Zomba, showcased our work at the ICTAM
+                across Malawi. We co-facilitated a transformative Girl`s Retreat in Zomba, showcased our work at the ICTAM
                  Expo with UNDP Malawi sponsorship, and celebrated the selection of our mentees to public universities. 
                </p>   <p className="mt-4">
                  Additionally, our Beautiful Minds Scholars successfully passed their JCE exams, and we conducted impactful
