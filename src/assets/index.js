@@ -33,6 +33,9 @@ import team2 from "../assets/team2.jpg";
 import team3 from "../assets/team3.jpg";
 import team4 from "../assets/team4.jpg";
 import team5 from "../assets/team5.jpg";
+import team6 from "../assets/team6.jpg";
+import team7 from "../assets/team7.jpg";
+import team8 from "../assets/team8.jpg";
 import reach1 from "../assets/reach1.jpg";
 import reach2 from "../assets/reach2.jpg";
 import reach3 from "../assets/reach3.jpg";
@@ -92,6 +95,9 @@ export {
   team3,
   team4,
   team5,
+  team6,
+  team7,
+  team8,
   reach1,
   reach2,
   reach3,

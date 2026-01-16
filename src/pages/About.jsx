@@ -1,39 +1,36 @@
 import { Link } from "react-router-dom";
-
-// Import assets
-import { board3, reach1, reach12, new4 } from "../assets";
-
-// Team photos
-import team1 from "../assets/board3.jpg";
+import { board3, reach1, reach12, new4, board2, board1 } from "../assets";
+import team1 from "../assets/team1.jpg";
 import team2 from "../assets/team2.jpg";
 import team3 from "../assets/team3.jpg";
 import team4 from "../assets/team4.jpg";
 import team5 from "../assets/team5.jpg";
-import team6 from "../assets/team1.jpg";
-import team7 from "../assets/team2.jpg";
-import team8 from "../assets/team3.jpg";
-import team9 from "../assets/team4.jpg";
-import team10 from "../assets/team1.jpg";
-import team11 from "../assets/team3.jpg";
+import team6 from "../assets/team6.jpg";
+import team7 from "../assets/team7.jpg";
+import team8 from "../assets/team8.jpg";
 
 const team = [
-  { name: "Khudze Sarah", role: "Founder & Director", photo: team1 },
-  { name: "Grace M.", role: "ICT Program Lead", photo: team2 },
-  { name: "Chikondi T.", role: "Health Coordinator", photo: team3 },
-  { name: "Trinity B.", role: "Scholarship Mentor", photo: team4 },
-  { name: "Ellen K.", role: "STEM Ambassador", photo: team5 },
-  { name: "Patricia N.", role: "Finance Officer", photo: team6 },
-  { name: "Memory D.", role: "Community Liaison", photo: team7 },
-  { name: "Tionge L.", role: "Agribusiness Trainer", photo: team8 },
-  { name: "Anjela M.", role: "Volunteer Coordinator", photo: team9 },
-  { name: "Joyce P.", role: "Monitoring & Evaluation", photo: team10 },
-  { name: "Lucy S.", role: "Partnerships Manager", photo: team11 },
+  { name: "Khudze Sarah", role: "Founder & Director", photo: board3 },
+  { name: "Chikondi Nkata", role: "National Coordinator", photo: team2 },
+  { name: "Samantha Dzikawanda", role: "Programs Coordinator", photo: team1 },
+  { name: "Grace Taulo", role: "Asst. Programs Coordinator", photo: team7 },
+  { name: "Cytnthia Kumbemba", role: "Finance Officer", photo: team8 },
+  { name: "Jessie Mzembe", role: "Regional Coordinator", photo: team5 },
+  { name: "Grace Kalua", role: "Regional Coordinator", photo: team4 },
+  { name: "Lizzie Chikwembeni", role: "Regional Coordinator", photo: team6 },
+  { name: "Thoko Major", role: "Capacity Building Officer", photo: team3 },
+];
+
+const board = [
+  { name: "Khudze Sarah", role: "Founder & Director", photo: board3 },
+  { name: "", role: "PRO", photo: board2 },
+  { name: "", role: "Legal Advisor", photo: board1 },
+
 ];
 
 const About = () => {
   return (
     <div className="w-full overflow-hidden">
-      {/* 1. Hero Banner - Full Width */}
       <section
         className="relative py-20 md:py-28 px-4"
         style={{
@@ -53,7 +50,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* 2. Story Section - Light Background, Image Left */}
       <section className="py-16 md:py-24 px-4 bg-[#faf9f7]">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -103,7 +99,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* 3. Welcome Message - Dark Teal Background */}
       <section
         className="py-16 md:py-24 px-4"
         style={{ backgroundColor: "#f0f9ff" }}
@@ -160,7 +155,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* 4. Performance - Gold Accent Background */}
       <section className="py-16 md:py-24 px-4 bg-[#fffbeb]">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
@@ -189,7 +183,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* 5. Vision & Mission - Split Panel */}
       <section className="py-16 md:py-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2
@@ -236,7 +229,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* 6. Objectives - Minimalist */}
       <section className="py-16 md:py-24 px-4 bg-[#faf9f7]">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -278,7 +270,42 @@ const About = () => {
         </div>
       </section>
 
-      {/* 7. Team Section - Full Width Grid */}
+      <section className="py-16 md:py-24 px-4 bg-[#f0f9ff]">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2
+            className="text-3xl md:text-4xl font-normal mb-4"
+            style={{
+              fontWeight: 700,
+              color: "#292496",
+            }}
+          >
+            Meet the Board
+          </h2>
+          <div className="w-20 h-1 bg-[#65a7b2] mx-auto rounded-full mb-12"></div>
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            {board.map((member, idx) => (
+              <div key={idx} className="flex flex-col items-center">
+                <div className="w-40 md:w-80 h-40 md:h-80 rounded-full overflow-hidden border-2 border-[#65a7b2]/30 shadow-md">
+                  <img
+                    src={member.photo}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* <p className="font-medium text-[#292496] text-sm mt-3">
+                  {member.name}
+                </p>
+                <p className="text-gray-600 text-xs">{member.role}</p> */}
+              </div>
+            ))}
+          </div>
+          <p className="mt-12 text-gray-600 max-w-2xl mx-auto">
+            Our board members bring diverse expertise and a shared commitment
+            to advancing our mission of empowering girls and women.
+            </p>
+        </div>
+      </section>
+
       <section className="py-16 md:py-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <h2
@@ -294,7 +321,7 @@ const About = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
             {team.map((member, idx) => (
               <div key={idx} className="flex flex-col items-center">
-                <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#65a7b2]/30 shadow-md">
+                <div className="w-28 md:w-44 h-28 md:h-44 rounded-full overflow-hidden border-2 border-[#65a7b2]/30 shadow-md">
                   <img
                     src={member.photo}
                     alt={member.name}
@@ -315,7 +342,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-12 px-4 bg-[#292496] text-center">
         <Link
           to="/donate"
