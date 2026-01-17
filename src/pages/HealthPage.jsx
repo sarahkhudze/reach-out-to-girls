@@ -13,7 +13,7 @@ const HealthPage = () => {
         backgroundSize: "60px 60px",
       }}
     >
-      {/* Hero Section */}
+      
       <div className="max-w-4xl mx-auto text-center mb-16">
         
         <h1
@@ -36,9 +36,9 @@ const HealthPage = () => {
         </div>
       </div>
 
-      {/* Main Content */}
+     
       <div className="max-w-5xl mx-auto space-y-10 text-gray-700">
-        {/* Smart Period Initiative */}
+       
         <div className="bg-[#f8fbfd] border-l-4 border-[#65a7b2] p-6 rounded-r-lg">
           <h2 className="text-xl font-bold text-[#292496] mb-3">
             The `Smart Period`` Initiative
