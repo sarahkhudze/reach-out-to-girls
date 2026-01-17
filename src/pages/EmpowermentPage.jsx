@@ -13,7 +13,7 @@ const EmpowermentPage = () => {
         backgroundSize: "60px 60px",
       }}
     >
-      {/* Hero Section */}
+     
       <div className="max-w-4xl mx-auto text-center mb-16">
        
         <h1
