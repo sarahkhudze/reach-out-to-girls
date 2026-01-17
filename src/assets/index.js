@@ -1,6 +1,7 @@
 import board1 from "../assets/board1.jpg";
 import board2 from "../assets/board2.jpg";
 import board3 from "../assets/board3.jpg";
+import board4 from "../assets/board4.jpg";
 import face1 from "../assets/face1.jpg";
 import face2 from "../assets/face2.jpg";
 import face3 from "../assets/face3.jpg";
@@ -28,6 +29,10 @@ import new19 from "../assets/new19.jpg";
 import new30 from "../assets/new30.jpg";
 import new31 from "../assets/new31.jpg";
 import new32 from "../assets/new32.jpg";
+import icon1 from "../assets/icon1.png";
+import icon2 from "../assets/icon2.png";
+import icon3 from "../assets/icon3.png";
+import team from "../assets/team.jpg";
 import team1 from "../assets/team1.jpg";
 import team2 from "../assets/team2.jpg";
 import team3 from "../assets/team3.jpg";
@@ -36,6 +41,7 @@ import team5 from "../assets/team5.jpg";
 import team6 from "../assets/team6.jpg";
 import team7 from "../assets/team7.jpg";
 import team8 from "../assets/team8.jpg";
+import team38 from "../assets/team38.jpg";
 import reach1 from "../assets/reach1.jpg";
 import reach2 from "../assets/reach2.jpg";
 import reach3 from "../assets/reach3.jpg";
@@ -64,6 +70,11 @@ export {
   board1,
   board2,
   board3,
+  board4,
+  icon1,
+  icon2,
+  icon3,
+  team,
   face1,
   face2,
   face3,
@@ -98,6 +109,7 @@ export {
   team6,
   team7,
   team8,
+  team38,
   reach1,
   reach2,
   reach3,

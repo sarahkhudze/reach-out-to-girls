@@ -1,19 +1,35 @@
 import { Link } from "react-router-dom";
-import { board3, reach1, reach12, new4, board2, board1 } from "../assets";
-import team1 from "../assets/team1.jpg";
-import team2 from "../assets/team2.jpg";
-import team3 from "../assets/team3.jpg";
-import team4 from "../assets/team4.jpg";
-import team5 from "../assets/team5.jpg";
-import team6 from "../assets/team6.jpg";
-import team7 from "../assets/team7.jpg";
-import team8 from "../assets/team8.jpg";
+import {
+  board3,
+  reach12,
+  new4,
+  board2,
+  board1,
+  team,
+  icon1,
+  icon2,
+  icon3,
+  team1,
+  team2,
+  team3,
+  team4,
+  team5,
+  team6,
+  team7,
+  team8,
+  team38,
+  board4,
+} from "../assets";
 
-const team = [
-  { name: "Khudze Sarah", role: "Founder & Director", photo: board3 },
+const necTeam = [
   { name: "Chikondi Nkata", role: "National Coordinator", photo: team2 },
+  {
+    name: "Ngongite Chisiza",
+    role: "Deputy National Coordinator",
+    photo: team,
+  },
   { name: "Samantha Dzikawanda", role: "Programs Coordinator", photo: team1 },
-  { name: "Grace Taulo", role: "Asst. Programs Coordinator", photo: team7 },
+  { name: "Grace Taulo", role: "Deputy Programs Coordinator", photo: team7 },
   { name: "Cytnthia Kumbemba", role: "Finance Officer", photo: team8 },
   { name: "Jessie Mzembe", role: "Regional Coordinator", photo: team5 },
   { name: "Grace Kalua", role: "Regional Coordinator", photo: team4 },
@@ -21,48 +37,53 @@ const team = [
   { name: "Thoko Major", role: "Capacity Building Officer", photo: team3 },
 ];
 
-const board = [
-  { name: "Khudze Sarah", role: "Founder & Director", photo: board3 },
-  { name: "", role: "PRO", photo: board2 },
-  { name: "", role: "Legal Advisor", photo: board1 },
+const operationsTeam = [
+  {
+    name: "Khudze Sarah",
+    role: " Executive Director & Founder ",
+    photo: board3,
+  },
+  { name: "", role: " Technical Leads", photo: icon1 },
+  { name: "", role: "Programs Coordinator", photo: icon2 },
+  { name: "", role: "Communications Officer", photo: icon3 },
+  { name: "", role: "Administrative Officer", photo: icon1 },
+];
 
+const board = [
+  { name: "Mphatso Manda", role: "Board Chairperson", photo: board2 },
+  { name: "Malchiel Chipingo", role: "Board Member", photo: board1 },
+  { name: "Sarah Kambilinya", role: "Board Member", photo: board4 },
 ];
 
 const About = () => {
   return (
     <div className="w-full overflow-hidden">
-     
+      <div className="text-center mb-16 max-w-3xl mx-auto relative">
+        <div className="inline-block mb-24"></div>
+        <h1
+          className="text-4xl md:text-5xl font-normal tracking-wide"
+          style={{
+            fontWeight: 700,
+            color: "#292496",
+            letterSpacing: "0.02em",
+          }}
+        >
+          About Reach Out to Girls
+        </h1>
 
+        <div className="w-24 h-1 bg-gradient-to-r from-[#65a7b2] to-[#FFBE0B] mx-auto rounded-full mt-6"></div>
 
-       {/* Header with Handwritten Title */}
-        <div className="text-center mb-16 max-w-3xl mx-auto relative">
-          <div className="inline-block mb-24">
-              </div>
-          
-          <h1
-            className="text-4xl md:text-5xl font-normal tracking-wide"
-            style={{
-              fontWeight: 700,
-              color: "#292496",
-              letterSpacing: "0.02em",
-            }}
-          >
-            About Reach Out to Girls
-          </h1>
-          
-          <div className="w-24 h-1 bg-gradient-to-r from-[#65a7b2] to-[#FFBE0B] mx-auto rounded-full mt-6"></div>
-          
-          <p className="text-gray-700 mt-8 leading-relaxed max-w-2xl mx-auto">
-            Empowering girls in Malawi since 2020.
-          </p>
-        </div>
+        <p className="text-gray-700 mt-8 leading-relaxed max-w-2xl mx-auto">
+          Empowering girls in Malawi since 2020.
+        </p>
+      </div>
 
       <section className="py-16 md:py-24 px-4 bg-[#faf9f7]">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-2/5">
               <img
-                src={reach1}
+                src={team38}
                 alt="Our Story"
                 className="rounded-2xl shadow-lg border border-[#65a7b2]/20"
               />
@@ -177,13 +198,19 @@ const About = () => {
                 Organisation Performance Summary
               </h2>
               <p className="text-gray-700 leading-relaxed">
-                Between January and September 2024, Reach Out to Girls achieved significant milestones in empowering girls 
-                across Malawi. We co-facilitated a transformative Girl`s Retreat in Zomba, showcased our work at the ICTAM
-                 Expo with UNDP Malawi sponsorship, and celebrated the selection of our mentees to public universities. 
-               </p>   <p className="mt-4">
-                 Additionally, our Beautiful Minds Scholars successfully passed their JCE exams, and we conducted impactful
-                  menstrual hygiene initiatives, reaching over 500 girls. These efforts underscore our commitment to education,
-                   health, and leadership for girls in Malawi.
+                Between January and September 2024, Reach Out to Girls achieved
+                significant milestones in empowering girls across Malawi. We
+                co-facilitated a transformative Girl`s Retreat in Zomba,
+                showcased our work at the ICTAM Expo with UNDP Malawi
+                sponsorship, and celebrated the selection of our mentees to
+                public universities.
+              </p>{" "}
+              <p className="mt-4">
+                Additionally, our Beautiful Minds Scholars successfully passed
+                their JCE exams, and we conducted impactful menstrual hygiene
+                initiatives, reaching over 500 girls. These efforts underscore
+                our commitment to education, health, and leadership for girls in
+                Malawi.
               </p>
             </div>
           </div>
@@ -205,7 +232,7 @@ const About = () => {
             <div
               className="p-8 md:p-16 rounded-2xl border"
               style={{ backgroundColor: "#f8fbfd" }}
-              >
+            >
               <h3 className="text-xl font-bold text-[#292496] mb-4">
                 Our Vision
               </h3>
@@ -219,7 +246,7 @@ const About = () => {
             <div
               className="p-8 md:p-16 rounded-2xl border "
               style={{ backgroundColor: "#f0f9ff" }}
-              >
+            >
               <h3 className="text-xl font-bold text-[#292496] mb-4">
                 Our Mission
               </h3>
@@ -289,46 +316,10 @@ const About = () => {
             Meet the Board
           </h2>
           <div className="w-20 h-1 bg-[#65a7b2] mx-auto rounded-full mb-12"></div>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2">
             {board.map((member, idx) => (
               <div key={idx} className="flex flex-col items-center">
-                <div className="w-40 md:w-80 h-40 md:h-80 rounded-3xl overflow-hidden border-2 border-[#65a7b2]/30 shadow-md">
-                  <img
-                    src={member.photo}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                {/* <p className="font-medium text-[#292496] text-sm mt-3">
-                  {member.name}
-                </p>
-                <p className="text-gray-600 text-xs">{member.role}</p> */}
-              </div>
-            ))}
-          </div>
-          <p className="mt-12 text-gray-600 max-w-2xl mx-auto">
-            Our board members bring diverse expertise and a shared commitment
-            to advancing our mission of empowering girls and women.
-            </p>
-        </div>
-      </section>
-
-      <section className="py-16 md:py-24 px-4 bg-white">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2
-            className="text-3xl md:text-4xl font-normal mb-4"
-            style={{
-              fontWeight: 700,
-              color: "#292496",
-            }}
-          >
-            Meet Our Team
-          </h2>
-          <div className="w-20 h-1 bg-[#65a7b2] mx-auto rounded-full mb-12"></div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
-            {team.map((member, idx) => (
-              <div key={idx} className="flex flex-col items-center">
-                <div className="w-28 md:w-52 h-28 md:h-52 rounded-full overflow-hidden border-2 border-[#65a7b2]/30 shadow-md">
+                <div className="w-40 md:w-72 h-40 md:h-72 rounded-full overflow-hidden border-2 border-[#65a7b2]/30 shadow-md">
                   <img
                     src={member.photo}
                     alt={member.name}
@@ -342,10 +333,80 @@ const About = () => {
               </div>
             ))}
           </div>
-          <p className="mt-12 text-gray-600 max-w-2xl mx-auto">
-            Our team includes educators, technologists, health workers, and
-            community leaders — all united by one mission.
-          </p>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 md:gap-60">
+            <div>
+              <h3 className="text-2xl font-bold text-[#292496] text-center mb-8 pb-4 border-b border-[#65a7b2]/30">
+                <h2
+                  className="text-3xl md:text-4xl font-normal mb-4"
+                  style={{
+                    fontWeight: 700,
+                    color: "#292496",
+                  }}
+                >
+                  National Executive Committee
+                </h2>
+                <div className="w-20 h-1 bg-[#65a7b2] mx-auto rounded-full mb-12"></div>
+              </h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6">
+                {necTeam.map((member, idx) => (
+                  <div key={idx} className="flex flex-col items-center">
+                    <div className="w-44 h-44 rounded-full overflow-hidden border-2 border-[#65a7b2]/30 shadow-md">
+                      <img
+                        src={member.photo}
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <p className="font-medium text-[#292496] text-sm mt-2">
+                      {member.name}
+                    </p>
+                    <p className="text-gray-600 text-xs text-center">
+                      {member.role}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-[#292496] text-center mb-8 pb-4 border-b border-[#65a7b2]/30">
+                <h2
+                  className="text-3xl md:text-4xl font-normal mb-4"
+                  style={{
+                    fontWeight: 700,
+                    color: "#292496",
+                  }}
+                >
+                  Operations Team
+                </h2>
+                <div className="w-20 h-1 bg-[#65a7b2] mx-auto rounded-full mb-12"></div>
+              </h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6">
+                {operationsTeam.map((member, idx) => (
+                  <div key={idx} className="flex flex-col items-center">
+                    <div className="w-44 h-44 rounded-full overflow-hidden border-2 border-[#65a7b2]/30 shadow-md">
+                      <img
+                        src={member.photo}
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <p className="font-medium text-[#292496] text-sm mt-2">
+                      {member.name}
+                    </p>
+                    <p className="text-gray-600 text-xs text-center">
+                      {member.role}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
