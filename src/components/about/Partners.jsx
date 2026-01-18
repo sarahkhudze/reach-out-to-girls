@@ -37,7 +37,6 @@ const highlights = [
 const Partners = () => {
   return (
     <div className="mb-16 md:mb-24 pt-24 md:pt-16 lg:pt-20 relative overflow-hidden">
-      {/* Subtle background texture */}
       <div
         className="absolute top-0 left-0 w-full h-full -z-10 opacity-5"
         style={{
@@ -50,7 +49,6 @@ const Partners = () => {
       ></div>
 
       <div className="text-center px-4 md:px-6 max-w-4xl mx-auto relative z-10">
-        {/* Handwritten Title */}
         <h2
           className="text-3xl md:text-4xl lg:text-5xl font-normal tracking-wide drop-shadow-sm mb-8"
           style={{
@@ -62,19 +60,14 @@ const Partners = () => {
           Highlights
         </h2>
         <div className="w-20 h-1 bg-[#65a7b2] -translate-y-3 mx-auto rounded-full mb-10"></div>
-
-        {/* Mission-focused description */}
         <p className="text-gray-700 leading-relaxed text-base md:text-lg max-w-3xl mx-auto">
           From rural classrooms to university campuses, these are the moments that fuel our mission — 
           where curiosity meets opportunity, and every girl steps into her power.
         </p>
       </div>
-
-      {/* Marquee of Highlight Photos */}
       <div className="w-full mt-12 px-4 md:px-8">
         <div className="overflow-hidden rounded-2xl bg-white/60 backdrop-blur-sm border border-[#292496]/10 shadow-lg py-6">
           <div className="flex animate-marquee">
-            {/* Show all images twice for seamless loop */}
             {[...highlights, ...highlights].map((item, index) => (
               <div
                 key={index}
@@ -92,8 +85,6 @@ const Partners = () => {
           </div>
         </div>
       </div>
-
-      {/* Animation Styles */}
       <style>{`
         @keyframes marquee {
           0% {
