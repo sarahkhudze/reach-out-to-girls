@@ -13,11 +13,11 @@ export default function FacebookFeed() {
         className="fb-page"
         data-href="https://www.facebook.com/RoGMalawi"
         data-tabs="timeline"
-        data-width="450"
+        data-width="340"
         data-height="450"
         data-small-header="false"
-        data-adapt-container-width="false"
-        data-hide-cover="false"
+        data-adapt-container-width="true"
+        data-hide-cover="true"
         data-show-facepile="false"
       >
         <blockquote cite="https://www.facebook.com/RoGMalawi" className="fb-xfbml-parse-ignore">
