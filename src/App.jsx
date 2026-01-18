@@ -23,6 +23,7 @@ import Hero from "./components/home/Hero";
 import ScrollToTop from "./components/others/ScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
+import WhatsAppButton from "./components/WhatsAppButton";
 
 AOS.init({
   duration: 800,
@@ -44,6 +45,7 @@ const App = () => {
     <div className="font-bodyFont">
       <Router>
         <ScrollToTop />
+        <WhatsAppButton />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />

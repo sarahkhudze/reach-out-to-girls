@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <div className="overflow-x-hidden overflow-y-hidden">
       <CTAHome />
-        <Hero />
-      <SuccessStory />  
-      <MainHero/>  
-      <BFooterHome/>
+      <Hero />     
+      <SuccessStory />
+      <MainHero />
+      <BFooterHome />
       <Partners />
     </div>
   );

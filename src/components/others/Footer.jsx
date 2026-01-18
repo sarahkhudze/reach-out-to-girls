@@ -86,8 +86,8 @@ const Footer = () => {
             <ul className="space-y-3 text-white/90">
               <li className="flex items-start gap-3">
                 <MdOutlineCall className="mt-1 flex-shrink-0" />
-                <a href="tel:+265994682891" className="hover:text-[#FFBE0B]">
-                  +265 996 62 32 27
+                <a href="tel:+265996623227" className="hover:text-[#FFBE0B]">
+                  +265 996 623 227
                 </a>
               </li>
               <li className="flex items-start gap-3">

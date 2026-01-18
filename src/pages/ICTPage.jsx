@@ -13,25 +13,23 @@ const ICTPage = () => {
       `,
         backgroundSize: "60px 60px",
       }}
-      >
-      {/* Hero Section */}
+    >
       <div className="max-w-4xl mx-auto text-center mb-16">
-       
         <h1
           className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4"
           style={{ color: "#292496" }}
         >
           ICT & STEM for Girls
         </h1>
-        
+
         <div className="w-20 h-1 bg-[#65a7b2] mx-auto rounded-full mb-6"></div>
-        
+
         <p className="text-gray-700 text-lg max-w-md mx-auto leading-relaxed">
           In todays rapidly evolving digital landscape, possessing Information
           and Communication Technology (ICT) skills is crucial for personal and
           professional success.
         </p>
-         <div className="flex justify-center mb-12 mt-8">
+        <div className="flex justify-center mb-12 mt-8">
           <img
             src={reach14}
             alt="ICT Skills for Girls"
@@ -40,9 +38,7 @@ const ICTPage = () => {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="max-w-5xl mx-auto space-y-12 text-gray-700">
-        {/* ICT Skills for Girls */}
         <section>
           <h2 className="text-2xl font-bold text-[#292496] mb-6 text-center">
             ICT Skills for Girls
@@ -76,7 +72,6 @@ const ICTPage = () => {
           </div>
         </section>
 
-        {/* Essentials for Young Women in STEM */}
         <section>
           <h2 className="text-2xl font-bold text-[#292496] mb-6 text-center">
             Essentials for Young Women in STEM
@@ -109,8 +104,6 @@ const ICTPage = () => {
             </ul>
           </div>
         </section>
-
-        {/* Photo Gallery */}
         <section>
           <h2 className="text-2xl font-bold text-[#292496] mb-6 text-center">
             Digital Futures in Action
@@ -130,8 +123,6 @@ const ICTPage = () => {
             ))}
           </div>
         </section>
-
-        {/* Impact Stats */}
         <section>
           <h2 className="text-2xl font-bold text-[#292496] mb-6 text-center">
             By the Numbers
@@ -151,15 +142,13 @@ const ICTPage = () => {
             </div>
           </div>
         </section>
-
-        {/* CTA */}
         <section className="text-center mt-12">
           <p className="text-lg mb-6">
             Help us close the digital gender gap — one girl at a time.
           </p>
           <Link
             to="/donate"
-            className="inline-block bg-[#292496] text-white px-8 py-3.5 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300 text-lg shadow-md"
+            className="inline-block bg-[#292496] text-white px-8 py-3.5 rounded-full animate-bounce font-medium hover:bg-opacity-90 transition-all duration-300 text-lg shadow-md"
           >
             Support Digital Education
           </Link>

@@ -13,9 +13,7 @@ const EmpowermentPage = () => {
         backgroundSize: "60px 60px",
       }}
     >
-     
       <div className="max-w-4xl mx-auto text-center mb-16">
-       
         <h1
           className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4"
           style={{ color: "#292496" }}
@@ -28,7 +26,7 @@ const EmpowermentPage = () => {
           challenges, which can hinder their ability to support their families
           and contribute to their communities.
         </p>
-         <div className="flex justify-center mb-12 mt-8">
+        <div className="flex justify-center mb-12 mt-8">
           <img
             src={new9}
             alt="Women Empowerment Initiative"
@@ -36,10 +34,7 @@ const EmpowermentPage = () => {
           />
         </div>
       </div>
-
-      {/* Main Content */}
       <div className="max-w-5xl mx-auto space-y-10 text-gray-700">
-        {/* Program Overview */}
         <div className="bg-[#f8fbfd] border-l-4 border-[#65a7b2] p-6 rounded-r-lg">
           <h2 className="text-xl font-bold text-[#292496] mb-3">
             Empowering Rural Women
@@ -60,8 +55,6 @@ const EmpowermentPage = () => {
             build sustainable livelihoods — and keep their daughters in school.
           </p>
         </div>
-
-        {/* Objectives */}
         <div>
           <h2 className="text-2xl font-bold text-[#292496] mb-4 text-center">
             Our Objectives
@@ -83,8 +76,6 @@ const EmpowermentPage = () => {
             </ul>
           </div>
         </div>
-
-        {/* Photo Gallery */}
         <div>
           <h2 className="text-2xl font-bold text-[#292496] mb-6 text-center">
             Economic Independence in Action
@@ -104,8 +95,6 @@ const EmpowermentPage = () => {
             ))}
           </div>
         </div>
-
-        {/* Impact & Call to Action */}
         <div className="bg-[#f0f9ff] border-l-4 border-[#FFBE0B] p-6 rounded-r-lg">
           <h2 className="text-xl font-bold text-[#292496] mb-3">
             Your Support Creates Ripple Effects
@@ -117,12 +106,10 @@ const EmpowermentPage = () => {
             communities thrive.
           </p>
         </div>
-
-        {/* Donate Button */}
         <div className="text-center mt-8">
           <Link
             to="/donate"
-            className="inline-block bg-[#292496] text-white px-8 py-3.5 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300 text-lg shadow-md"
+            className="inline-block bg-[#292496] text-white animate-bounce px-8 py-3.5 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300 text-lg shadow-md"
           >
             Empower a Woman Today
           </Link>

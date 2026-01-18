@@ -49,7 +49,6 @@ const Header = () => {
         </Link>
       </div>
 
-    
       <div className="hidden md:flex items-center justify-center">
         <div className="flex justify-center items-center gap-40 text-lg font-medium">
           <NavLink to="/">Home</NavLink>
@@ -92,11 +91,11 @@ const Header = () => {
           <NavLink to="/blog">Blog</NavLink>
           <NavLink to="/contact">Contact</NavLink>
           <Link
-  to="/donate"
-  className="bg-[#292496] text-white hover:bg-opacity-90 p-3 rounded-md animate-bounce block text-center font-medium transition-all duration-200"
->
-  Donate
-</Link>
+            to="/donate"
+            className="bg-[#292496] text-white hover:bg-opacity-90 p-3 rounded-md block text-center font-medium transition-all duration-200"
+          >
+            Donate
+          </Link>
         </div>
       </div>
 
@@ -172,16 +171,10 @@ const Header = () => {
               <MobileNavLink to="/blog" onClick={() => setIsMenuOpen(false)}>
                 Blog
               </MobileNavLink>
-              <MobileNavLink
-                to="/contact"
-                onClick={() => setIsMenuOpen(false)}
-              >
+              <MobileNavLink to="/contact" onClick={() => setIsMenuOpen(false)}>
                 Contact
               </MobileNavLink>
-              <MobileNavLink
-                to="/donate"
-                onClick={() => setIsMenuOpen(false)}
-              >
+              <MobileNavLink to="/donate" onClick={() => setIsMenuOpen(false)}>
                 Donate
               </MobileNavLink>
             </div>
@@ -214,7 +207,6 @@ const NavLink = ({ to, children }) => {
     </div>
   );
 };
-
 
 const MobileNavLink = ({ to, children, onClick }) => {
   const currentUrl = window.location.pathname;

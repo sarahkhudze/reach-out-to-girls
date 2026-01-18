@@ -102,9 +102,7 @@ const ContactPage = () => {
             </form>
           </div>
 
-          {/* Right: Contact Info + Map */}
           <div className="space-y-8">
-            {/* Contact Details */}
             <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-[#65a7b2]/10">
               <h2 className="text-2xl font-bold text-[#292496] mb-6">Get in Touch</h2>
               <div className="space-y-5">

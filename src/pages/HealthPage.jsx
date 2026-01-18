@@ -13,9 +13,7 @@ const HealthPage = () => {
         backgroundSize: "60px 60px",
       }}
     >
-      
       <div className="max-w-4xl mx-auto text-center mb-16">
-        
         <h1
           className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4"
           style={{ color: "#292496" }}
@@ -35,10 +33,7 @@ const HealthPage = () => {
           />
         </div>
       </div>
-
-     
       <div className="max-w-5xl mx-auto space-y-10 text-gray-700">
-       
         <div className="bg-[#f8fbfd] border-l-4 border-[#65a7b2] p-6 rounded-r-lg">
           <h2 className="text-xl font-bold text-[#292496] mb-3">
             The `Smart Period`` Initiative
@@ -59,8 +54,6 @@ const HealthPage = () => {
             <li>Training girls to create reusable sanitary pads</li>
           </ul>
         </div>
-
-        {/* Why It Matters */}
         <div>
           <h2 className="text-2xl font-bold text-[#292496] mb-4 text-center">
             Why Menstrual Health Matters
@@ -76,8 +69,6 @@ const HealthPage = () => {
             confidence, knowledge, and community support.
           </p>
         </div>
-
-        {/* Photo Gallery */}
         <div>
           <h2 className="text-2xl font-bold text-[#292496] mb-6 text-center">
             In Action
@@ -97,8 +88,6 @@ const HealthPage = () => {
             ))}
           </div>
         </div>
-
-        {/* Impact & Call to Action */}
         <div className="bg-[#f0f9ff] border-l-4 border-[#FFBE0B] p-6 rounded-r-lg">
           <h2 className="text-xl font-bold text-[#292496] mb-3">
             Join Our Mission
@@ -109,8 +98,6 @@ const HealthPage = () => {
             peer educators, and reach more schools.
           </p>
         </div>
-
-        {/* Donate Button */}
         <div className="text-center mt-8">
           <Link
             to="/donate"
