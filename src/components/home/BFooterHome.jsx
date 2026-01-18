@@ -99,7 +99,7 @@ const BFooterHome = () => {
 
           <div className="lg:w-1/2 flex justify-center px-4 sm:px-6">
             <div className="w-full max-w-md overflow-hidden border-2 border-gray-200 rounded-lg shadow-lg bg-white">
-              <div className="py-4 px-4">
+              <div className="py-4 px-3">
                 {" "}
                 <h2 className="text-3xl font-bold mb-4 text-center">
                   Facebook Updates

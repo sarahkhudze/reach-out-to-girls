@@ -11,7 +11,7 @@
     "postbuild": "cp dist/index.html dist/404.html"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.3.3",
+    "@emailjs/browser": "^4.4.1",
     "@fontsource/lato": "^5.0.21",
     "@fontsource/merriweather": "^5.0.13",
     "@popperjs/core": "^2.11.8",

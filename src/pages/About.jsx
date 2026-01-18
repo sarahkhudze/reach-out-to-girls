@@ -413,7 +413,7 @@ const About = () => {
       <section className="py-12 px-4 bg-[#292496] text-center">
         <Link
           to="/donate"
-          className="inline-block bg-white text-[#292496] px-8 py-4 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300 text-lg shadow-md"
+          className="inline-block bg-white text-[#292496] px-8 py-4 animate-bounce rounded-full font-medium hover:bg-opacity-90 transition-all duration-300 text-lg shadow-md"
         >
           Support Our Work
         </Link>
