@@ -96,7 +96,7 @@ const SuccessStory = () => {
                   <img
                     src={story.image}
                     alt={`${story.name} - ${story.shortTitle}`}
-                    className="w-[400px] h-[400px] rounded-xl"
+                    className="w-[400px] h-[500px] rounded-xl"
                   />
                 </div>
               </div>

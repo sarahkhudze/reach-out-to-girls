@@ -98,16 +98,13 @@ const BFooterHome = () => {
           </div>
 
           <div className="lg:w-1/2 flex justify-center px-4 sm:px-6">
-            <div
-              className="text-center md:w-fit h-fit overflow-hidden border-2 border-gray-200 rounded-lg shadow-lg bg-white"
-            >
-              <div className="max-w-4xl mx-auto py-4 md:px-4 mt-12 md:mt-0">
-                <div className="py-4 px-4">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
-                    Facebook Updates
-                  </h2>
-                  <FacebookFeed />
-                </div>
+            <div className="w-full max-w-md overflow-hidden border-2 border-gray-200 rounded-lg shadow-lg bg-white">
+              <div className="py-4 px-4">
+                {" "}
+                <h2 className="text-3xl font-bold mb-4 text-center">
+                  Facebook Updates
+                </h2>
+                <FacebookFeed />
               </div>
             </div>
           </div>
