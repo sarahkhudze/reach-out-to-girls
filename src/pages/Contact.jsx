@@ -68,9 +68,9 @@ const ContactPage = () => {
     e.preventDefault();
     setLoading(true);
 
-    const serviceID = "YOUR_SERVICE_ID";
-    const templateID = "contact_form";
-    const publicKey = "YOUR_PUBLIC_KEY";
+    const serviceID = "service_2ixxrva";
+    const templateID = "template_ak36qoj";
+    const publicKey = "kv0oL9-nCt-1arW55";
 
     emailjs
       .send(serviceID, templateID, formData, publicKey)
