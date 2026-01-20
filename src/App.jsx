@@ -24,6 +24,7 @@ import ScrollToTop from "./components/others/ScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
 import WhatsAppButton from "./components/WhatsAppButton";
+import BlogPost from "./pages/BlogPost";
 
 AOS.init({
   duration: 800,
@@ -56,6 +57,7 @@ const App = () => {
             <Route path="/donate" element={<Donate />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/sstories" element={<SStories />} />
             <Route path="/projects/ict" element={<ICTPage />} />
             <Route path="/projects/health" element={<HealthPage />} />
