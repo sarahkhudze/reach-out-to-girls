@@ -31,10 +31,23 @@ const Blog = () => {
 
   return (
     <div className="max-w-6xl mx-auto py-12 px-4">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-4">Our Blog</h1>
-      <p className="text-gray-700 text-center mb-8">
-        Stories of hope, impact, and the girls who inspire us.
-      </p>
+      <div className="text-center mb-16 max-w-3xl mx-auto relative">
+        
+          <h1
+            className="text-4xl md:text-5xl font-normal tracking-wide"
+            style={{
+              fontWeight: 700,
+              color: "#292496",
+              letterSpacing: "0.02em",
+            }}
+          >
+            Let’s Connect Together
+          </h1>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#65a7b2] to-[#FFBE0B] mx-auto rounded-full mt-6"></div>
+          <p className="text-gray-700 mt-8 leading-relaxed max-w-2xl mx-auto">
+             A community of women lifting each other because your journey matters, and you don`t have to walk it alone. Share your thoughts, ask for advice, or just listen. Every conversation here builds a stronger, more empowered you. Welcome to where women connect genuinely.
+          </p>
+        </div>
 
       <div className="flex justify-center gap-4 mb-8">
         <button
